@@ -10,11 +10,12 @@
 </head>
     
 <body>
+    <!-- Header/Navigation -->
     <header>
         <nav>
             <div class="logo">
-                <img src="bridanlogo.PNG" alt="Bridan Design Build Logo"> 
-                <h3>BRIDAN DESIGN BUILD </h3>
+              <img src="img/bridanlogo.PNG" alt="Bridan Design Build Logo" style="width: 85px; height: auto; padding: 2px;"> 
+              <h3 style="font-size: 20px;">BRIDAN DESIGN BUILD </h3>
             </div>
             <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
@@ -29,1886 +30,2180 @@
         </nav>
     </header>
 
-<!-- HOME SECTION (Combined Hero + Free Architect Promo + About) -->
-<section id="home" class="home-section">
-  <!-- Background Video Promo -->
-  <div class="home-bg-video-wrapper" style="background: rgba(248, 249, 250, 0.7);">
-    <video class="promo-bg-video" autoplay muted loop style="opacity: 2.5;">
-      <source src="pvid.mp4" type="video/mp4">
-    </video>
-    <div class="container home-container">
-      <div class="free-architect-content">
-        <h1 class="promo-title">FREE ARCHITECT!</h1>
-        <p class="promo-subtitle">
-          We are a professional house designing company in Kenya. We offer architectural drawings, interior design, and building construction. Get free architectural plans when you build with us.
+    <!-- Home/Hero Section -->
+    <section id="home" class="home-section improved-hero">
+    <section id="home" class="home-section improved-hero">
+      <div class="home-bg-video-wrapper" style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
+        <video class="promo-bg-video" autoplay muted loop playsinline poster="img/home.jpg" style="opacity:1; z-index:1; filter:brightness(1.08) contrast(1.08);">
+          <source src="img/bgimage1 (4).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <table style="width: 100%; height: 100%; position: relative; z-index: 2;">
+          <tr>
+            <td style="width: 50%; padding: 40px;">
+              <!-- Left Column Content (Previously Right) -->
+              <div class="value-props" style="text-align: justify; margin-bottom: 30px;">
+                <h3 style="font-size: 2rem; font-weight: 900; color: #635305; margin-bottom: 18px; letter-spacing: 1px; text-shadow: 0 2px 8px #ffd60055, 0 1px 0 #fff4;">
+                  Why Choose Bridan Design Build?
+                </h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="display: flex; align-items: center; margin-bottom: 14px;">
+                    <i class="fas fa-check-circle" style="color: #ffd600; font-size: 1.4em; margin-right: 12px; text-shadow: 0 2px 8px #ffd60055;"></i>
+                    <span style="font-size: 1.18rem; font-weight: 800; color: #222; letter-spacing: 0.5px; text-shadow: 0 1px 4px #ffd60022;">Expert house design & construction</span>
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 14px;">
+                    <i class="fas fa-check-circle" style="color: #ffd600; font-size: 1.4em; margin-right: 12px; text-shadow: 0 2px 8px #ffd60055;"></i>
+                    <span style="font-size: 1.18rem; font-weight: 800; color: #222; letter-spacing: 0.5px; text-shadow: 0 1px 4px #ffd60022;">Quality workmanship guarantee</span>
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 14px;">
+                    <i class="fas fa-check-circle" style="color: #ffd600; font-size: 1.4em; margin-right: 12px; text-shadow: 0 2px 8px #ffd60055;"></i>
+                    <span style="font-size: 1.18rem; font-weight: 800; color: #222; letter-spacing: 0.5px; text-shadow: 0 1px 4px #ffd60022;">On-time project delivery</span>
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 0;">
+                    <i class="fas fa-check-circle" style="color: #ffd600; font-size: 1.4em; margin-right: 12px; text-shadow: 0 2px 8px #ffd60055;"></i>
+                    <span style="font-size: 1.18rem; font-weight: 800; color: #222; letter-spacing: 0.5px; text-shadow: 0 1px 4px #ffd60022;">Transparent cost control</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="hero-cta" style="text-align: center;">
+          <a href="#portfolio" class="btn btn-primary" style="margin-right: 15px;">
+            <i class="fas fa-images"></i>
+            View Portfolio
+          </a>
+            <a href="https://api.whatsapp.com/send?phone=254741400368" class="btn btn-secondary" target="_blank" rel="noopener">
+            <i class="fas fa-envelope"></i>
+            Contact Us
+            </a>
+              </div>
+
+              </div>
+            </td>
+
+            <td style="width: 50%; padding: 40px; vertical-align: top;">
+
+                <!-- Right Column Content (Previously Left) -->
+                <div class="hero-content animated fadeInLeft" style="max-width: 100%;">
+
+                <h3 class="promo-title" style="
+                  font-size: 2.2rem;
+                  font-weight: 900;
+                  color: #181818;
+                  margin-bottom: 14px;
+                  letter-spacing: 1px;
+                  text-shadow:
+                    0 0 12px #ffd600cc,
+                    0 0 24px #ffd60099,
+                    0 2px 8px #ffd60066,
+                    0 1px 4px #ffd5000e,
+                    0 0 1px #000;
+                  line-height: 1.15;
+                  word-break: break-word;
+                ">
+                  FREE ARCHITECT!!
+                </h3>
+                <h4 class="promo-subtitle" style="
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                  color: #7b6600;
+                  margin-bottom: 8px;
+                  text-shadow: 0 1px 4px #000b, 0 1px 0 #fff4;
+                  line-height: 1.2;
+                  word-break: break-word;
+                ">
+                  We Are a Professional House Designing Company in Kenya.
+                </h4>
+                <div class="promo-desc" style="
+                  font-size: 1rem;
+                  font-weight: 600;
+                  color: #1b1b16;
+                  margin-bottom: 14px;
+                  text-shadow: 0 1px 4px #000b, 0 1px 0 #0e0b0155;
+                  line-height: 1.4;
+                  max-width: 100%;
+                  word-break: break-word;
+                ">
+                  We are a friendly and easy to work with professional house designing company in Kenya.<br>
+                  We do architectural drawings, interior designing, building construction, and much more.<br>
+                  <span style="color:#070215; font-weight:700;">We offer free architectural plans if you sign up to build with us.</span>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px; margin: 14px 0; width: 100%;">
+                  <a 
+                  href="https://api.whatsapp.com/send?phone=254741400368" 
+                  target="_blank" 
+                  rel="noopener"
+                  class="cta-button"
+                  style="
+                    display: flex; 
+                    align-items: center; 
+                    gap: 8px; 
+                    background: linear-gradient(90deg, #25d366 0%, #128c7e 100%);
+                    color: #fff; 
+                    border: none; 
+                    border-radius: 30px; 
+                    padding: 10px 18px; 
+                    font-size: 1rem; 
+                    font-weight: 700; 
+                    box-shadow: 0 2px 8px rgba(37,211,102,0.18); 
+                    cursor: pointer; 
+                    transition: background 0.3s, transform 0.2s;
+                    text-decoration: none;
+                    width: 100%;
+                    justify-content: center;
+                  "
+                  >
+                  <i class="fab fa-whatsapp" style="font-size:1.2em;"></i>
+                  <span>WhatsApp Consultation</span>
+                  </a>
+
+                  <a 
+                  href="tel:+254741400368"
+                  class="cta-button"
+                  style="
+                    display: flex; 
+                    align-items: center; 
+                    gap: 8px; 
+                    background: linear-gradient(90deg, #ffd700 0%, #ffb300 100%);
+                    color: #222; 
+                    border: none; 
+                    border-radius: 30px; 
+                    padding: 10px 18px; 
+                    font-size: 1rem; 
+                    font-weight: 700; 
+                    box-shadow: 0 2px 8px rgba(255,215,0,0.18); 
+                    cursor: pointer; 
+                    transition: background 0.3s, transform 0.2s;
+                    text-decoration: none;
+                    width: 100%;
+                    justify-content: center;
+                  "
+                  onclick="window.location.href='tel:+254741400368'; return false;"
+                  >
+                  <i class="fas fa-phone-alt" style="font-size:1.1em;"></i>
+                  <span>Call for Consultation</span>
+                  </a>
+                </div>
+
+                <div class="badges-container" style="margin: 12px 0; display: flex; flex-wrap: wrap; gap: 8px;">
+                  <div class="badge" style="background:rgba(216, 227, 4, 0.12); color:#120129; border-radius:8px; padding:4px 10px; font-size:0.95em; display:flex; align-items:center; gap:5px;">
+                  <i class="fas fa-certificate"></i>
+                  <span>ETIMS & VAT Registered</span>
+                  </div>
+                  <div class="badge" style="background:rgba(235, 239, 4, 0.12); color:#0c0124; border-radius:8px; padding:4px 10px; font-size:0.95em; display:flex; align-items:center; gap:5px;">
+                  <i class="fas fa-hard-hat"></i>
+                  <span>BORAQS Registered</span>
+                  </div>
+                  <div class="badge" style="background:rgba(244, 224, 5, 0.12); color:#040404; border-radius:8px; padding:4px 10px; font-size:0.95em; display:flex; align-items:center; gap:5px;">
+                  <i class="fas fa-building"></i>
+                  <span>NCA Certified</span>
+                  </div>
+                </div>
+                </div>
+              </td>
+              </tr>
+            </table>
+
+            <div class="scroll-indicator" style="position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); font-size:0.98em;">
+              <span>Explore More</span>
+              <i class="fas fa-chevron-down bounce"></i>
+            </div>
+            </div>
+          </section>
+
+    <!-- Vision & Excellence Section -->
+    <section class="vision-excellence" style="
+      padding: 120px 0;
+      text-align: center;
+      position: relative;
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('path-to-bg-image.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      transition: all 0.5s ease-in-out;
+      margin: -2px 0; /* Smooth transition between sections */
+    ">
+      <div class="content-container" style="
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 30px;
+      ">
+        <h1 style="
+          font-size: 4.5rem;
+          margin-bottom: 2rem;
+          font-weight: 700;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+          background: linear-gradient(45deg, #ffd700, #fff);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transform: scale(1);
+          transition: transform 0.3s ease;
+        ">
+          Transform Your Space Into Beauty & Art
+        </h1>
+
+        <p class="vision-subtitle" style="
+          font-size: 2rem;
+          margin-bottom: 3rem;
+          font-weight: 300;
+          line-height: 1.6;
+          color: #e0e0e0;
+          max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        ">
+          We Are Bridan Design Build Limited A Local House Design Company Based in Kenya
         </p>
-        <a href="tel:+254721384325" class="btn primary-btn promo-call-btn">Call Us for a FREE Architects Plan</a>
-        <div class="badges">
-          <span class="badge">ETIMS &amp; VAT Registered</span>
-          <span class="badge">BORAQS Registered Architect</span>
-          <span class="badge">NCA Registered Contractor</span>
-        </div>
-        <h3 class="section-heading">Are You Looking For A Professional House Designer in Kenya?</h3>
-        <ul class="promo-list">
-          <li>Looking for a trustworthy house designer to design and build for you?</li>
-          <li>Need an honest architect and contractor to show you building options?</li>
-          <li>Ready to build your dream home?</li>
-          <li>Want to save costs on building?</li>
-        </ul>
-        <h3 class="section-heading">Why Choose Bridan Design Build?</h3>
-        <p>
-          We are experts in house design and construction, qualified by the National Construction Authority (NCA) and BORAQS. Our team delivers quality workmanship, on-time projects, and cost control.
-        </p>
-        <h3 class="section-heading">How It Works</h3>
-        <ol class="promo-steps">
-          <li>Call us and tell us about your project.</li>
-          <li>We set up a meeting to discuss your needs and timeline.</li>
-          <li>We visit your site, sign the agreement, and start your project.</li>
-        </ol>
-      </div>
-    </div>
-  </div>
 
-
-  
-<!-- Enhanced Portfolio Section for Architecture & Design Company -->
-<section id="portfolio" class="portfolio-section">
-  <div class="portfolio-header">
-    <h2 class="portfolio-title"><i class="fas fa-building"></i> Our Design Portfolio</h2>
-    <p class="portfolio-subtitle">A showcase of our award-winning architectural and interior design projects, blending innovation, sustainability, and timeless elegance.</p>
-    <p class="portfolio-description">At ArchDesign Studios, we transform spaces into extraordinary experiences through thoughtful design and meticulous craftsmanship. Explore our diverse portfolio spanning residential, commercial, and hospitality projects.</p>
-  </div>
-
-
-<!-- Portfolio Section -->
-<section class="portfolio-section" id="portfolio">
-  <!-- Hero Video Banner with Text Overlay -->
-  <div class="portfolio-hero">
-    <video class="hero-video" autoplay muted loop playsinline poster="portfolio-banner.jpg">
-      <source src="gbimage1 (1).mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <h2 class="hero-title">Crafting Spaces That Inspire</h2>
-        <p class="hero-subtitle">Explore our award-winning designs that blend functionality with aesthetic excellence</p>
-        <div class="hero-scroll-indicator">
-          <span>Scroll to Explore</span>
-          <i class="fas fa-chevron-down"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Stats with Animated Counters -->
-  <div class="portfolio-stats-container">
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
-        <div class="counter" data-target="250">0</div>
-        <p class="stat-label">Completed Projects</p>
-      </div>
-      <div class="stat-card">
-        <div class="stat-icon"><i class="fas fa-award"></i></div>
-        <div class="counter" data-target="18">0</div>
-        <p class="stat-label">Industry Awards</p>
-      </div>
-      <div class="stat-card">
-        <div class="stat-icon"><i class="fas fa-smile"></i></div>
-        <div class="counter" data-target="98">0</div>
-        <span>%</span>
-        <p class="stat-label">Client Satisfaction</p>
-      </div>
-      <div class="stat-card">
-        <div class="stat-icon"><i class="fas fa-map-marked-alt"></i></div>
-        <div class="counter" data-target="12">0</div>
-        <p class="stat-label">Cities Served</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Interactive Filter with Animated Underline -->
-  <div class="portfolio-filter-container">
-    <div class="filter-wrapper">
-      <div class="filter-options" id="portfolioFilter">
-        <button class="filter-btn active" data-filter="all">
-          <i class="fas fa-th"></i> All Projects
-        </button>
-        <button class="filter-btn" data-filter="residential">
-          <i class="fas fa-home"></i> Residential
-        </button>
-        <button class="filter-btn" data-filter="commercial">
-          <i class="fas fa-building"></i> Commercial
-        </button>
-        <button class="filter-btn" data-filter="hospitality">
-          <i class="fas fa-hotel"></i> Hospitality
-        </button>
-        <button class="filter-btn" data-filter="sustainable">
-          <i class="fas fa-leaf"></i> Sustainable
-        </button>
-        <div class="filter-underline"></div>
-      </div>
-      <div class="filter-search">
-        <input type="text" placeholder="Search projects..." class="search-input">
-        <button class="search-btn"><i class="fas fa-search"></i></button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Grid with Hover Effects -->
-  <div class="portfolio-grid-container">
-    <div class="portfolio-grid" id="portfolioGrid">
-      <!-- Featured Project -->
-      <article class="portfolio-item featured" data-category="residential sustainable" data-tags="smart-home luxury modern">
-        <div class="portfolio-media">
-          <video class="project-video" autoplay muted loop playsinline poster="skyview-thumb.jpg">
-            <source src="gbimage1 (2).mp4" type="video/mp4">
-          </video>
-          <img src="skyview-thumb.jpg" alt="Skyview Residences" class="project-image" loading="lazy">
-          <div class="project-badge">Featured</div>
-          <div class="project-hover-content">
-            <button class="quick-view-btn" data-project="skyview-residences">
-              <i class="fas fa-expand"></i> Quick View
-            </button>
-            <button class="project-details-btn" data-project="skyview-residences">
-              <i class="fas fa-info-circle"></i> Details
-            </button>
+        <div class="expertise-areas" style="
+          margin: 4rem auto;
+          padding: 2rem;
+          background: rgba(255,255,255,0.05);
+          border-radius: 15px;
+          backdrop-filter: blur(10px);
+          max-width: 1000px;
+          transition: transform 0.3s ease;
+        ">
+          <p style="font-size: 1.6rem; margin-bottom: 2rem; color: #fff;">We Are More Than Just A House Design Company Based in Kenya. We Also Provide:</p>
+          <div style="
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+          ">
+            <span class="expertise-tag" style="
+              color: #ffd700;
+              font-size: 1.3rem;
+              padding: 0.8rem 1.5rem;
+              border: 2px solid #ffd700;
+              border-radius: 30px;
+              transition: all 0.3s ease;
+              cursor: pointer;
+            ">
+              <i class="fas fa-drafting-compass"></i> Architectural Design
+            </span>
+            <span class="expertise-tag" style="
+              color: #ffd700;
+              font-size: 1.3rem;
+              padding: 0.8rem 1.5rem;
+              border: 2px solid #ffd700;
+              border-radius: 30px;
+              transition: all 0.3s ease;
+              cursor: pointer;
+            ">
+              <i class="fas fa-paint-brush"></i> Interior Design
+            </span>
+            <span class="expertise-tag" style="
+              color: #ffd700;
+              font-size: 1.3rem;
+              padding: 0.8rem 1.5rem;
+              border: 2px solid #ffd700;
+              border-radius: 30px;
+              transition: all 0.3s ease;
+              cursor: pointer;
+            ">
+              <i class="fas fa-hard-hat"></i> Construction
+            </span>
+            <span class="expertise-tag" style="
+              color: #ffd700;
+              font-size: 1.3rem;
+              padding: 0.8rem 1.5rem;
+              border: 2px solid #ffd700;
+              border-radius: 30px;
+              transition: all 0.3s ease;
+              cursor: pointer;
+            ">
+              <i class="fas fa-tasks"></i> Project Management
+            </span>
           </div>
         </div>
-        <div class="project-info">
-          <h3 class="project-title">Skyview Residences</h3>
-          <div class="project-meta">
-            <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Nairobi</span>
-            <span class="meta-item"><i class="far fa-calendar-alt"></i> 2024</span>
-            <span class="meta-item"><i class="fas fa-ruler-combined"></i> 4,500 sq ft</span>
-          </div>
-          <p class="project-excerpt">A modern sustainable home with smart technology integration and custom furniture designs.</p>
-          <div class="project-tags">
-            <span class="tag">Smart Home</span>
-            <span class="tag">LEED Certified</span>
-            <span class="tag">Luxury</span>
-          </div>
+
+        <div class="action-buttons" style="
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          margin: 4rem 0;
+          flex-wrap: wrap;
+        ">
+          <a href="#portfolio" class="action-btn primary" style="
+            padding: 1.4rem 3rem;
+            background: #ffd700;
+            color: #000;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255,215,0,0.3);
+          ">
+            <i class="fas fa-images"></i> View Our Work
+          </a>
+          <a href="#contact" class="action-btn secondary" style="
+            padding: 1.4rem 3rem;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: 2px solid #fff;
+          ">
+            <i class="fas fa-envelope"></i> Contact Us
+          </a>
+          <a href="tel:+254741400368" class="action-btn outline" style="
+            padding: 1.4rem 3rem;
+            border: 2px solid #ffd700;
+            color: #ffd700;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+          ">
+            <i class="fas fa-phone"></i> Call Now
+          </a>
         </div>
-      </article>
 
-      <!-- Additional Project Cards Would Go Here -->
-      <!-- Example of another project -->
-      <article class="portfolio-item" data-category="commercial" data-tags="office workspace">
-        <div class="portfolio-media">
-          <img src="commercial-project.jpg" alt="Corporate Office Design" class="project-image" loading="lazy">
-          <div class="project-hover-content">
-            <button class="quick-view-btn" data-project="corporate-office">
-              <i class="fas fa-expand"></i> Quick View
-            </button>
-            <button class="project-details-btn" data-project="corporate-office">
-              <i class="fas fa-info-circle"></i> Details
-            </button>
-          </div>
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">Nexus Corporate Offices</h3>
-          <div class="project-meta">
-            <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Mombasa</span>
-            <span class="meta-item"><i class="far fa-calendar-alt"></i> 2023</span>
-            <span class="meta-item"><i class="fas fa-ruler-combined"></i> 12,000 sq ft</span>
-          </div>
-          <p class="project-excerpt">Innovative workspace design promoting collaboration and employee wellbeing.</p>
-          <div class="project-tags">
-            <span class="tag">Ergonomic</span>
-            <span class="tag">Open Plan</span>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-
-  <!-- Project Modal -->
-  <div class="project-modal" id="projectModal">
-    <div class="modal-container">
-      <button class="modal-close-btn" aria-label="Close modal">
-        <i class="fas fa-times"></i>
-      </button>
-      <div class="modal-content">
-        <!-- Content will be dynamically inserted here -->
-      </div>
-    </div>
-  </div>
-
-  <!-- CTA Section -->
-  <div class="portfolio-cta">
-    <div class="cta-content">
-      <h3>Ready to Start Your Project?</h3>
-      <p>Get in touch with our design team to discuss your vision</p>
-      <div class="cta-buttons">
-        <a href="#contact" class="cta-btn primary">
-          <i class="fas fa-envelope"></i> Request Consultation
-        </a>
-        <a href="tel:+254741400368" class="cta-btn secondary">
-          <i class="fas fa-phone-alt"></i> Call Now
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Portfolio Section Styles -->
-<style>
-/* Base Styles */
-.portfolio-section {
-  background: #f9f9f9;
-  padding: 0;
-  font-family: 'Poppins', 'Playfair Display', sans-serif;
-  color: #333;
-}
-
-/* Hero Video Banner */
-.portfolio-hero {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  max-height: 800px;
-  overflow: hidden;
-  margin-bottom: 60px;
-}
-
-.hero-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.85);
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-}
-
-.hero-content {
-  max-width: 800px;
-  padding: 0 20px;
-  animation: fadeInUp 0.8s ease-out;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-}
-
-.hero-subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 40px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
-
-.hero-scroll-indicator {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: bounce 2s infinite;
-}
-
-.hero-scroll-indicator i {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-/* Stats Section */
-.portfolio-stats-container {
-  background: linear-gradient(135deg, #f5f5f5 0%, #e9e9e9 100%);
-  padding: 60px 0;
-  margin-bottom: 60px;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.stat-card {
-  background: white;
-  border-radius: 12px;
-  padding: 30px 20px;
-  text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.stat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-}
-
-.stat-icon {
-  font-size: 2.5rem;
-  color: #9b8100;
-  margin-bottom: 15px;
-}
-
-.counter {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.stat-label {
-  font-size: 1.1rem;
-  color: #666;
-}
-
-/* Filter Section */
-.portfolio-filter-container {
-  max-width: 1200px;
-  margin: 0 auto 40px;
-  padding: 0 20px;
-}
-
-.filter-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.filter-options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  position: relative;
-}
-
-.filter-btn {
-  background: transparent;
-  color: #666;
-  border: none;
-  border-radius: 30px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.filter-btn.active, .filter-btn:hover {
-  color: #9b8100;
-  background: rgba(155, 129, 0, 0.1);
-}
-
-.filter-underline {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 100px;
-  background: #9b8100;
-  border-radius: 3px;
-  transition: all 0.3s ease;
-}
-
-.filter-search {
-  position: relative;
-}
-
-.search-input {
-  padding: 10px 15px;
-  padding-right: 40px;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  font-size: 1rem;
-  width: 200px;
-  transition: all 0.3s;
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: #9b8100;
-  width: 250px;
-}
-
-.search-btn {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  color: #666;
-  cursor: pointer;
-}
-
-/* Portfolio Grid */
-.portfolio-grid-container {
-  max-width: 1200px;
-  margin: 0 auto 60px;
-  padding: 0 20px;
-}
-
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 30px;
-}
-
-.portfolio-item {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: all 0.3s;
-  position: relative;
-}
-
-.portfolio-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-}
-
-.portfolio-item.featured {
-  grid-column: span 2;
-}
-
-.portfolio-media {
-  position: relative;
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-}
-
-.portfolio-item.featured .portfolio-media {
-  height: 350px;
-}
-
-.project-video, .project-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s;
-}
-
-.portfolio-item:hover .project-video,
-.portfolio-item:hover .project-image {
-  transform: scale(1.05);
-}
-
-.project-badge {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: #9b8100;
-  color: white;
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  z-index: 2;
-}
-
-.project-hover-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.portfolio-item:hover .project-hover-content {
-  opacity: 1;
-}
-
-.quick-view-btn, .project-details-btn {
-  background: rgba(255,255,255,0.9);
-  color: #333;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s;
-  min-width: 150px;
-  justify-content: center;
-}
-
-.quick-view-btn:hover {
-  background: #9b8100;
-  color: white;
-}
-
-.project-details-btn {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
-}
-
-.project-details-btn:hover {
-  background: white;
-  color: #333;
-}
-
-.project-info {
-  padding: 20px;
-}
-
-.project-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.project-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 15px;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.meta-item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.project-excerpt {
-  color: #555;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.tag {
-  background: #f5f5f5;
-  color: #666;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-}
-
-/* Project Modal */
-.project-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.project-modal.active {
-  display: flex;
-  opacity: 1;
-}
-
-.modal-container {
-  background: white;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 1000px;
-  max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
-  animation: modalFadeIn 0.3s;
-}
-
-.modal-close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: transparent;
-  border: none;
-  font-size: 1.5rem;
-  color: #666;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.modal-content {
-  padding: 40px;
-}
-
-/* CTA Section */
-.portfolio-cta {
-  background: linear-gradient(135deg, #9b8100 0%, #c7a500 100%);
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.cta-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.portfolio-cta h3 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-}
-
-.portfolio-cta p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  opacity: 0.9;
-}
-
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.cta-btn {
-  padding: 12px 30px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s;
-}
-
-.cta-btn.primary {
-  background: white;
-  color: #9b8100;
-}
-
-.cta-btn.primary:hover {
-  background: #f5f5f5;
-  transform: translateY(-3px);
-}
-
-.cta-btn.secondary {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
-}
-
-.cta-btn.secondary:hover {
-  background: rgba(255,255,255,0.1);
-  transform: translateY(-3px);
-}
-
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0) translateX(-50%);
-  }
-  40% {
-    transform: translateY(-10px) translateX(-50%);
-  }
-  60% {
-    transform: translateY(-5px) translateX(-50%);
-  }
-}
-
-@keyframes modalFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .hero-title {
-    font-size: 2.8rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-  
-  .portfolio-item.featured {
-    grid-column: span 1;
-  }
-}
-
-@media (max-width: 768px) {
-  .portfolio-hero {
-    height: 60vh;
-  }
-  
-  .hero-title {
-    font-size: 2.2rem;
-  }
-  
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .filter-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  
-  .search-input {
-    width: 100%;
-  }
-  
-  .search-input:focus {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .portfolio-hero {
-    height: 50vh;
-  }
-  
-  .hero-title {
-    font-size: 1.8rem;
-  }
-  
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .cta-buttons {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .cta-btn {
-    width: 100%;
-    justify-content: center;
-  }
-}
-</style>
-
-<!-- JavaScript for Interactive Elements -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Animated Counter
-  const counters = document.querySelectorAll('.counter');
-  const speed = 200;
-  
-  function animateCounters() {
-    counters.forEach(counter => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText;
-      const increment = target / speed;
-      
-      if(count < target) {
-        counter.innerText = Math.ceil(count + increment);
-        setTimeout(animateCounters, 1);
-      } else {
-        counter.innerText = target;
-      }
-    });
-  }
-  
-  // Start counters when stats section is in view
-  const statsSection = document.querySelector('.portfolio-stats-container');
-  const observer = new IntersectionObserver((entries) => {
-    if(entries[0].isIntersecting) {
-      animateCounters();
-      observer.unobserve(statsSection);
-    }
-  }, {threshold: 0.5});
-  
-  observer.observe(statsSection);
-
-  // Filter Animation
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const filterUnderline = document.querySelector('.filter-underline');
-  
-  function moveUnderline(btn) {
-    const rect = btn.getBoundingClientRect();
-    const parentRect = btn.parentElement.getBoundingClientRect();
-    filterUnderline.style.width = `${rect.width}px`;
-    filterUnderline.style.left = `${rect.left - parentRect.left}px`;
-  }
-  
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      this.classList.add('active');
-      moveUnderline(this);
-      
-      // Filter functionality would go here
-    });
-  });
-  
-  // Initialize underline position
-  const activeBtn = document.querySelector('.filter-btn.active');
-  if(activeBtn) moveUnderline(activeBtn);
-
-  // Project Modal
-  const modal = document.getElementById('projectModal');
-  const modalCloseBtn = document.querySelector('.modal-close-btn');
-  const quickViewBtns = document.querySelectorAll('.quick-view-btn');
-  const projectDetailBtns = document.querySelectorAll('.project-details-btn');
-  
-  function openModal(projectId) {
-    // In a real implementation, you would fetch project data based on projectId
-    // and populate the modal content dynamically
-    const modalContent = `
-      <div class="modal-project">
-        <div class="modal-media">
-          <video controls autoplay muted loop playsinline class="modal-video">
-            <source src="gbimage1 (2).mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="modal-info">
-          <h2>${projectId === 'skyview-residences' ? 'Skyview Residences' : 'Project Details'}</h2>
-          <div class="modal-meta">
-            <span><i class="fas fa-map-marker-alt"></i> Nairobi</span>
-            <span><i class="far fa-calendar-alt"></i> 2024</span>
-            <span><i class="fas fa-ruler-combined"></i> 4,500 sq ft</span>
-          </div>
-          <div class="modal-description">
-            <p>${projectId === 'skyview-residences' ? 
-              'This contemporary sustainable home features smart technology integration throughout, with custom furniture designs that complement the modern aesthetic. The project achieved LEED Platinum certification through innovative energy-saving solutions and sustainable material choices.' : 
-              'Detailed description of the project would appear here.'}
-            </p>
-          </div>
-          <div class="modal-features">
-            <h3>Key Features</h3>
-            <ul>
-              <li><i class="fas fa-check-circle"></i> Smart home automation system</li>
-              <li><i class="fas fa-check-circle"></i> Energy-efficient design</li>
-              <li><i class="fas fa-check-circle"></i> Custom furniture pieces</li>
-              <li><i class="fas fa-check-circle"></i> Indoor-outdoor living spaces</li>
-            </ul>
-          </div>
-          <a href="#contact" class="modal-cta-btn">Request Similar Project</a>
+        <div class="trust-indicators" style="
+          display: flex;
+          justify-content: center;
+          gap: 4rem;
+          flex-wrap: wrap;
+          margin-top: 4rem;
+        ">
+          <span class="trust-badge" style="
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.2rem;
+            color: #ffd700;
+            transition: transform 0.3s ease;
+          ">
+            <i class="fas fa-check-circle"></i> Free Consultation
+          </span>
+          <span class="trust-badge" style="
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.2rem;
+            color: #ffd700;
+            transition: transform 0.3s ease;
+          ">
+            <i class="fas fa-clock"></i> On-Time Delivery
+          </span>
+          <span class="trust-badge" style="
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.2rem;
+            color: #ffd700;
+            transition: transform 0.3s ease;
+          ">
+            <i class="fas fa-handshake"></i> Quality Guaranteed
+          </span>
         </div>
       </div>
-    `;
-    
-    document.querySelector('.modal-content').innerHTML = modalContent;
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-  
-  function closeModal() {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-  
-  quickViewBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const projectId = btn.getAttribute('data-project');
-      openModal(projectId);
-    });
-  });
-  
-  projectDetailBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const projectId = btn.getAttribute('data-project');
-      openModal(projectId);
-    });
-  });
-  
-  modalCloseBtn.addEventListener('click', closeModal);
-  
-  modal.addEventListener('click', (e) => {
-    if(e.target === modal) {
-      closeModal();
-    }
-  });
-  
-  document.addEventListener('keydown', (e) => {
-    if(e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModal();
-    }
-  });
-  
-  // Search functionality
-  const searchInput = document.querySelector('.search-input');
-  const searchBtn = document.querySelector('.search-btn');
-  
-  searchBtn.addEventListener('click', performSearch);
-  searchInput.addEventListener('keypress', (e) => {
-    if(e.key === 'Enter') performSearch();
-  });
-  
-  function performSearch() {
-    const searchTerm = searchInput.value.toLowerCase();
-    // In a real implementation, you would filter projects based on search term
-    console.log('Searching for:', searchTerm);
-  }
-});
-</script>  <!-- Hero Section -->
-  <div class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Transform Your Space Into Beauty & Art</h1>
-        <p>Bridan Design Build is a Construction Company and Award-winning interior design art crafting, building and breathtaking spaces.</p>
-        <div class="cta-buttons">
-          <a href="#portfolio" class="btn primary-btn">View Our Work</a>
-          <a href="#contact" class="btn secondary-btn">Contact Us</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="home.jpg" alt="Elegant Interior Design">
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="section-header">
-        <h2>About Bridan Design Build</h2>
-        <p class="subtitle">Building Dreams. Designing Futures. Creating Landmarks.</p>
-      </div>
-      <div class="about-content">
-        <div class="about-image">
-          <img src="bridan1.webp" alt="Bridan Interiors Design Studio - Inspiring Spaces">
+
+    <!-- About Section -->
+    <section id="about" class="about enhanced-about-section" style="background: linear-gradient(120deg, #fffbe6 0%, #f7f7f7 100%); padding: 80px 0;">
+      <div class="container" style="max-width: 1300px; margin: 0 auto; padding: 0 24px;">
+        <div class="section-header" style="text-align: center; margin-bottom: 48px;">
+          <h2 style="font-size: 2.8rem; font-weight: 700; color: #222; margin-bottom: 10px;">
+            <i class="fas fa-users-cog" style="color: #ffd600;"></i> About Bridan Design Build
+          </h2>
+          <p class="subtitle" style="font-size: 1.3rem; color: #555;">Building Dreams. Designing Futures. Creating Landmarks.</p>
         </div>
-        <div class="about-text">
-          <h3>Kenya’s Trusted Partner in Architecture, Construction & Interior Design</h3>
-          <p>
-            Bridan Design Build is a leading, fully registered and certified architecture, building, and interior design company based in Nairobi, Kenya. We specialize in delivering innovative, sustainable, and client-focused solutions for residential, commercial, and mixed-use projects.
-          </p>
-          <div class="about-gb-image" style="margin-bottom: 22px; text-align: center;">
-            <img src="bgimage1 (1).mp4" alt="Bridan Design Build - Great Building Project" style="max-width: 100%; border-radius: 10px; box-shadow: 0 6px 24px rgba(155,129,0,0.10); object-fit: cover;">
-          </div>
-          <p>
-            Our multidisciplinary team of architects, engineers, interior designers, and project managers brings together creativity, technical expertise, and a passion for excellence. From concept to completion, we handle every stage—site analysis, architectural planning, approvals, construction, interior fit-out, and finishing.
-          </p>
-          <ul style="margin-bottom: 14px; color: #444; font-size: 1.05rem;">
-            <li><strong>Registered Architect (BORAQS)</strong> &amp; <strong>NCA Certified Contractor</strong></li>
-            <li>Turnkey design &amp; build solutions</li>
-            <li>Modern, sustainable, and energy-efficient designs</li>
-            <li>Transparent project management &amp; cost control</li>
-            <li>Personalized service and collaborative approach</li>
-            <li>Aftercare, maintenance, and renovation expertise</li>
-          </ul>
-          <p>
-            We believe every space should tell a story—your story. Whether you’re building your dream home, developing apartments, or upgrading your office, Bridan delivers quality, innovation, and peace of mind.
-          </p>
-          <div class="stats">
-            <div class="stat">
-              <h4>15+</h4>
-              <p>Years of Expertise</p>
+        <div class="about-flex" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+          <!-- Left: Main Image & Gallery -->
+          <div class="about-gallery" style="flex: 1 1 380px; min-width: 320px;">
+            <div class="main-about-image" style="border-radius: 18px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.09); margin-bottom: 18px;">
+              <img src="img/bridan1.webp" alt="Bridan Interiors Design Studio - Inspiring Spaces" style="width: 100%; display: block;">
             </div>
-            <div class="stat">
-              <h4>200+</h4>
-              <p>Completed Projects</p>
+            <div class="about-image-gallery" style="display: flex; gap: 10px; justify-content: center;">
+              <img src="img/stair.jpg" alt="Bridan Project 2" style="width: 80px; height: 60px; object-fit: cover; border-radius: 8px; cursor: pointer; border: 2px solid #ffd600;">
+              <img src="img/bedroom.jpg" alt="Bridan Project 3" style="width: 80px; height: 60px; object-fit: cover; border-radius: 8px; cursor: pointer;">
+              <img src="img/home.jpg" alt="Bridan Project 4" style="width: 80px; height: 60px; object-fit: cover; border-radius: 8px; cursor: pointer;">
             </div>
-            <div class="stat">
-              <h4>50+</h4>
-              <p>Industry Awards & Recognition</p>
-            </div>
-            <div class="stat">
-              <h4>100%</h4>
-              <p>Client Satisfaction</p>
+            <div class="about-gallery-caption" style="text-align: center; font-size: 1rem; color: #888; margin-top: 10px;">
+              <i class="fas fa-images"></i> Explore our recent projects
             </div>
           </div>
-          <h4 style="color:#9b8100; margin-top:18px;">Our Core Values</h4>
-          <ul style="margin-bottom: 14px; color: #444; font-size: 1.05rem;">
-            <li><strong>Integrity:</strong> Honest, transparent, and ethical in all dealings.</li>
-            <li><strong>Innovation:</strong> Embracing new technologies and creative solutions.</li>
-            <li><strong>Quality:</strong> Uncompromising standards in design and construction.</li>
-            <li><strong>Collaboration:</strong> Working closely with clients, consultants, and craftsmen.</li>
-            <li><strong>Sustainability:</strong> Eco-friendly materials and energy-efficient designs.</li>
-          </ul>
-          <h4 style="color:#9b8100; margin-top:18px;">Our Services Include:</h4>
-          <ul style="margin-bottom: 14px; color: #444; font-size: 1.05rem;">
-            <li>Architectural Design &amp; Planning</li>
-            <li>Building Construction &amp; Project Management</li>
-            <li>Interior Design &amp; Fit-Out</li>
-            <li>Renovations &amp; Remodeling</li>
-            <li>Space Planning &amp; Custom Furniture</li>
-            <li>Lighting Design &amp; Color Consultation</li>
-            <li>3D Visualization &amp; Virtual Tours</li>
-          </ul>
-          <p>
-            <strong>Let’s build your vision together.</strong> Contact us for a free consultation and discover how Bridan Design Build can transform your ideas into reality.
-          </p>
-          <p class="call-to-action">Ready to bring your dream space to life? <a href="#contact">Contact us today!</a></p>
+          <!-- Right: Text & Interactive Features -->
+          <div class="about-details" style="flex: 2 1 520px; min-width: 320px;">
+            <h3 style="font-size: 2rem; color: #222; font-weight: 600; margin-bottom: 12px;">
+
+              Why We Stand Out As The Best House Designer in Kenya.            </h3>
+            <p style="font-size: 1.1rem; color: #444; margin-bottom: 18px;">
+              We at Bridan Design Build are experts in our field. We design houses and construct them, along with doing home renovation projects. We are qualified to provide contracting services by the National Construction Authority (NCA). We are also qualified design architects. Our team includes a BORAQS Registered Architect. We are a vibrant company, formed during the COVID-19 crisis in 2020 and as of Sep 2024 will have worked on projects worth a combined value of Ksh 100 million+. Our construction team is able to guarantee: quality workmanship, project delivery within agreed timeline, minimal construction budget variations (10% or less).             </p>
+            <div class="about-accordion" style="margin-bottom: 18px;">
+              <button class="accordion-toggle" style="background: #ffd600; color: #222; border: none; border-radius: 6px; padding: 10px 18px; font-weight: 600; cursor: pointer; margin-bottom: 6px;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">
+                <i class="fas fa-users"></i> Meet Our Team
+              </button>
+              <div class="accordion-content" style="display: none; background: #fffde7; padding: 12px 18px; border-radius: 6px; margin-bottom: 8px;">
+                <ul style="margin: 0; padding-left: 18px;">
+                  <li><strong>Architects:</strong> Registered with BORAQS</li>
+                  <li><strong>Engineers:</strong> Structural, Civil & MEP</li>
+                  <li><strong>Interior Designers:</strong> Award-winning creatives</li>
+                  <li><strong>Project Managers:</strong> Certified & experienced</li>
+                </ul>
+              </div>
+              <button class="accordion-toggle" style="background: #ffd600; color: #222; border: none; border-radius: 6px; padding: 10px 18px; font-weight: 600; cursor: pointer; margin-bottom: 6px;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">
+                <i class="fas fa-certificate"></i> Certifications & Memberships
+              </button>
+              <div class="accordion-content" style="display: none; background: #fffde7; padding: 12px 18px; border-radius: 6px;">
+                <ul style="margin: 0; padding-left: 18px;">
+                  <li>BORAQS Registered Architect</li>
+                  <li>NCA Certified Contractor</li>
+                  <li>ETIMS & VAT Compliant</li>
+                  <li>Member: Architectural Association of Kenya</li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-features" style="display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 18px;">
+              <div class="feature-card" style="flex: 1 1 180px; background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.04); padding: 18px; text-align: center;">
+                <i class="fas fa-leaf" style="color: #ffd600; font-size: 1.7rem;"></i>
+                <div style="font-weight: 600; margin-top: 6px;">Sustainable Designs</div>
+              </div>
+              <div class="feature-card" style="flex: 1 1 180px; background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.04); padding: 18px; text-align: center;">
+                <i class="fas fa-clock" style="color: #ffd600; font-size: 1.7rem;"></i>
+                <div style="font-weight: 600; margin-top: 6px;">On-Time Delivery</div>
+              </div>
+              <div class="feature-card" style="flex: 1 1 180px; background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.04); padding: 18px; text-align: center;">
+                <i class="fas fa-handshake" style="color: #ffd600; font-size: 1.7rem;"></i>
+                <div style="font-weight: 600; margin-top: 6px;">Client-Focused</div>
+              </div>
+              <div class="feature-card" style="flex: 1 1 180px; background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.04); padding: 18px; text-align: center;">
+                <i class="fas fa-hard-hat" style="color: #ffd600; font-size: 1.7rem;"></i>
+                <div style="font-weight: 600; margin-top: 6px;">Turnkey Solutions</div>
+              </div>
+            </div>
+            <div class="about-stats" style="display: flex; gap: 18px; margin-bottom: 18px; flex-wrap: wrap;">
+              <div class="stat" style="flex: 1 1 120px; background: #fffde7; border-radius: 8px; text-align: center; padding: 16px;">
+                <h4 style="font-size: 2rem; color: #ffd600; margin: 0;">15+</h4>
+                <p style="margin: 0; color: #444;">Years Expertise</p>
+              </div>
+              <div class="stat" style="flex: 1 1 120px; background: #fffde7; border-radius: 8px; text-align: center; padding: 16px;">
+                <h4 style="font-size: 2rem; color: #ffd600; margin: 0;">200+</h4>
+                <p style="margin: 0; color: #444;">Projects</p>
+              </div>
+              <div class="stat" style="flex: 1 1 120px; background: #fffde7; border-radius: 8px; text-align: center; padding: 16px;">
+                <h4 style="font-size: 2rem; color: #ffd600; margin: 0;">50+</h4>
+                <p style="margin: 0; color: #444;">Awards</p>
+              </div>
+              <div class="stat" style="flex: 1 1 120px; background: #fffde7; border-radius: 8px; text-align: center; padding: 16px;">
+                <h4 style="font-size: 2rem; color: #ffd600; margin: 0;">100%</h4>
+                <p style="margin: 0; color: #444;">Client Satisfaction</p>
+              </div>
+            </div>
+            <div class="about-tabs" style="margin-bottom: 18px;">
+              <div class="tab-buttons" style="display: flex; gap: 10px; margin-bottom: 10px;">
+                <button class="tab-btn active" onclick="showAboutTab('values', this)" style="background: #ffd600; border: none; border-radius: 6px; padding: 8px 18px; font-weight: 600; cursor: pointer;">Core Values</button>
+                <button class="tab-btn" onclick="showAboutTab('services', this)" style="background: #eee; border: none; border-radius: 6px; padding: 8px 18px; font-weight: 600; cursor: pointer;">Our Services</button>
+              </div>
+              <div class="tab-content" id="about-tab-values">
+                <ul style="margin: 0 0 0 18px;">
+                  <li><strong>Integrity:</strong> Honest, transparent, and ethical in all dealings.</li>
+                  <li><strong>Innovation:</strong> Embracing new technologies and creative solutions.</li>
+                  <li><strong>Quality:</strong> Uncompromising standards in design and construction.</li>
+                  <li><strong>Collaboration:</strong> Working closely with clients, consultants, and craftsmen.</li>
+                  <li><strong>Sustainability:</strong> Eco-friendly materials and energy-efficient designs.</li>
+                </ul>
+              </div>
+              <div class="tab-content" id="about-tab-services" style="display: none;">
+                <ul style="margin: 0 0 0 18px;">
+                  <li>Architectural Design &amp; Planning</li>
+                  <li>Building Construction &amp; Project Management</li>
+                  <li>Interior Design &amp; Fit-Out</li>
+                  <li>Renovations &amp; Remodeling</li>
+                  <li>Space Planning &amp; Custom Furniture</li>
+                  <li>Lighting Design &amp; Color Consultation</li>
+                  <li>3D Visualization &amp; Virtual Tours</li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-cta" style="margin-top: 18px;">
+              <p style="font-size: 1.1rem; color: #222; margin-bottom: 10px;">
+                <strong>Let's build your vision together.</strong> Contact us for a free consultation and discover how Bridan Design Build can transform your ideas into reality.
+              </p>
+              <a href="#contact" class="btn btn-primary" style="background: #ffd600; color: #222; border-radius: 30px; padding: 12px 32px; font-weight: 700; text-decoration: none; font-size: 1.1rem; box-shadow: 0 2px 10px rgba(255,214,0,0.12);">
+                <i class="fas fa-envelope-open-text"></i> Contact Us Today!
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</section>
-
-
-<style>
-/* Video background */
-.home-bg-video-wrapper {
-  position: relative;
-  padding: 80px 0 50px;
-  background: rgba(245, 245, 245, 0.95); /* light grey */
-  border-bottom: 1px solid #e0e0e0;
-  overflow: hidden;
-}
-
-.promo-bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  opacity: 0.18;
-  pointer-events: none;
-}
-
-/* Free architect promo */
-.free-architect-content {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.promo-title {
-  font-size: 2.8rem;
-  font-family: 'Playfair Display', serif;
-  color: #111; /* black */
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-}
-
-.promo-subtitle {
-  font-size: 1.2rem;
-  color: #0d0d0d; /* dark grey */
-  margin-bottom: 18px;
-}
-
-.promo-call-btn {
-  display: inline-block;
-  margin: 18px 0 22px 0;
-  font-size: 1.1rem;
-  padding: 12px 32px;
-  background: #ffd600; /* yellow */
-  color: #111; /* black */
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  border: none;
-  transition: background 0.2s, color 0.2s;
-}
-
-.promo-call-btn:hover {
-  background: #111; /* black */
-  color: #ffd600; /* yellow */
-}
-
-.badges {
-  margin-bottom: 20px;
-}
-
-.badge {
-  display: inline-block;
-  background: #fffde7; /* very light yellow */
-  color: #ffd600; /* yellow */
-  font-weight: 600;
-  border-radius: 16px;
-  padding: 6px 16px;
-  margin: 0 6px 8px 6px;
-  font-size: 0.98rem;
-  border: 1px solid #ffd600;
-}
-
-.section-heading {
-  font-size: 1.4rem;
-  color: #ffd600; /* yellow */
-  margin: 28px 0 10px 0;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-}
-
-.promo-list {
-  text-align: left;
-  display: inline-block;
-  margin: 0 auto 18px auto;
-  color: #222; /* blackish */
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
-.promo-steps {
-  text-align: left;
-  display: inline-block;
-  margin: 0 auto;
-  color: #222;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  padding-left: 18px;
-}
-
-/* Hero section */
-.hero {
-  padding: 80px 0;
-  background: #fff; /* white */
-  position: relative;
-  z-index: 1;
-}
-
-.hero .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.hero-content {
-  flex: 1;
-}
-
-.hero-content h1 {
-  font-size: 2.6rem;
-  color: #111; /* black */
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.hero-content p {
-  font-size: 1.1rem;
-  color: #444; /* dark grey */
-  margin-bottom: 30px;
-  line-height: 1.6;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 15px;
-}
-
-.btn {
-  padding: 12px 24px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: none;
-}
-
-.primary-btn {
-  background: #9b8100; /* yellow */
-  color: #111; /* black */
-}
-
-.primary-btn:hover {
-  background: #111; /* black */
-  color: #ffd600; /* yellow */
-}
-
-.secondary-btn {
-  background: transparent;
-  color: #ffd600; /* yellow */
-  border: 2px solid #ffd600;
-}
-
-.secondary-btn:hover {
-  background: #ffd600;
-  color: #111;
-}
-
-.hero-image {
-  flex: 1;
-  text-align: right;
-}
-
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  object-fit: cover;
-}
-
-/* About section */
-.about {
-  padding: 80px 0;
-  background: #f5f5f5; /* light grey */
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.section-header h2 {
-  font-size: 2.2rem;
-  color: #111; /* black */
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-.subtitle {
-  font-size: 1.1rem;
-  color: #666; /* medium grey */
-}
-
-.about-content {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.about-image {
-  flex: 1;
-}
-
-.about-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-  object-fit: cover;
-}
-
-.about-text {
-  flex: 1;
-}
-
-.about-text h3 {
-  font-size: 1.8rem;
-  color: #796607; /* yellow */
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.about-text p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-  color: #444; /* dark grey */
-}
-
-.stats {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 0;
-}
-
-.stat h4 {
-  font-size: 2rem;
-  color: #111; /* black */
-  margin-bottom: 5px;
-  font-weight: 700;
-}
-
-.stat p {
-  color: #666;
-}
-
-.call-to-action {
-  font-weight: 600;
-}
-
-.call-to-action a {
-  color: #ffd600;
-  text-decoration: underline;
-}
-
-.call-to-action a:hover {
-  color: #111;
-}
-
-/* Responsive adjustments */
-@media (max-width: 991px) {
-  .hero .container, 
-  .about-content {
-    flex-direction: column;
-  }
-  
-  .hero-image {
-    margin-top: 30px;
-    text-align: center;
-  }
-  
-  .stats {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .promo-title {
-    font-size: 2.2rem;
-  }
-  
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-  
-  .about-text h3 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .home-container {
-    padding-top: 40px;
-  }
-  
-  .free-architect-content {
-    padding: 0 10px;
-  }
-  
-  .promo-title {
-    font-size: 2rem;
-  }
-  
-  .section-heading {
-    font-size: 1.1rem;
-  }
-  
-  .hero-content h1 {
-    font-size: 1.8rem;
-  }
-  
-  .cta-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .btn {
-    display: block;
-    text-align: center;
-  }
-  
-  .stats {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .stat {
-    text-align: center;
-  }
-}
-</style>
-
-<script>
-// Scroll to badges on button click (if not tel: link)
-document.addEventListener('DOMContentLoaded', function() {
-  var callButton = document.querySelector('.promo-call-btn');
-  if (callButton) {
-    callButton.addEventListener('click', function(e) {
-      if (this.getAttribute('href').startsWith('tel:')) return;
-      e.preventDefault();
-      var badges = document.querySelector('.badges');
-      if (badges) {
-        badges.scrollIntoView({behavior: 'smooth'});
-      }
-    });
-  }
-  
-  // Smooth scroll for navigation links
-  var navLinks = document.querySelectorAll('a[href^="#"]');
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      var href = this.getAttribute('href');
-      if (href !== '#' && href.startsWith('#')) {
-        e.preventDefault();
-        var targetElement = document.querySelector(href);
-        if (targetElement) {
-          targetElement.scrollIntoView({behavior: 'smooth'});
+      <script>
+        // Tab switching logic
+        function showAboutTab(tab, btn) {
+          document.getElementById('about-tab-values').style.display = tab === 'values' ? 'block' : 'none';
+          document.getElementById('about-tab-services').style.display = tab === 'services' ? 'block' : 'none';
+          var buttons = btn.parentNode.querySelectorAll('.tab-btn');
+          buttons.forEach(function(b) { b.classList.remove('active'); b.style.background = '#eee'; });
+          btn.classList.add('active'); btn.style.background = '#ffd600';
         }
-      }
-    });
-  });
-});
-</script>
->
+        // Simple image gallery swap
+        document.querySelectorAll('.about-image-gallery img').forEach(function(img) {
+          img.addEventListener('click', function() {
+            var mainImg = document.querySelector('.main-about-image img');
+            var temp = mainImg.src;
+            mainImg.src = img.src;
+            img.src = temp;
+          });
+        });
+      </script>
+    </section>
 
-  <section id="services" class="services">
-  <div class="container">
-    <div class="section-header">
-      <h2>Our Services</h2>
-      <p class="subtitle">Custom designed AND  comprehensive design solutions for every space.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-home"></i></div>
-        <h3>Residential Design</h3>
-        <p>Personalized home transformations balancing aesthetics and functionality. From initial concept to final installation, we handle every detail, ensuring a cohesive and beautiful living space.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-building"></i></div>
-        <h3>Commercial Design</h3>
-        <p>Inspiring workspaces that enhance productivity and brand identity. We create environments that foster creativity, collaboration, and a positive employee experience.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
-        <h3>Space Planning</h3>
-        <p>Optimized floor plans for maximum space efficiency and flow. We analyze your needs and develop layouts that maximize usability and create a comfortable and functional environment.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
-        <h3>Custom Furniture</h3>
-        <p>Bespoke furniture designed to perfectly complement your space. We work with skilled artisans to create unique pieces tailored to your specific style and requirements.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-palette"></i></div>
-        <h3>Color Consultation</h3>
-        <p>Expert guidance in selecting the perfect color palette to evoke the desired mood and enhance your space. We consider lighting, existing décor, and your personal preferences to create a harmonious and visually appealing environment.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-ruler-combined"></i></div>
-        <h3>Renovation & Remodeling</h3>
-        <p>Complete renovation and remodeling services, from kitchen and bath updates to whole-house transformations. We manage every stage of the project, ensuring a seamless and stress-free experience.</p>
-      </div>
-       <div class="service-card">
-        <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
-        <h3>Lighting Design</h3>
-        <p>Strategic lighting solutions to enhance ambiance, functionality, and energy efficiency. We create layered lighting schemes that highlight architectural features and create a warm and inviting atmosphere.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-couch"></i></div>
-        <h3>Interior Styling & Decoration</h3>
-        <p>Adding the finishing touches that bring your space to life. We select and arrange furniture, accessories, and artwork to create a cohesive and personalized environment.</p>
-      </div>
-    </div>
-  </div>
-  
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-header">
+            <h2 class="portfolio-title"><i class="fas fa-building"></i> Our Design Portfolio</h2>
+            <p class="portfolio-subtitle">A showcase of our award-winning architectural and interior design projects, blending innovation, sustainability, and timeless elegance.</p>
+            <p class="portfolio-description">At ArchDesign Studios, we transform spaces into extraordinary experiences through thoughtful design and meticulous craftsmanship. Explore our diverse portfolio spanning residential, commercial, and hospitality projects.</p>
+        </div>
 
-  <!-- Contact & Social Section -  Unified, Beautiful, with Map -->
-
-  <section id="contact" style="background: linear-gradient(135deg, #fffde7 0%, #f5f5f5 100%); padding: 60px 0 40px 0; border-top: 2px solid #ffd600; box-shadow: 0 8px 32px rgba(155,129,0,0.07);">
-    <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
-      <!-- Section Heading -->
-      <div style="text-align:center; margin-bottom: 36px;">
-        <h2 style="font-family:'Playfair Display',serif; font-size:2.5rem; color:#9b8100; letter-spacing:1px; margin-bottom:10px;">
-          <i class="fas fa-envelope-open-text" style="color:#ffd600;"></i> Contact & Connect With Us
-        </h2>
-        <p style="color:#444; font-size:1.15rem; margin-bottom:18px;">
-          We'd love to hear from you! Reach out for a free consultation, project inquiries, or just to say hello.
-        </p>
-      </div>
-
-      <!-- Social Icons Row -->
-      <div style="display:flex; justify-content:center; gap:18px; margin-bottom:36px; flex-wrap:wrap;">
-        <a href="https://www.instagram.com/bridan_design_build/" target="_blank" aria-label="Instagram" style="background:#fff; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.07); width:48px; height:48px; display:flex; align-items:center; justify-content:center; color:#e1306c; font-size:1.7rem; transition:transform 0.2s;">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.tiktok.com/@bridandesignbuild" target="_blank" aria-label="TikTok" style="background:#fff; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.07); width:48px; height:48px; display:flex; align-items:center; justify-content:center; color:#000; font-size:1.7rem; transition:transform 0.2s;">
-          <i class="fab fa-tiktok"></i>
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=254741400368" target="_blank" aria-label="WhatsApp" style="background:#fff; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.07); width:48px; height:48px; display:flex; align-items:center; justify-content:center; color:#25d366; font-size:1.7rem; transition:transform 0.2s;">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100086679484882" target="_blank" aria-label="Facebook" style="background:#fff; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.07); width:48px; height:48px; display:flex; align-items:center; justify-content:center; color:#1877f3; font-size:1.7rem; transition:transform 0.2s;">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://x.com/bridanbuild" target="_blank" aria-label="Twitter" style="background:#fff; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.07); width:48px; height:48px; display:flex; align-items:center; justify-content:center; color:#1da1f2; font-size:1.7rem; transition:transform 0.2s;">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/bridan-design-build-653b631a7/" target="_blank" aria-label="LinkedIn" style="background:#fff; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.07); width:48px; height:48px; display:flex; align-items:center; justify-content:center; color:#0077b5; font-size:1.7rem; transition:transform 0.2s;">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://www.pinterest.com/bridandesignbuild/" target="_blank" aria-label="Pinterest" style="background:#fff; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.07); width:48px; height:48px; display:flex; align-items:center; justify-content:center; color:#e60023; font-size:1.7rem; transition:transform 0.2s;">
-          <i class="fab fa-pinterest-p"></i>
-        </a>
-      </div>
-
-      <!-- Contact Info, Map & Form Row -->
-      <div style="display:flex; flex-wrap:wrap; gap:40px; justify-content:space-between;">
-        <!-- Contact Info & Map -->
-        <div style="flex:1; min-width:320px; display:flex; flex-direction:column; gap:18px;">
-          <div style="background:#fff; border-radius:10px; box-shadow:0 4px 16px rgba(155,129,0,0.07); padding:28px 22px 18px 22px; margin-bottom:0;">
-            <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-              <i class="fas fa-map-marker-alt" style="color:#ffd600; font-size:1.4rem;"></i>
-              <span style="font-weight:600; color:#222;">Nachu Plaza, Upperhill, Moi, Nairobi Area, Kenya 00202</span>
+        <!-- Hero Video Banner with Text Overlay -->
+        <div class="portfolio-hero">
+            <video class="hero-video" autoplay muted loop playsinline poster="portfolio-banner.jpg">
+                <source src="img/pixelvid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h2 class="hero-title">
+                        <i class="fas fa-drafting-compass"></i>
+                        Designing Tomorrow, Today
+                    </h2>
+                    <p class="hero-subtitle">
+                        <i class="fas fa-magic"></i>
+                        Discover our signature projects blending innovation, sustainability, and artistry.
+                    </p>
+                    <div class="hero-scroll-indicator">
+                        <span>Scroll Down to Explore <i class="fas fa-angle-double-down"></i></span>
+                    </div>
+                </div>
             </div>
-            <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-              <i class="fas fa-envelope" style="color:#ffd600; font-size:1.3rem;"></i>
-              <a href="mailto:bridandesignbuild@gmail.com" style="color:#444; text-decoration:none; font-weight:600;">bridandesignbuild@gmail.com</a>
+        </div>
+        <!-- ===== Enhanced Portfolio Section ===== -->
+
+        <!-- Portfolio Stats with Animated 3D Counters -->
+        <div class="portfolio-stats-container enhanced-stats">
+          <div class="stats-grid">
+            <div class="stat-card glassmorphism">
+              <div class="stat-icon gradient-bg"><i class="fas fa-layer-group"></i></div>
+              <div class="counter" data-target="250">0</div>
+              <p class="stat-label">Projects Delivered</p>
             </div>
-            <div style="display:flex; align-items:center; gap:12px;">
-              <i class="fas fa-phone" style="color:#ffd600; font-size:1.3rem;"></i>
-              <a href="tel:+254741400368" style="color:#444; text-decoration:none; font-weight:600;">+254 741 400 368</a>
+            <div class="stat-card glassmorphism">
+              <div class="stat-icon gradient-bg"><i class="fas fa-trophy"></i></div>
+              <div class="counter" data-target="18">0</div>
+              <p class="stat-label">Awards Won</p>
             </div>
-          </div>
-          <!-- Embedded Google Map for Nachu Plaza, Upperhill, Nairobi -->
-          <div style="border-radius:10px; overflow:hidden; box-shadow:0 4px 16px rgba(155,129,0,0.07);">
-            <iframe
-              title="Bridan Design Build Office Location"
-              src="https://www.google.com/maps?q=Nachu+Plaza,+Upperhill,+Nairobi,+Kenya&hl=en&z=17&output=embed"
-              width="100%"
-              height="260"
-              style="border:0; min-width:220px;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <div style="background:#fffde7; border-radius:10px; padding:18px 18px 10px 18px; box-shadow:0 2px 8px rgba(155,129,0,0.04);">
-            <h3 style="font-size:1.1rem; color:#9b8100; margin-bottom:6px;">Careers</h3>
-            <p style="font-size:0.98rem; color:#444; margin-bottom:4px;">
-              Interested in joining Bridan Design Build? Send your cover letter and CV to
-              <a href="mailto:bridandesignbuild@gmail.com" style="color:#9b8100; text-decoration:underline;">bridandesignbuild@gmail.com</a>
-              or <a href="tel:+254741400368" style="color:#9b8100; text-decoration:underline;">call us</a>.
-            </p>
+            <div class="stat-card glassmorphism">
+              <div class="stat-icon gradient-bg"><i class="fas fa-heart"></i></div>
+              <div class="counter" data-target="98">0</div>
+              <span class="stat-percent">%</span>
+              <p class="stat-label">Happy Clients</p>
+            </div>
+            <div class="stat-card glassmorphism">
+              <div class="stat-icon gradient-bg"><i class="fas fa-globe-africa"></i></div>
+              <div class="counter" data-target="12">0</div>
+              <p class="stat-label">Cities Impacted</p>
+            </div>
           </div>
         </div>
-        <!-- Contact Form -->
-        <div style="flex:1; min-width:320px;">
-          <form id="contactForm" autocomplete="off" style="background:#fff; border-radius:10px; box-shadow:0 4px 16px rgba(155,129,0,0.07); padding:28px 22px;">
-            <div style="display:flex; gap:12px; margin-bottom:14px;">
-              <input type="text" name="firstName" placeholder="First name" required style="flex:1; padding:10px 12px; border:1px solid #ffd600; border-radius:6px; font-size:1rem; outline:none;">
-              <input type="text" name="lastName" placeholder="Last name" required style="flex:1; padding:10px 12px; border:1px solid #ffd600; border-radius:6px; font-size:1rem; outline:none;">
+
+        <!-- Interactive Filter with Animated Underline -->
+        <div class="portfolio-filter-container enhanced-filter">
+          <div class="filter-wrapper">
+            <div class="filter-options" id="portfolioFilter">
+              <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-th-large"></i> All
+              </button>
+              <button class="filter-btn" data-filter="residential">
+                <i class="fas fa-home"></i> Homes
+              </button>
+              <button class="filter-btn" data-filter="commercial">
+                <i class="fas fa-city"></i> Commercial
+              </button>
+              <button class="filter-btn" data-filter="hospitality">
+                <i class="fas fa-hotel"></i> Hospitality
+              </button>
+              <button class="filter-btn" data-filter="sustainable">
+                <i class="fas fa-leaf"></i> Eco-Friendly
+              </button>
+              <div class="filter-underline"></div>
             </div>
-            <input type="email" name="email" placeholder="E-mail" required style="width:100%; padding:10px 12px; border:1px solid #ffd600; border-radius:6px; font-size:1rem; margin-bottom:14px; outline:none;">
-            <textarea name="message" rows="5" placeholder="Message" required style="width:100%; padding:10px 12px; border:1px solid #ffd600; border-radius:6px; font-size:1rem; margin-bottom:14px; resize:vertical; outline:none;"></textarea>
-            <button type="submit" style="width:100%; background:#ffd600; color:#111; font-weight:700; border:none; border-radius:6px; padding:12px 0; font-size:1.1rem; letter-spacing:1px; cursor:pointer; transition:background 0.2s;">
-              Send Message
+            <div class="filter-search">
+              <input type="text" placeholder="🔍 Search projects..." class="search-input">
+              <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Grid with 3D Hover Effects and Interactive Cards -->
+        <div class="portfolio-grid-container enhanced-portfolio-grid">
+          <div class="portfolio-grid" id="portfolioGrid">
+            <!-- Featured Project -->
+            <article class="portfolio-item featured glassmorphism" data-category="residential sustainable" data-tags="smart-home luxury modern">
+              <div class="portfolio-media">
+                <div class="media-3d">
+                  <video class="project-video" autoplay muted loop playsinline poster="skyview-thumb.jpg">
+                    <source src="img/pvid.mp4" type="video/mp4">
+                  </video>
+                  <img src="skyview-thumb.jpg" alt="Skyview Residences" class="project-image" loading="lazy">
+                </div>
+                <div class="project-badge neon-glow"><i class="fas fa-star"></i> Signature</div>
+                <div class="project-hover-content">
+                  <button class="quick-view-btn" data-project="skyview-residences">
+                    <i class="fas fa-eye"></i> Quick View
+                  </button>
+                  <button class="project-details-btn" data-project="skyview-residences">
+                    <i class="fas fa-info-circle"></i> Details
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title gradient-text"><i class="fas fa-home"></i> Skyview Residences</h3>
+                <div class="project-meta">
+                  <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Nairobi</span>
+                  <span class="meta-item"><i class="far fa-calendar-alt"></i> 2024</span>
+                  <span class="meta-item"><i class="fas fa-ruler-combined"></i> 4,500 sq ft</span>
+                </div>
+                <p class="project-excerpt">
+                  <i class="fas fa-lightbulb"></i>
+                  Modern eco-home with smart automation, solar energy, and bespoke interiors.
+                </p>
+                <div class="project-tags">
+                  <span class="tag"><i class="fas fa-bolt"></i> Smart Home</span>
+                  <span class="tag"><i class="fas fa-leaf"></i> LEED Platinum</span>
+                  <span class="tag"><i class="fas fa-gem"></i> Luxury</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Example of another project -->
+            <article class="portfolio-item glassmorphism" data-category="commercial" data-tags="office workspace">
+              <div class="portfolio-media">
+                <div class="media-3d">
+                  <img src="img/build.png" alt="Corporate Office Design" class="project-image" loading="lazy">
+                </div>
+                <div class="project-hover-content">
+                  <button class="quick-view-btn" data-project="corporate-office">
+                    <i class="fas fa-eye"></i> Quick View
+                  </button>
+                  <button class="project-details-btn" data-project="corporate-office">
+                    <i class="fas fa-info-circle"></i> Details
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title gradient-text"><i class="fas fa-city"></i> Nexus Corporate Offices</h3>
+                <div class="project-meta">
+                  <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Mombasa</span>
+                  <span class="meta-item"><i class="far fa-calendar-alt"></i> 2023</span>
+                  <span class="meta-item"><i class="fas fa-ruler-combined"></i> 12,000 sq ft</span>
+                </div>
+                <p class="project-excerpt">
+                  <i class="fas fa-users"></i>
+                  Collaborative workspace with biophilic design and wellness zones.
+                </p>
+                <div class="project-tags">
+                  <span class="tag"><i class="fas fa-chair"></i> Ergonomic</span>
+                  <span class="tag"><i class="fas fa-project-diagram"></i> Open Plan</span>
+                </div>
+              </div>
+            </article>
+            <!-- Add more projects as needed, following the same structure -->
+          </div>
+        </div>
+
+        <!-- Project Modal -->
+        <div class="project-modal" id="projectModal">
+          <div class="modal-container glassmorphism">
+            <button class="modal-close-btn" aria-label="Close modal">
+              <i class="fas fa-times"></i>
             </button>
-            <div id="formSuccess" style="display:none; color:#25d366; font-weight:600; margin-top:10px; text-align:center;">Thank you! We'll be in touch soon.</div>
-          </form>
+            <div class="modal-content">
+              <!-- Content will be dynamically inserted here -->
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Friendly Note -->
-      <div style="text-align:center; margin-top:38px;">
-        <h3 style="color:#9b8100; font-size:1.2rem; font-family:'Poppins',sans-serif; margin-bottom:8px;">Get in Touch</h3>
-        <p style="color:#444; font-size:1.05rem; max-width:600px; margin:0 auto;">
-          Have questions or want to discuss your project? Our team will respond promptly. We look forward to working with you!
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <script>
-  (function(){
-    // Animate social icons on hover
-    var icons = document.querySelectorAll('[aria-label^="Instagram"],[aria-label^="TikTok"],[aria-label^="WhatsApp"],[aria-label^="Facebook"],[aria-label^="Twitter"],[aria-label^="LinkedIn"],[aria-label^="Pinterest"]');
-    icons.forEach(function(icon){
-      icon.addEventListener('mouseenter', function(){
-        this.style.transform = 'scale(1.18) rotate(-6deg)';
-        this.style.boxShadow = '0 6px 18px rgba(155,129,0,0.13)';
-      });
-      icon.addEventListener('mouseleave', function(){
-        this.style.transform = '';
-        this.style.boxShadow = '0 2px 8px rgba(0,0,0,0.07)';
-      });
-    });
+        <!-- CTA Section -->
+        <div class="portfolio-cta enhanced-cta">
+          <div class="cta-content">
+            <h3 class="gradient-text">
+              <i class="fas fa-rocket"></i>
+              Ready to Build Your Dream?
+            </h3>
+            <p>
+              <i class="fas fa-comments"></i>
+              Connect with our award-winning team and let's bring your vision to life!
+            </p>
+            <div class="cta-buttons">
+              <a href="#contact" class="cta-btn primary glassmorphism">
+                <i class="fas fa-envelope-open-text"></i> Request Consultation
+              </a>
+              <a href="tel:+254741400368" class="cta-btn secondary glassmorphism">
+                <i class="fas fa-phone-alt"></i> Call Now
+              </a>
+            </div>
+          </div>
+        </div>
 
-    // Contact form submission (demo, no backend)
-    var form = document.getElementById('contactForm');
-    if(form){
-      form.addEventListener('submit', function(e){
-        e.preventDefault();
-        form.reset();
-        var msg = document.getElementById('formSuccess');
-        if(msg){
-          msg.style.display = 'block';
-          setTimeout(function(){ msg.style.display = 'none'; }, 3500);
+        <!-- Services Section -->
+        <section id="services" class="services enhanced-services">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="gradient-text"><i class="fas fa-tools"></i> Our Services</h2>
+              <p class="subtitle">
+                Here Are The Steps You Can Expect When You Call Us:</p>
+            </div>
+            <div class="services-grid">
+              <div class="service-card glassmorphism">
+                <div class="service-icon gradient-bg"><i class="fas fa-home"></i></div>
+                <h3>Residential Design</h3>
+                <p>Personalized home transformations balancing style and function. From concept to completion, we create beautiful, livable spaces tailored to your lifestyle.</p>
+              </div>
+              <div class="service-card glassmorphism">
+                <div class="service-icon gradient-bg"><i class="fas fa-building"></i></div>
+                <h3>Commercial Design</h3>
+                <p>Inspiring workspaces that boost productivity and reflect your brand. We design environments that foster creativity and collaboration.</p>
+              </div>
+              <div class="service-card glassmorphism">
+                <div class="service-icon gradient-bg"><i class="fas fa-pencil-ruler"></i></div>
+                <h3>Space Planning</h3>
+                <p>Optimized layouts for maximum efficiency and flow. We analyze your needs and deliver smart, functional solutions for every square foot.</p>
+              </div>
+              <div class="service-card glassmorphism">
+                <div class="service-icon gradient-bg"><i class="fas fa-paint-roller"></i></div>
+                <h3>Custom Furniture</h3>
+                <p>Bespoke pieces crafted to complement your space and style. Our artisans bring your vision to life with quality and creativity.</p>
+              </div>
+              <div class="service-card glassmorphism">
+                <div class="service-icon gradient-bg"><i class="fas fa-palette"></i></div>
+                <h3>Color Consultation</h3>
+                <p>Expert guidance to select the perfect palette. We create harmonious, mood-enhancing environments with color psychology and design expertise.</p>
+              </div>
+              <div class="service-card glassmorphism">
+                <div class="service-icon gradient-bg"><i class="fas fa-ruler-combined"></i></div>
+                <h3>Renovation & Remodeling</h3>
+                <p>Complete transformations, from kitchen and bath updates to whole-house makeovers. We manage every detail for a seamless experience.</p>
+              </div>
+              <div class="service-card glassmorphism">
+                <div class="service-icon gradient-bg"><i class="fas fa-lightbulb"></i></div>
+                <h3>Lighting Design</h3>
+                <p>Strategic lighting for ambiance, function, and energy savings. We highlight architectural features and create inviting atmospheres.</p>
+              </div>
+              <div class="service-card glassmorphism">
+                <div class="service-icon gradient-bg"><i class="fas fa-couch"></i></div>
+                <h3>Interior Styling & Decoration</h3>
+                <p>Finishing touches that bring your space to life. We curate furniture, accessories, and art for a cohesive, personalized look.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== Enhanced Portfolio Section Styles & Scripts ===== -->
+        <style>
+        /* 3D Glassmorphism Card Styles */
+        .glassmorphism {
+          background: rgba(255,255,255,0.13);
+          box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+          backdrop-filter: blur(10px);
+          border-radius: 18px;
+          border: 1.5px solid rgba(255,255,255,0.18);
+          transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+          position: relative;
         }
-      });
-    }
-  })();
-  </script>
-<!-- Testimonials Section - Enhanced for Building, Architecture & Interior Design -->
-<section class="testimonials" id="testimonials" style="background: linear-gradient(120deg, #fffde7 0%, #f5f5f5 100%); padding: 70px 0 60px 0;">
-  <div class="container">
-    <h2 class="testimonials-title"><i class="fas fa-quote-left" style="color:#ffd600;"></i> What Our Clients Say</h2>
-    <p class="subtitle">Discover how Bridan Design Build transforms visions into reality for homeowners, developers, and businesses across Kenya.</p>
-    <div class="testimonial-slider">
-      <div class="testimonial-slide active">
-        <div class="testimonial-content">
-          <img src="client1.jpg" alt="Emma Kamau" class="testimonial-avatar">
-          <blockquote>
-            <p>Bridan Interiors exceeded expectations, transforming our home renovation with creativity and meticulous detail. The team listened to our needs and delivered a space that truly feels like home.</p>
-          </blockquote>
-          <div class="testimonial-meta">
-            <h4>Emma Kamau</h4>
-            <span class="client-type">Residential Client, Nairobi</span>
-            <span class="project-type"><i class="fas fa-home"></i> Full Home Renovation</span>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-slide">
-        <div class="testimonial-content">
-          <img src="client2.jpg" alt="James Monti Ngeno" class="testimonial-avatar">
-          <blockquote>
-            <p>Bridan perfectly executed our vision, creating a new, morale-boosting, and productive office. Their architectural expertise and project management kept us on time and within budget.</p>
-          </blockquote>
-          <div class="testimonial-meta">
-            <h4>James Monti Ngeno</h4>
-            <span class="client-type">Commercial Client, Westlands</span>
-            <span class="project-type"><i class="fas fa-building"></i> Office Fit-Out & Interior Design</span>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-slide">
-        <div class="testimonial-content">
-          <img src="client3.jpg" alt="Sarah Wanjiku & Jr Davis" class="testimonial-avatar">
-          <blockquote>
-            <p>Their remarkable blend of aesthetics and functionality has made our home both purposeful and beautiful. We are thrilled with the architectural plans and the seamless construction process.</p>
-          </blockquote>
-          <div class="testimonial-meta">
-            <h4>Sarah Wanjiku & Jr Davis</h4>
-            <span class="client-type">Residential Client, Kiambu</span>
-            <span class="project-type"><i class="fas fa-drafting-compass"></i> New Build & Interior Styling</span>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-slide">
-        <div class="testimonial-content">
-          <img src="client4.jpg" alt="Moses Otieno" class="testimonial-avatar">
-          <blockquote>
-            <p>From concept to completion, Bridan’s architects and site team delivered a modern apartment block that stands out in the city. Their attention to structural detail and finishes is unmatched.</p>
-          </blockquote>
-          <div class="testimonial-meta">
-            <h4>Moses Otieno</h4>
-            <span class="client-type">Developer, Nairobi</span>
-            <span class="project-type"><i class="fas fa-city"></i> Multi-Unit Residential Development</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-controls">
-      <button class="testimonial-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
-      <button class="testimonial-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
-    </div>
-  </div>
-  <style>
-    .testimonials { position: relative; }
-    .testimonials-title {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 2.3rem;
-      color: #9b8100;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-    }
-    .testimonials .subtitle {
-      text-align: center;
-      color: #444;
-      font-size: 1.1rem;
-      margin-bottom: 36px;
-    }
-    .testimonial-slider {
-      max-width: 800px;
-      margin: 0 auto;
-      position: relative;
-      overflow: hidden;
-    }
-    .testimonial-slide {
-      display: none;
-      animation: fadeIn 0.5s;
-    }
-    .testimonial-slide.active {
-      display: block;
-    }
-    .testimonial-content {
-      background: #fff;
-      border-radius: 14px;
-      box-shadow: 0 4px 24px rgba(155,129,0,0.09);
-      padding: 38px 32px 28px 32px;
-      text-align: center;
-      position: relative;
-    }
-    .testimonial-avatar {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 18px;
-      border: 3px solid #ffd600;
-      box-shadow: 0 2px 8px rgba(155,129,0,0.07);
-    }
-    .testimonial-content blockquote {
-      font-size: 1.15rem;
-      color: #444;
-      font-style: italic;
-      margin-bottom: 18px;
-      line-height: 1.7;
-      position: relative;
-    }
-    .testimonial-meta h4 {
-      color: #9b8100;
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 2px;
-    }
-    .testimonial-meta .client-type,
-    .testimonial-meta .project-type {
-      display: block;
-      color: #666;
-      font-size: 0.98rem;
-      margin-bottom: 2px;
-    }
-    .testimonial-meta .project-type i {
-      margin-right: 4px;
-      color: #ffd600;
-    }
-    .testimonial-controls {
-      display: flex;
-      justify-content: center;
-      gap: 18px;
-      margin-top: 24px;
-    }
-    .testimonial-prev, .testimonial-next {
-      background: #ffd600;
-      color: #111;
-      border: none;
-      border-radius: 50%;
-      width: 44px;
-      height: 44px;
-      font-size: 1.3rem;
-      cursor: pointer;
-      transition: background 0.18s, color 0.18s;
-      box-shadow: 0 2px 8px rgba(155,129,0,0.07);
-    }
-    .testimonial-prev:hover, .testimonial-next:hover {
-      background: #9b8100;
-      color: #fff;
-    }
-    @media (max-width: 600px) {
-      .testimonial-content { padding: 22px 8px 18px 8px; }
-      .testimonials-title { font-size: 1.5rem; }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px);}
-      to { opacity: 1; transform: translateY(0);}
-    }
-  </style>
-  <script>
-    // Simple testimonial slider
-    (function(){
-      const slides = document.querySelectorAll('.testimonial-slide');
-      const prevBtn = document.querySelector('.testimonial-prev');
-      const nextBtn = document.querySelector('.testimonial-next');
-      let idx = 0;
-      function showSlide(i) {
-        slides.forEach((s, j) => s.classList.toggle('active', j === i));
-      }
-      prevBtn.addEventListener('click', function() {
-        idx = (idx - 1 + slides.length) % slides.length;
-        showSlide(idx);
-      });
-      nextBtn.addEventListener('click', function() {
-        idx = (idx + 1) % slides.length;
-        showSlide(idx);
-      });
-      // Auto-advance every 8s
-      setInterval(function() {
-        idx = (idx + 1) % slides.length;
-        showSlide(idx);
-      }, 8000);
-    })();
-  </script>
-</section>
+        .glassmorphism:hover {
+          transform: translateY(-8px) scale(1.03) rotateX(2deg);
+          box-shadow: 0 16px 40px 0 rgba(31,38,135,0.22);
+          z-index: 2;
+        }
+        .gradient-bg {
+          background: linear-gradient(135deg, #ffd600 0%, #ffb300 100%);
+          color: #fff;
+          border-radius: 50%;
+          padding: 18px;
+          font-size: 2.1rem;
+          margin-bottom: 10px;
+          box-shadow: 0 2px 12px rgba(255,214,0,0.18);
+        }
+        .gradient-text {
+          background: linear-gradient(90deg, #ffd600 0%, #ffb300 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: 700;
+        }
+        .neon-glow {
+          background: #ffd600;
+          color: #222;
+          border-radius: 18px;
+          padding: 6px 18px;
+          font-weight: 700;
+          box-shadow: 0 0 18px #ffd60099, 0 2px 8px #fff3;
+          position: absolute;
+          top: 18px;
+          left: 18px;
+          z-index: 2;
+        }
+        .stats-grid {
+          display: flex;
+          gap: 2.5rem;
+          justify-content: center;
+          margin: 2.5rem 0 2rem 0;
+          flex-wrap: wrap;
+        }
+        .stat-card {
+          min-width: 180px;
+          text-align: center;
+          padding: 28px 18px 18px 18px;
+          position: relative;
+        }
+        .stat-icon {
+          font-size: 2.5rem;
+          margin-bottom: 8px;
+        }
+        .counter {
+          font-size: 2.6rem;
+          font-weight: 800;
+          color: #ffd600;
+          margin-bottom: 2px;
+          text-shadow: 0 2px 8px #ffd60033;
+          transition: color 0.3s;
+        }
+        .stat-label {
+          font-size: 1.1rem;
+          color: #222;
+          font-weight: 600;
+          margin-top: 4px;
+        }
+        .stat-percent {
+          color: #ffd600;
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-left: 2px;
+        }
+        .enhanced-filter .filter-btn {
+          background: none;
+          border: none;
+          color: #222;
+          font-weight: 600;
+          font-size: 1.1rem;
+          padding: 10px 22px;
+          border-radius: 30px;
+          margin: 0 4px;
+          cursor: pointer;
+          transition: background 0.2s, color 0.2s;
+          position: relative;
+          z-index: 1;
+        }
+        .enhanced-filter .filter-btn.active,
+        .enhanced-filter .filter-btn:hover {
+          background: #ffd600;
+          color: #111;
+        }
+        .filter-underline {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 4px;
+          width: 60px;
+          background: linear-gradient(90deg, #ffd600 0%, #ffb300 100%);
+          border-radius: 2px;
+          transition: left 0.3s, width 0.3s;
+          z-index: 0;
+        }
+        .filter-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 2.5rem 0 1.5rem 0;
+          flex-wrap: wrap;
+          gap: 1.5rem;
+        }
+        .filter-search {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        .search-input {
+          padding: 8px 14px;
+          border-radius: 20px;
+          border: 1px solid #ffd600;
+          font-size: 1rem;
+          outline: none;
+          width: 180px;
+          transition: border 0.2s;
+        }
+        .search-input:focus {
+          border: 2px solid #ffb300;
+        }
+        .search-btn {
+          background: #ffd600;
+          color: #222;
+          border: none;
+          border-radius: 50%;
+          padding: 8px 12px;
+          font-size: 1.1rem;
+          cursor: pointer;
+          transition: background 0.2s;
+        }
+        .enhanced-portfolio-grid .portfolio-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 2.2rem;
+          margin: 2.5rem 0;
+        }
+        .portfolio-item {
+          overflow: hidden;
+          position: relative;
+          min-height: 420px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          cursor: pointer;
+          transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .portfolio-media {
+          position: relative;
+          width: 100%;
+          height: 220px;
+          overflow: hidden;
+          border-radius: 14px 14px 0 0;
+          background: #eee;
+          margin-bottom: 0.8rem;
+        }
+        .media-3d {
+          perspective: 800px;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.3s;
+        }
+        .portfolio-item:hover .media-3d {
+          transform: rotateY(8deg) scale(1.04);
+        }
+        .project-video,
+        .project-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 14px 14px 0 0;
+          box-shadow: 0 2px 12px #ffd60022;
+        }
+        .project-hover-content {
+          position: absolute;
+          bottom: 16px;
+          left: 50%;
+          transform: translateX(-50%) scale(0.95);
+          opacity: 0;
+          display: flex;
+          gap: 10px;
+          z-index: 3;
+          transition: opacity 0.3s, transform 0.3s;
+        }
+        .portfolio-item:hover .project-hover-content {
+          opacity: 1;
+          transform: translateX(-50%) scale(1.08);
+        }
+        .quick-view-btn, .project-details-btn {
+          background: #ffd600;
+          color: #222;
+          border: none;
+          border-radius: 22px;
+          padding: 7px 18px;
+          font-weight: 600;
+          font-size: 1rem;
+          cursor: pointer;
+          box-shadow: 0 2px 8px #ffd60033;
+          transition: background 0.2s, color 0.2s;
+        }
+        .quick-view-btn:hover, .project-details-btn:hover {
+          background: #ffb300;
+          color: #fff;
+        }
+        .project-info {
+          padding: 1.1rem 1.2rem 1.2rem 1.2rem;
+          background: rgba(255,255,255,0.92);
+          border-radius: 0 0 14px 14px;
+          box-shadow: 0 2px 8px #ffd60011;
+        }
+        .project-title {
+          font-size: 1.25rem;
+          margin-bottom: 0.5rem;
+          font-weight: 700;
+        }
+        .project-meta {
+          font-size: 0.98rem;
+          color: #888;
+          margin-bottom: 0.6rem;
+          display: flex;
+          gap: 1.2rem;
+          flex-wrap: wrap;
+        }
+        .project-excerpt {
+          font-size: 1.05rem;
+          color: #333;
+          margin-bottom: 0.7rem;
+        }
+        .project-tags {
+          display: flex;
+          gap: 0.7rem;
+          flex-wrap: wrap;
+        }
+        .tag {
+          background: #ffd600;
+          color: #222;
+          border-radius: 14px;
+          padding: 3px 12px;
+          font-size: 0.95rem;
+          font-weight: 600;
+          box-shadow: 0 1px 4px #ffd60022;
+        }
+        .project-modal {
+          display: none;
+          position: fixed;
+          z-index: 9999;
+          left: 0; top: 0; width: 100vw; height: 100vh;
+          background: rgba(0,0,0,0.55);
+          align-items: center;
+          justify-content: center;
+        }
+        .project-modal.active {
+          display: flex;
+        }
+        .modal-container {
+          background: rgba(255,255,255,0.98);
+          border-radius: 18px;
+          max-width: 600px;
+          width: 95vw;
+          padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+          position: relative;
+          box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+          animation: modalPop 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+        @keyframes modalPop {
+          0% { transform: scale(0.8); opacity: 0; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+        .modal-close-btn {
+          position: absolute;
+          top: 16px; right: 16px;
+          background: none;
+          border: none;
+          font-size: 1.5rem;
+          color: #ffd600;
+          cursor: pointer;
+        }
+        .enhanced-cta {
+          margin: 3.5rem 0 2.5rem 0;
+          text-align: center;
+        }
+        .enhanced-cta .cta-content {
+          background: linear-gradient(90deg, #fffbe6 0%, #fffde7 100%);
+          border-radius: 18px;
+          box-shadow: 0 2px 18px #ffd60022;
+          padding: 2.2rem 1.5rem;
+          display: inline-block;
+        }
+        .enhanced-cta .cta-buttons {
+          display: flex;
+          gap: 1.5rem;
+          justify-content: center;
+          margin-top: 1.2rem;
+          flex-wrap: wrap;
+        }
+        .cta-btn {
+          padding: 1rem 2.2rem;
+          font-size: 1.1rem;
+          font-weight: 700;
+          border-radius: 30px;
+          text-decoration: none;
+          transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+          box-shadow: 0 2px 10px #ffd60022;
+          border: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.7rem;
+        }
+        .cta-btn.primary {
+          background: #ffd600;
+          color: #222;
+        }
+        .cta-btn.secondary {
+          background: #fff;
+          color: #ffd600;
+          border: 2px solid #ffd600;
+        }
+        .cta-btn:hover {
+          background: #ffb300;
+          color: #fff;
+        }
+        .enhanced-services .services-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          gap: 2rem;
+          margin-top: 2.5rem;
+        }
+        .enhanced-services .service-card {
+          text-align: center;
+          padding: 2rem 1.2rem 1.5rem 1.2rem;
+          min-height: 260px;
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .enhanced-services .service-card:hover {
+          transform: translateY(-8px) scale(1.04) rotateZ(-1deg);
+          box-shadow: 0 8px 32px 0 rgba(255,214,0,0.18);
+          z-index: 2;
+        }
+        .enhanced-services .service-icon {
+          font-size: 2.2rem;
+          margin-bottom: 0.7rem;
+        }
+        .enhanced-services h3 {
+          font-size: 1.18rem;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+          color: #222;
+        }
+        .enhanced-services p {
+          font-size: 1.02rem;
+          color: #444;
+        }
+        @media (max-width: 900px) {
+          .stats-grid, .enhanced-cta .cta-buttons {
+            flex-direction: column;
+            gap: 1.2rem;
+          }
+          .enhanced-portfolio-grid .portfolio-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+        </style>
 
-<!-- Footer Section - Enhanced for Building, Architecture & Interior Design -->
-<footer class="site-footer" style="background: #222; color: #fff; padding: 0;">
-  <div class="footer-container" style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 60px 20px 30px 20px; gap: 40px;">
-    <!-- Company Info & Logo -->
-    <div class="footer-section" style="flex: 1 1 260px; min-width: 240px;">
-      <div class="footer-brand" style="display: flex; align-items: center; gap: 14px; margin-bottom: 12px;">
-        <img src="mainlogo.png" alt="Bridan Design Build Logo" class="footer-logo" style="width: 54px; height: 54px; border-radius: 8px; background: #fffde7; object-fit: contain;">
-        <h2 class="company-name" style="font-family:'Playfair Display',serif; font-size:1.4rem; color:#ffd600; margin:0;">Bridan Design Build</h2>
-      </div>
-      <p class="company-description" style="color:#eee; font-size:1.02rem; margin-bottom: 18px;">
-        Leading construction, architecture, and interior design firm in Kenya. We deliver innovative building solutions, sustainable designs, and inspiring spaces for residential, commercial, and mixed-use projects.
-      </p>
-      <ul style="color:#ffd600; font-size:0.98rem; margin-bottom: 14px; list-style:none; padding:0;">
-        <li><i class="fas fa-check-circle"></i> Registered Architect (BORAQS)</li>
-        <li><i class="fas fa-check-circle"></i> NCA Certified Contractor</li>
-        <li><i class="fas fa-check-circle"></i> ETIMS & VAT Compliant</li>
-      </ul>
-      <div class="social-links" style="display: flex; gap: 12px; margin-top: 10px;">
-        <a href="https://www.facebook.com/profile.php?id=100086679484882" target="_blank" aria-label="Facebook" style="color:#1877f3;"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/bridan_design_build/" target="_blank" aria-label="Instagram" style="color:#e1306c;"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/bridan-design-build-653b631a7/" target="_blank" aria-label="LinkedIn" style="color:#0077b5;"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://x.com/bridanbuild" target="_blank" aria-label="Twitter" style="color:#1da1f2;"><i class="fab fa-twitter"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=254741400368" target="_blank" aria-label="WhatsApp" style="color:#25d366;"><i class="fab fa-whatsapp"></i></a>
-      </div>
-    </div>
+        <script>
+        // Animated Counter Logic
+        document.addEventListener('DOMContentLoaded', function() {
+          function animateCounter(counter) {
+            const target = +counter.getAttribute('data-target');
+            const duration = 1800;
+            const start = 0;
+            let startTime = null;
+            function updateCounter(timestamp) {
+              if (!startTime) startTime = timestamp;
+              const progress = Math.min((timestamp - startTime) / duration, 1);
+              const value = Math.floor(progress * (target - start) + start);
+              counter.textContent = value;
+              if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.textContent = target;
+              }
+            }
+            requestAnimationFrame(updateCounter);
+          }
+          document.querySelectorAll('.counter').forEach(animateCounter);
 
-    <!-- Quick Links -->
-    <div class="footer-section" style="flex: 1 1 180px; min-width: 160px;">
-      <h3 class="footer-heading" style="color:#ffd600; font-size:1.1rem; margin-bottom:10px;">Quick Links</h3>
-      <ul class="footer-links" style="list-style:none; padding:0; color:#eee;">
-        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
-        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
-        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
-        <li><a href="#portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
-        <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
-        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
-      </ul>
-    </div>
+          // Portfolio Filter Logic
+          const filterBtns = document.querySelectorAll('.filter-btn');
+          const grid = document.getElementById('portfolioGrid');
+          const underline = document.querySelector('.filter-underline');
+          function moveUnderline(btn) {
+            underline.style.width = btn.offsetWidth + 'px';
+            underline.style.left = btn.offsetLeft + 'px';
+          }
+          filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+              filterBtns.forEach(b => b.classList.remove('active'));
+              this.classList.add('active');
+              moveUnderline(this);
+              const filter = this.getAttribute('data-filter');
+              grid.querySelectorAll('.portfolio-item').forEach(item => {
+                if (filter === 'all' || item.dataset.category.includes(filter)) {
+                  item.style.display = '';
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+            });
+          });
+          // Initialize underline on load
+          setTimeout(() => {
+            const activeBtn = document.querySelector('.filter-btn.active');
+            if (activeBtn) moveUnderline(activeBtn);
+          }, 100);
 
-    <!-- Services -->
-    <div class="footer-section" style="flex: 1 1 200px; min-width: 180px;">
-      <h3 class="footer-heading" style="color:#ffd600; font-size:1.1rem; margin-bottom:10px;">Our Services</h3>
-      <ul class="footer-links" style="list-style:none; padding:0; color:#eee;">
-        <li><a href="#"><i class="fas fa-drafting-compass"></i> Architectural Design</a></li>
-        <li><a href="#"><i class="fas fa-paint-roller"></i> Interior Design</a></li>
-        <li><a href="#"><i class="fas fa-hard-hat"></i> Construction & Build</a></li>
-        <li><a href="#"><i class="fas fa-tasks"></i> Project Management</a></li>
-        <li><a href="#"><i class="fas fa-ruler-combined"></i> Space Planning</a></li>
-        <li><a href="#"><i class="fas fa-home"></i> Renovations</a></li>
-        <li><a href="#"><i class="fas fa-lightbulb"></i> Lighting Design</a></li>
-        <li><a href="#"><i class="fas fa-couch"></i> Custom Furniture</a></li>
-      </ul>
-    </div>
+          // Search Logic
+          document.querySelector('.search-input').addEventListener('input', function() {
+            const val = this.value.toLowerCase();
+            grid.querySelectorAll('.portfolio-item').forEach(item => {
+              const text = item.textContent.toLowerCase();
+              item.style.display = text.includes(val) ? '' : 'none';
+            });
+          });
+
+          // Project Modal Logic (Demo)
+          const modal = document.getElementById('projectModal');
+          grid.addEventListener('click', function(e) {
+            if (e.target.closest('.quick-view-btn') || e.target.closest('.project-details-btn')) {
+              const project = e.target.closest('button').dataset.project;
+              modal.classList.add('active');
+              modal.querySelector('.modal-content').innerHTML =
+                `<h2 style="color:#ffd600;">Project: ${project.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</h2>
+                <p>More details and images coming soon!</p>`;
+            }
+          });
+          modal.querySelector('.modal-close-btn').onclick = () => modal.classList.remove('active');
+          modal.onclick = e => { if (e.target === modal) modal.classList.remove('active'); };
+        });
+        </script>
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section enhanced-contact-3d">
+          <div class="contact-container glassmorphism-3d">
+            <!-- Section Heading -->
+            <div class="contact-header">
+              <h2 class="gradient-text-3d"><i class="fas fa-envelope-open-text"></i> Contact & Connect With Us</h2>
+              <p>We'd love to hear from you! Reach out for a free consultation, project inquiries, or just to say hello.</p>
+              <!-- Social Icons Row (horizontal, below paragraph) -->
+              <div class="social-links-3d" style="display: flex; justify-content: center; gap: 18px; margin-top: 18px;">
+                <a href="https://www.instagram.com/bridan_design_build/" target="_blank" aria-label="Instagram" class="social-3d"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@bridandesignbuild" target="_blank" aria-label="TikTok" class="social-3d"><i class="fab fa-tiktok"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=254741400368" target="_blank" aria-label="WhatsApp" class="social-3d"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100086679484882" target="_blank" aria-label="Facebook" class="social-3d"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/bridanbuild" target="_blank" aria-label="Twitter" class="social-3d"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/bridan-design-build-653b631a7/" target="_blank" aria-label="LinkedIn" class="social-3d"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.pinterest.com/bridandesignbuild/" target="_blank" aria-label="Pinterest" class="social-3d"><i class="fab fa-pinterest-p"></i></a>
+                <span class="live-dot" title="We're online now!"></span>
+              </div>
+            </div>
+
+            <!-- Contact Info, Map & Form Row -->
+            <div class="contact-content-3d">
+              <!-- Contact Info & Map -->
+              <div class="contact-info-3d glassmorphism-3d">
+                <div class="info-card-3d">
+                  <div class="info-item-3d">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Nachu Plaza, Upperhill, Moi, Nairobi Area, Kenya 00202</span>
+                  </div>
+                  <div class="info-item-3d">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:bridandesignbuild@gmail.com">bridandesignbuild@gmail.com</a>
+                  </div>
+                  <div class="info-item-3d">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+254741400368">+254 741 400 368</a>
+                  </div>
+                  <div class="info-item-3d">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon - Sat: 8:00am – 6:00pm</span>
+                  </div>
+                  <div class="info-item-3d">
+                    <i class="fas fa-globe-africa"></i>
+                    <span>Serving all of Kenya & East Africa</span>
+                  </div>
+                </div>
+                <!-- Embedded Google Map for Nachu Plaza, Upperhill, Nairobi -->
+                <div class="map-container-3d">
+                  <iframe
+                    title="Bridan Design Build Office Location"
+                    src="https://www.google.com/maps?q=Nachu+Plaza,+Upperhill,+Nairobi,+Kenya&hl=en&z=17&output=embed"
+                    width="100%"
+                    height="220"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    style="border-radius: 14px; border: 2px solid #ffd600; box-shadow: 0 4px 24px #ffd60033;">
+                  </iframe>
+                </div>
+                <div class="careers-info-3d">
+                  <h3><i class="fas fa-user-tie"></i> Careers</h3>
+                  <p>
+                    Interested in joining Bridan Design Build? Send your cover letter and CV to
+                    <a href="mailto:bridandesignbuild@gmail.com">bridandesignbuild@gmail.com</a>
+                    or <a href="tel:+254741400368">call us</a>.
+                  </p>
+                </div>
+                <div class="emergency-contact-3d">
+                  <i class="fas fa-bolt"></i> <strong>Emergency?</strong> <a href="tel:+254741400368" style="color:#ffd600;">Call Now</a>
+                </div>
+              </div>
+              <!-- Contact Form -->
+              <div class="contact-form-3d glassmorphism-3d">
+                <form id="contactForm" autocomplete="off">
+                  <div class="form-group-3d">
+                    <input type="text" name="firstName" placeholder="First name" required>
+                    <input type="text" name="lastName" placeholder="Last name" required>
+                  </div>
+                  <input type="email" name="email" placeholder="E-mail" required>
+                  <input type="tel" name="phone" placeholder="Phone (optional)">
+                  <select name="service" required>
+                    <option value="" disabled selected>Service Interested In</option>
+                    <option value="architecture">Architecture & Design</option>
+                    <option value="construction">Construction & Build</option>
+                    <option value="interior">Interior Design</option>
+                    <option value="project">Project Management</option>
+                    <option value="other">Other / Not Sure</option>
+                  </select>
+                  <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                  <button type="submit" class="btn-3d"><i class="fas fa-paper-plane"></i> Send Message</button>
+                  <div id="formSuccess" class="form-success-3d">Thank you! We'll be in touch soon.</div>
+                </form>
+                <div class="live-chat-3d">
+                  <button class="chat-btn-3d" onclick="window.open('https://api.whatsapp.com/send?phone=254741400368','_blank')">
+                    <i class="fab fa-whatsapp"></i> Live WhatsApp Chat
+                  </button>
+                  <button class="chat-btn-3d" onclick="window.open('mailto:bridandesignbuild@gmail.com','_blank')">
+                    <i class="fas fa-envelope"></i> Email Us Directly
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Friendly Note -->
+            <div class="contact-note-3d">
+              <h3><i class="fas fa-handshake"></i> Get in Touch</h3>
+              <p>
+                Have questions or want to discuss your project? Our team will respond promptly. We look forward to working with you!
+              </p>
+              <div class="contact-badges-3d">
+                <span class="badge-3d"><i class="fas fa-check-circle"></i> Free Consultation</span>
+                <span class="badge-3d"><i class="fas fa-shield-alt"></i> Confidential & Secure</span>
+                <span class="badge-3d"><i class="fas fa-award"></i> Award-Winning Team</span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .enhanced-contact-3d {
+              padding: 100px 0 60px 0;
+              background: linear-gradient(120deg, #fffbe6 0%, #f7f7f7 100%);
+              position: relative;
+              z-index: 2;
+            }
+            .glassmorphism-3d {
+              background: rgba(255,255,255,0.18);
+              box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+              backdrop-filter: blur(12px);
+              border-radius: 22px;
+              border: 2px solid rgba(255,214,0,0.18);
+              padding: 2.5rem 2rem;
+              margin: 0 auto;
+              max-width: 1200px;
+              transition: box-shadow 0.3s, transform 0.3s;
+            }
+            .glassmorphism-3d:hover {
+              box-shadow: 0 16px 48px 0 rgba(255,214,0,0.18);
+              transform: scale(1.01) rotateY(1deg);
+            }
+            .gradient-text-3d {
+              background: linear-gradient(90deg, #ffd600 0%, #ffb300 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              font-weight: 800;
+              font-size: 2.5rem;
+              margin-bottom: 0.5rem;
+              letter-spacing: 1px;
+              text-shadow: 0 2px 8px #ffd60033;
+            }
+            .social-links-3d {
+              display: flex;
+              gap: 18px;
+              justify-content: center;
+              margin: 1.2rem 0 2.2rem 0;
+              position: relative;
+            }
+            .social-3d {
+              font-size: 1.7rem;
+              color: #ffd600;
+              background: #fff;
+              border-radius: 50%;
+              width: 48px;
+              height: 48px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              box-shadow: 0 2px 12px #ffd60033, 0 1px 4px #fff3;
+              transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
+              border: 2px solid #ffd60022;
+              position: relative;
+            }
+            .social-3d:hover {
+              color: #fff;
+              background: linear-gradient(135deg, #ffd600 0%, #ffb300 100%);
+              transform: scale(1.13) rotateZ(-6deg);
+              box-shadow: 0 4px 24px #ffd60066;
+              z-index: 2;
+            }
+            .live-dot {
+              width: 13px;
+              height: 13px;
+              background: #25d366;
+              border-radius: 50%;
+              position: absolute;
+              right: -25px;
+              top: 16px;
+              box-shadow: 0 0 8px #25d36699;
+              border: 2px solid #fff;
+              animation: pulseLive 1.2s infinite;
+            }
+            @keyframes pulseLive {
+              0% { box-shadow: 0 0 8px #25d36699; }
+              50% { box-shadow: 0 0 18px #25d366cc; }
+              100% { box-shadow: 0 0 8px #25d36699; }
+            }
+            .contact-content-3d {
+              display: flex;
+              gap: 2.5rem;
+              margin: 2.5rem 0 1.5rem 0;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+            .contact-info-3d {
+              flex: 1 1 340px;
+              min-width: 320px;
+              max-width: 420px;
+              display: flex;
+              flex-direction: column;
+              gap: 1.2rem;
+              align-items: stretch;
+              background: rgba(255,255,255,0.22);
+              box-shadow: 0 2px 12px #ffd60022;
+              padding: 1.5rem 1.2rem;
+              border-radius: 18px;
+            }
+            .info-card-3d {
+              margin-bottom: 1.2rem;
+            }
+            .info-item-3d {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              font-size: 1.08rem;
+              color: #222;
+              margin-bottom: 8px;
+              font-weight: 500;
+            }
+            .info-item-3d i {
+              color: #ffd600;
+              font-size: 1.2rem;
+              min-width: 22px;
+            }
+            .map-container-3d {
+              margin: 1.2rem 0;
+              border-radius: 14px;
+              overflow: hidden;
+              box-shadow: 0 2px 12px #ffd60022;
+            }
+            .careers-info-3d {
+              background: #fffde7;
+              border-radius: 8px;
+              padding: 10px 14px;
+              font-size: 1rem;
+              color: #444;
+              margin-bottom: 8px;
+              box-shadow: 0 1px 4px #ffd60011;
+            }
+            .careers-info-3d h3 {
+              color: #ffd600;
+              font-size: 1.1rem;
+              margin-bottom: 4px;
+              font-weight: 700;
+            }
+            .emergency-contact-3d {
+              background: #ffd600;
+              color: #222;
+              border-radius: 8px;
+              padding: 8px 14px;
+              font-size: 1rem;
+              font-weight: 600;
+              margin-top: 8px;
+              box-shadow: 0 2px 8px #ffd60033;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            }
+            .contact-form-3d {
+              flex: 1 1 340px;
+              min-width: 320px;
+              max-width: 420px;
+              background: rgba(255,255,255,0.22);
+              box-shadow: 0 2px 12px #ffd60022;
+              padding: 1.5rem 1.2rem;
+              border-radius: 18px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
+            .form-group-3d {
+              display: flex;
+              gap: 10px;
+              margin-bottom: 10px;
+            }
+            .contact-form-3d input,
+            .contact-form-3d select,
+            .contact-form-3d textarea {
+              width: 100%;
+              padding: 10px 12px;
+              margin-bottom: 12px;
+              border-radius: 8px;
+              border: 1.5px solid #ffd60055;
+              font-size: 1.05rem;
+              background: rgba(255,255,255,0.85);
+              color: #222;
+              transition: border 0.2s, box-shadow 0.2s;
+              outline: none;
+              box-shadow: 0 1px 4px #ffd60011;
+              font-family: inherit;
+              resize: none;
+            }
+            .contact-form-3d input:focus,
+            .contact-form-3d select:focus,
+            .contact-form-3d textarea:focus {
+              border: 2px solid #ffd600;
+              box-shadow: 0 2px 8px #ffd60033;
+            }
+            .contact-form-3d select {
+              color: #888;
+            }
+            .btn-3d {
+              background: linear-gradient(90deg, #ffd600 0%, #ffb300 100%);
+              color: #222;
+              border: none;
+              border-radius: 30px;
+              padding: 13px 32px;
+              font-size: 1.13rem;
+              font-weight: 700;
+              box-shadow: 0 2px 10px #ffd60022;
+              cursor: pointer;
+              transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+              margin-top: 6px;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              justify-content: center;
+            }
+            .btn-3d:hover {
+              background: linear-gradient(90deg, #ffb300 0%, #ffd600 100%);
+              color: #fff;
+              transform: scale(1.04) rotateZ(-2deg);
+              box-shadow: 0 4px 18px #ffd60033;
+            }
+            .form-success-3d {
+              display: none;
+              color: #25d366;
+              font-weight: 700;
+              margin-top: 10px;
+              font-size: 1.1rem;
+              text-align: center;
+              animation: fadeIn 0.7s;
+            }
+            @keyframes fadeIn {
+              from { opacity: 0; }
+              to { opacity: 1; }
+            }
+            .live-chat-3d {
+              display: flex;
+              gap: 10px;
+              margin-top: 14px;
+              justify-content: center;
+            }
+            .chat-btn-3d {
+              background: #25d366;
+              color: #fff;
+              border: none;
+              border-radius: 22px;
+              padding: 8px 18px;
+              font-weight: 600;
+              font-size: 1rem;
+              cursor: pointer;
+              box-shadow: 0 2px 8px #25d36633;
+              transition: background 0.2s, color 0.2s, transform 0.2s;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            }
+            .chat-btn-3d:hover {
+              background: #128c7e;
+              color: #ffd600;
+              transform: scale(1.06);
+            }
+            .contact-note-3d {
+              text-align: center;
+              margin-top: 2.5rem;
+              background: linear-gradient(90deg, #fffde7 0%, #fffbe6 100%);
+              border-radius: 18px;
+              box-shadow: 0 2px 18px #ffd60022;
+              padding: 1.5rem 1.2rem;
+              max-width: 900px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            .contact-note-3d h3 {
+              color: #ffd600;
+              font-size: 1.3rem;
+              font-weight: 700;
+              margin-bottom: 0.5rem;
+            }
+            .contact-badges-3d {
+              display: flex;
+              gap: 1.2rem;
+              justify-content: center;
+              margin-top: 1rem;
+              flex-wrap: wrap;
+            }
+            .badge-3d {
+              background: #ffd600;
+              color: #222;
+              border-radius: 14px;
+              padding: 6px 18px;
+              font-size: 1rem;
+              font-weight: 600;
+              box-shadow: 0 1px 4px #ffd60022;
+              display: flex;
+              align-items: center;
+              gap: 6px;
+              transition: background 0.2s, color 0.2s;
+            }
+            .badge-3d:hover {
+              background: #ffb300;
+              color: #fff;
+            }
+            @media (max-width: 900px) {
+              .contact-content-3d {
+                flex-direction: column;
+                gap: 1.5rem;
+              }
+              .glassmorphism-3d {
+                padding: 1.2rem 0.5rem;
+              }
+            }
+          </style>
+          <script>
+            // Contact Form Submission (AJAX-like, demo only)
+            document.addEventListener('DOMContentLoaded', function() {
+              var form = document.getElementById('contactForm');
+              var success = document.getElementById('formSuccess');
+              form.onsubmit = function(e) {
+                e.preventDefault();
+                // Simulate sending...
+                form.querySelectorAll('input, textarea, select, button').forEach(function(el) {
+                  el.disabled = true;
+                });
+                setTimeout(function() {
+                  success.style.display = 'block';
+                  form.reset();
+                  form.querySelectorAll('input, textarea, select, button').forEach(function(el) {
+                    el.disabled = false;
+                  });
+                  setTimeout(function() {
+                    success.style.display = 'none';
+                  }, 3500);
+                }, 1200);
+              };
+
+              // 3D input focus effect
+              document.querySelectorAll('.contact-form-3d input, .contact-form-3d textarea, .contact-form-3d select').forEach(function(input) {
+                input.addEventListener('focus', function() {
+                  this.style.boxShadow = '0 0 12px #ffd60099';
+                });
+                input.addEventListener('blur', function() {
+                  this.style.boxShadow = '';
+                });
+              });
+            });
+          </script>
+        </section>
+
+        <!-- Leadership / Company Structure Section -->
+        <section class="leadership-section" style="background: linear-gradient(120deg, #fffde6 0%, #f7f7f7 100%); padding: 80px 0;">
+          <div class="container" style="max-width: 1100px; margin: 0 auto; padding: 0 24px;">
+            <div class="section-header" style="text-align: center; margin-bottom: 48px;">
+              <h2 style="font-size: 2.5rem; font-weight: 700; color: #222; margin-bottom: 10px;">
+                <i class="fas fa-users" style="color: #ffd600;"></i> Meet Our Leadership
+              </h2>
+              <p class="subtitle" style="font-size: 1.2rem; color: #555;">
+                The visionaries at the forefront of Bridan Design Build's success and strategic decisions.
+              </p>
+            </div>
+            <div class="leadership-grid" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+              <!-- CEO -->
+              <div class="leader-card" style="flex: 1 1 260px; min-width: 220px; background: #fff; border-radius: 14px; box-shadow: 0 2px 12px #ffd60022; text-align: center; padding: 32px 18px;">
+                <div class="leader-icon" style="font-size: 2.8rem; color: #ffd600; margin-bottom: 12px;">
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <h3 style="font-size: 1.3rem; font-weight: 700; color: #222; margin-bottom: 6px;">Chief Executive Officer</h3>
+                <div class="leader-name" style="font-size: 1.15rem; color: #444; font-weight: 600; margin-bottom: 8px;">
+                 BRIAN
+                </div>
+                <p style="font-size: 1rem; color: #666;">
+                  Visionary leader driving innovation, growth, and excellence at Bridan Design Build.
+                </p>
+              </div>
+              <!-- CTO -->
+              <div class="leader-card" style="flex: 1 1 260px; min-width: 220px; background: #fff; border-radius: 14px; box-shadow: 0 2px 12px #ffd60022; text-align: center; padding: 32px 18px;">
+                <div class="leader-icon" style="font-size: 2.8rem; color: #ffd600; margin-bottom: 12px;">
+                  <i class="fas fa-user-cog"></i>
+                </div>
+                <h3 style="font-size: 1.3rem; font-weight: 700; color: #222; margin-bottom: 6px;">Chief Technical Officer</h3>
+                <div class="leader-name" style="font-size: 1.15rem; color: #444; font-weight: 600; margin-bottom: 8px;">
+                  DIANA
+                </div>
+                <p style="font-size: 1rem; color: #666;">
+                  Expert in engineering and technology, ensuring quality and technical excellence.
+                </p>
+              </div>
+              <!-- Head of Construction -->
+              <div class="leader-card" style="flex: 1 1 260px; min-width: 220px; background: #fff; border-radius: 14px; box-shadow: 0 2px 12px #ffd60022; text-align: center; padding: 32px 18px;">
+                <div class="leader-icon" style="font-size: 2.8rem; color: #ffd600; margin-bottom: 12px;">
+                  <i class="fas fa-user-hard-hat"></i>
+                </div>
+                <h3 style="font-size: 1.3rem; font-weight: 700; color: #222; margin-bottom: 6px;">Head of Construction</h3>
+                <div class="leader-name" style="font-size: 1.15rem; color: #444; font-weight: 600; margin-bottom: 8px;">
+                  *********
+                </div>
+                <p style="font-size: 1rem; color: #666;">
+                  Leading site operations and project delivery with a focus on safety and efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Testimonials Section -->
+        <section class="testimonials enhanced-testimonials" id="testimonials">
+          <div class="container">
+            <h2 class="testimonials-title gradient-text">
+              <i class="fas fa-quote-left"></i> What Our Clients Say
+            </h2>
+            <p class="subtitle">
+              Discover how Bridan Design Build transforms visions into reality for homeowners, developers, and businesses across Kenya.
+            </p>
+            <div class="testimonial-slider" id="testimonialSlider">
+              <!-- Testimonial 1 -->
+              <div class="testimonial-slide active" data-gender="woman">
+                <div class="testimonial-content glassmorphism">
+                  <div class="testimonial-avatar" style="background:#ffd600;">
+                    <i class="fas fa-user-woman"></i>
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Emma Kamau <span class="verified-badge" title="Verified Client"><i class="fas fa-check-circle"></i></span></h4>
+                    <span class="client-type"><i class="fas fa-home"></i> Residential, Nairobi</span>
+                  </div>
+                  <blockquote>
+                    <i class="fas fa-quote-left"></i>
+                    Bridan Interiors exceeded expectations, transforming our home renovation with creativity and meticulous detail. The team listened to our needs and delivered a space that truly feels like home.
+                    <i class="fas fa-quote-right"></i>
+                  </blockquote>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="testimonial-slide" data-gender="man">
+                <div class="testimonial-content glassmorphism">
+                  <div class="testimonial-avatar" style="background:#ffd600;">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>James Monti Ngeno <span class="verified-badge" title="Verified Client"><i class="fas fa-check-circle"></i></span></h4>
+                    <span class="client-type"><i class="fas fa-city"></i> Commercial, Westlands</span>
+                  </div>
+                  <blockquote>
+                    <i class="fas fa-quote-left"></i>
+                    Bridan perfectly executed our vision, creating a new, morale-boosting, and productive office. Their architectural expertise and project management kept us on time and within budget.
+                    <i class="fas fa-quote-right"></i>
+                  </blockquote>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star-half-alt" style="color:#ffd600;"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="testimonial-slide" data-gender="woman">
+                <div class="testimonial-content glassmorphism">
+                  <div class="testimonial-avatar" style="background:#ffd600;">
+                    <i class="fas fa-user-woman"></i>
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Sarah Wanjiku <span class="verified-badge" title="Verified Client"><i class="fas fa-check-circle"></i></span></h4>
+                    <span class="client-type"><i class="fas fa-home"></i> Residential, Kiambu</span>
+                  </div>
+                  <blockquote>
+                    <i class="fas fa-quote-left"></i>
+                    Their remarkable blend of aesthetics and functionality has made our home both purposeful and beautiful. We are thrilled with the architectural plans and the seamless construction process.
+                    <i class="fas fa-quote-right"></i>
+                  </blockquote>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 4 -->
+              <div class="testimonial-slide" data-gender="man">
+                <div class="testimonial-content glassmorphism">
+                  <div class="testimonial-avatar" style="background:#ffd600;">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Moses Otieno <span class="verified-badge" title="Verified Client"><i class="fas fa-check-circle"></i></span></h4>
+                    <span class="client-type"><i class="fas fa-city"></i> Developer, Nairobi</span>
+                  </div>
+                  <blockquote>
+                    <i class="fas fa-quote-left"></i>
+                    From concept to completion, Bridan's architects and site team delivered a modern apartment block that stands out in the city. Their attention to structural detail and finishes is unmatched.
+                    <i class="fas fa-quote-right"></i>
+                  </blockquote>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 5 -->
+              <div class="testimonial-slide" data-gender="woman">
+                <div class="testimonial-content glassmorphism">
+                  <div class="testimonial-avatar" style="background:#ffd600;">
+                    <i class="fas fa-user-woman"></i>
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Faith Mwikali <span class="verified-badge" title="Verified Client"><i class="fas fa-check-circle"></i></span></h4>
+                    <span class="client-type"><i class="fas fa-hotel"></i> Hospitality, Mombasa</span>
+                  </div>
+                  <blockquote>
+                    <i class="fas fa-quote-left"></i>
+                    The Bridan team brought our vision to life with a stunning, functional hotel interior. Guests always compliment the unique Kenyan-inspired décor and comfort.
+                    <i class="fas fa-quote-right"></i>
+                  </blockquote>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star" style="color:#ffd600;"></i>
+                    <i class="fas fa-star-half-alt" style="color:#ffd600;"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- Overlay for next/prev slides -->
+              <div class="testimonial-overlay testimonial-prev-bg"></div>
+              <div class="testimonial-overlay testimonial-next-bg"></div>
+            </div>
+            <div class="testimonial-controls">
+              <button class="testimonial-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+              <button class="testimonial-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="testimonial-progress">
+              <span id="testimonialCurrent">1</span> / <span id="testimonialTotal">5</span>
+            </div>
+          </div>
+          <style>
+            .enhanced-testimonials {
+              background: linear-gradient(120deg, #fffbe6 0%, #f7f7f7 100%);
+              padding: 70px 0 50px 0;
+              position: relative;
+              z-index: 2;
+            }
+            .testimonials-title.gradient-text {
+              background: linear-gradient(90deg, #ffd600 0%, #ffb300 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              font-weight: 800;
+              font-size: 2.1rem;
+              margin-bottom: 0.5rem;
+              letter-spacing: 1px;
+              text-align: center;
+            }
+            .testimonial-slider {
+              position: relative;
+              max-width: 420px;
+              margin: 2rem auto 1.5rem auto;
+              min-height: 320px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .testimonial-slide {
+              display: none;
+              position: absolute;
+              left: 0; top: 0; width: 100%; height: 100%;
+              opacity: 0;
+              z-index: 2;
+              transition: opacity 0.6s cubic-bezier(.4,0,.2,1), transform 0.6s cubic-bezier(.4,0,.2,1);
+              transform: scale(0.97) translateY(20px);
+              pointer-events: none;
+            }
+            .testimonial-slide.active {
+              display: block;
+              opacity: 1;
+              position: relative;
+              z-index: 3;
+              transform: scale(1) translateY(0);
+              pointer-events: auto;
+            }
+            .testimonial-slide.prev,
+            .testimonial-slide.next {
+              display: block;
+              opacity: 0.35;
+              z-index: 1;
+              filter: blur(2px) grayscale(0.3);
+              transform: scale(0.93) translateY(18px);
+              pointer-events: none;
+            }
+            .testimonial-content {
+              background: rgba(255,255,255,0.98);
+              border-radius: 18px;
+              box-shadow: 0 8px 32px #ffd60033, 0 2px 8px #0002;
+              padding: 2rem 1.2rem 1.2rem 1.2rem;
+              min-height: 260px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 0.7rem;
+              position: relative;
+            }
+            .testimonial-avatar {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 2.2rem;
+              color: #fff;
+              margin-bottom: 8px;
+              box-shadow: 0 2px 8px #ffd60033;
+            }
+            .testimonial-info h4 {
+              margin: 0;
+              font-size: 1.13rem;
+              font-weight: 700;
+              color: #222;
+              display: flex;
+              align-items: center;
+              gap: 6px;
+              justify-content: center;
+            }
+            .verified-badge {
+              color: #25d366;
+              font-size: 1.1rem;
+              margin-left: 4px;
+              vertical-align: middle;
+            }
+            .client-type {
+              font-size: 0.98rem;
+              color: #888;
+              margin-top: 2px;
+              display: block;
+              text-align: center;
+            }
+            blockquote {
+              margin: 0;
+              font-size: 1.08rem;
+              color: #444;
+              font-style: italic;
+              text-align: center;
+              padding: 0 8px;
+            }
+            blockquote i.fas.fa-quote-left,
+            blockquote i.fas.fa-quote-right {
+              color: #ffd600;
+              font-size: 1rem;
+              vertical-align: middle;
+            }
+            .testimonial-rating {
+              margin-top: 6px;
+              font-size: 1.1rem;
+              display: flex;
+              align-items: center;
+              gap: 2px;
+              justify-content: center;
+            }
+            .testimonial-controls {
+              display: flex;
+              justify-content: center;
+              gap: 18px;
+              margin-top: 1.2rem;
+            }
+            .testimonial-prev, .testimonial-next {
+              background: #ffd600;
+              color: #222;
+              border: none;
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+              font-size: 1.2rem;
+              cursor: pointer;
+              box-shadow: 0 2px 8px #ffd60033;
+              transition: background 0.2s, color 0.2s, transform 0.2s;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .testimonial-prev:hover, .testimonial-next:hover {
+              background: #ffb300;
+              color: #fff;
+              transform: scale(1.08);
+            }
+            .testimonial-progress {
+              text-align: center;
+              margin-top: 0.7rem;
+              color: #888;
+              font-size: 1.02rem;
+              font-weight: 600;
+            }
+            /* Overlay backgrounds for prev/next slides */
+            .testimonial-overlay {
+              position: absolute;
+              top: 0; left: 0; width: 100%; height: 100%;
+              z-index: 1;
+              pointer-events: none;
+              opacity: 0.18;
+              background: linear-gradient(120deg, #ffd600 0%, #fffbe6 100%);
+              border-radius: 18px;
+              box-shadow: 0 8px 32px #ffd60033, 0 2px 8px #0002;
+              transition: opacity 0.5s;
+              display: none;
+            }
+            .testimonial-prev-bg { left: -30%; width: 60%; display: block; }
+            .testimonial-next-bg { right: -30%; left: auto; width: 60%; display: block; }
+            @media (max-width: 600px) {
+              .testimonial-slider { max-width: 98vw; }
+              .testimonial-content { padding: 1.1rem 0.3rem 1rem 0.3rem; }
+            }
+          </style>
+          <script>
+            // Simple, smooth testimonial slider with overlay effect
+            document.addEventListener('DOMContentLoaded', function() {
+              const slides = Array.from(document.querySelectorAll('.testimonial-slide'));
+              const prevBtn = document.querySelector('.testimonial-prev');
+              const nextBtn = document.querySelector('.testimonial-next');
+              const current = document.getElementById('testimonialCurrent');
+              const total = document.getElementById('testimonialTotal');
+              const overlayPrev = document.querySelector('.testimonial-prev-bg');
+              const overlayNext = document.querySelector('.testimonial-next-bg');
+              let idx = 0;
+              total.textContent = slides.length;
+
+              function updateSlides(newIdx, direction = 0) {
+                slides.forEach((slide, i) => {
+                  slide.classList.remove('active', 'prev', 'next');
+                  slide.style.zIndex = 2;
+                  if (i === newIdx) {
+                    slide.classList.add('active');
+                    slide.style.zIndex = 3;
+                  } else if (i === (newIdx - 1 + slides.length) % slides.length) {
+                    slide.classList.add('prev');
+                    slide.style.zIndex = 1;
+                  } else if (i === (newIdx + 1) % slides.length) {
+                    slide.classList.add('next');
+                    slide.style.zIndex = 1;
+                  }
+                });
+                // Overlay fade for prev/next
+                overlayPrev.style.opacity = slides[(newIdx - 1 + slides.length) % slides.length] ? 0.18 : 0;
+                overlayNext.style.opacity = slides[(newIdx + 1) % slides.length] ? 0.18 : 0;
+                current.textContent = newIdx + 1;
+              }
+              prevBtn.onclick = () => {
+                idx = (idx - 1 + slides.length) % slides.length;
+                updateSlides(idx, -1);
+              };
+              nextBtn.onclick = () => {
+                idx = (idx + 1) % slides.length;
+                updateSlides(idx, 1);
+              };
+              // Swipe support for mobile
+              let startX = null;
+              const slider = document.getElementById('testimonialSlider');
+              slider.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+              slider.addEventListener('touchend', e => {
+                if (startX === null) return;
+                let endX = e.changedTouches[0].clientX;
+                if (endX - startX > 40) prevBtn.click();
+                else if (startX - endX > 40) nextBtn.click();
+                startX = null;
+              });
+              // Auto-advance every 8s
+              let autoAdvance = setInterval(() => { nextBtn.click(); }, 8000);
+              slider.addEventListener('mouseenter', () => clearInterval(autoAdvance));
+              slider.addEventListener('mouseleave', () => autoAdvance = setInterval(() => { nextBtn.click(); }, 8000));
+              // Initial state
+              updateSlides(idx);
+            });
+          </script>
+        </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Company Info & Logo -->
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <img src="mainlogo.png" alt="Bridan Design Build Logo" class="footer-logo">
+                    <h2 class="company-name">Bridan Design Build</h2>
+                </div>
+                <p class="company-description">
+                    Leading construction, architecture, and interior design firm in Kenya. We deliver innovative building solutions, sustainable designs, and inspiring spaces for residential, commercial, and mixed-use projects.
+                </p>
+                <ul class="company-features">
+                    <li><i class="fas fa-check-circle"></i> Registered Architect (BORAQS)</li>
+                    <li><i class="fas fa-check-circle"></i> NCA Certified Contractor</li>
+                    <li><i class="fas fa-check-circle"></i> ETIMS & VAT Compliant</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100086679484882" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/bridan_design_build/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/bridan-design-build-653b631a7/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/bridanbuild" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=254741400368" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="#portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+                    <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-drafting-compass"></i> Architectural Design</a></li>
+                    <li><a href="#"><i class="fas fa-paint-roller"></i> Interior Design</a></li>
+                    <li><a href="#"><i class="fas fa-hard-hat"></i> Construction & Build</a></li>
+                    <li><a href="#"><i class="fas fa-tasks"></i> Project Management</a></li>
+                    <li><a href="#"><i class="fas fa-ruler-combined"></i> Space Planning</a></li>
+                    <li><a href="#"><i class="fas fa-home"></i> Renovations</a></li>
+                    <li><a href="#"><i class="fas fa-lightbulb"></i> Lighting Design</a></li>
+                    <li><a href="#"><i class="fas fa-couch"></i> Custom Furniture</a></li>
+                </ul>
+            </div>
 
     <!-- Contact Information & Newsletter -->
     <div class="footer-section" style="flex: 1 1 260px; min-width: 220px;">
