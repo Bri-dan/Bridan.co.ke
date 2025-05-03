@@ -120,7 +120,9 @@
   </div>
 </div>
 
-<br>
+</section>
+
+  <!-- Scroll Indicator -->
 
 <div class="scroll-indicator">
   <span>Explore More</span>
@@ -187,8 +189,10 @@
       position: relative;
       width: 100vw;
       height: 100vh;
-      min-height: 520px;
+      min-height: 700px;
       overflow: hidden;
+      background: #181818;
+      transition: background 0.5s;
     }
     .promo-bg-video {
       position: absolute !important;
@@ -198,6 +202,8 @@
       min-height: 520px;
       object-fit: cover;
       z-index: 1;
+      filter: brightness(0.7) contrast(1.1);
+      transition: filter 0.4s;
     }
     .hero-flex-container {
       position: relative;
@@ -211,7 +217,8 @@
       width: 100vw;
       max-width: 1400px;
       margin: 0 auto;
-      padding: 0 2vw;
+      padding: 10px;
+      transition: padding 0.4s, max-width 0.4s;
     }
     .hero-left, .hero-right {
       flex: 1 1 0;
@@ -219,26 +226,33 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 40px 24px;
-      background: rgba(255,255,255,0.10);
-      backdrop-filter: blur(2px);
-      border-radius: 18px;
-      margin: 32px 0;
+      padding: 48px 32px;
+      background: rgba(20,20,20,0.62);
+      backdrop-filter: blur(3px);
+      border-radius: 22px;
+      margin: 36px 0;
       max-width: 600px;
+      box-shadow: 0 6px 32px #000b;
+      transition: background 0.4s, box-shadow 0.4s, padding 0.4s, border-radius 0.4s;
+      padding: 15px 0;
+
     }
     .hero-left {
       margin-right: 2vw;
+      padding: 15px 0;
     }
     .hero-right {
       margin-left: 2vw;
+      padding: 15px 0;
     }
     .value-props h3 {
-      font-size: 2rem;
+      font-size: 2.1rem;
       font-weight: 900;
-      color: #635305;
-      margin-bottom: 18px;
+      color: #ffd600;
+      margin-bottom: 22px;
       letter-spacing: 1px;
-      text-shadow: 0 2px 8px #ffd60055, 0 1px 0 #fff4;
+      text-shadow: 0 2px 8px #ffd60099, 0 1px 0 #000;
+      transition: font-size 0.3s;
     }
     .value-props ul {
       list-style: none;
@@ -248,275 +262,313 @@
     .value-props li {
       display: flex;
       align-items: center;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
     .value-props i {
       color: #ffd600;
       font-size: 1.4em;
       margin-right: 12px;
-      text-shadow: 0 2px 8px #ffd60055;
+      text-shadow: 0 2px 8px #ffd60099;
     }
     .value-props span {
       font-size: 1.18rem;
       font-weight: 800;
-      color: #222;
+      color: #fff;
       letter-spacing: 0.5px;
-      text-shadow: 0 1px 4px #ffd60022;
+      text-shadow: 0 1px 4px #ffd60044;
     }
     .hero-cta {
       text-align: center;
-      margin-top: 18px;
+      margin-top: 22px;
       display: flex;
-      gap: 15px;
+      gap: 18px;
       flex-wrap: wrap;
       justify-content: center;
+      transition: gap 0.3s;
     }
     .hero-cta .btn {
-      border-radius: 30px;
-      padding: 12px 32px;
+      border-radius: 32px;
+      padding: 14px 36px;
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1.13rem;
       text-decoration: none;
-      box-shadow: 0 2px 10px rgba(255,214,0,0.12);
+      box-shadow: 0 2px 12px #ffd60044;
       border: none;
-      transition: background 0.2s, color 0.2s;
+      transition: background 0.2s, color 0.2s, box-shadow 0.3s, padding 0.3s;
     }
     .hero-cta .btn-primary {
-      background: #ffd600;
-      color: #222;
+      background: linear-gradient(90deg, #ffd600 0%, #ffb300 100%);
+      color: #181818;
     }
     .hero-cta .btn-secondary {
-      background: #eee;
-      color: #222;
+      background: #333;
+      color: #ffd600;
     }
     .hero-content .promo-title {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: 900;
-      color: #181818;
-      margin-bottom: 14px;
+      color: #ffd600;
+      margin-bottom: 18px;
       letter-spacing: 1px;
       text-shadow: 0 0 12px #ffd600cc, 0 0 24px #ffd60099, 0 2px 8px #ffd60066, 0 1px 4px #ffd5000e, 0 0 1px #000;
       line-height: 1.15;
       word-break: break-word;
+      transition: font-size 0.3s;
     }
     .hero-content .promo-subtitle {
-      font-size: 1.2rem;
+      font-size: 1.22rem;
       font-weight: 700;
-      color: #7b6600;
-      margin-bottom: 8px;
+      color: #fffde7;
+      margin-bottom: 10px;
       text-shadow: 0 1px 4px #000b, 0 1px 0 #fff4;
       line-height: 1.2;
       word-break: break-word;
     }
     .hero-content .promo-desc {
-      font-size: 1rem;
+      font-size: 1.05rem;
       font-weight: 600;
-      color: #1b1b16;
-      margin-bottom: 14px;
+      color: #eee;
+      margin-bottom: 18px;
       text-shadow: 0 1px 4px #000b, 0 1px 0 #0e0b0155;
-      line-height: 1.4;
+      line-height: 1.5;
       max-width: 100%;
       word-break: break-word;
     }
     .hero-content .promo-desc span {
-      color: #070215;
+      color: #ffd600;
       font-weight: 700;
     }
     .cta-buttons-stack {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin: 14px 0;
+      gap: 12px;
+      margin: 18px 0;
       width: 100%;
     }
     .cta-button {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       border: none;
-      border-radius: 30px;
-      padding: 10px 18px;
-      font-size: 1rem;
+      border-radius: 32px;
+      padding: 12px 20px;
+      font-size: 1.05rem;
       font-weight: 700;
-      box-shadow: 0 2px 8px rgba(37,211,102,0.18);
+      box-shadow: 0 2px 10px #ffd60033;
       cursor: pointer;
-      transition: background 0.3s, transform 0.2s;
+      transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
       text-decoration: none;
       width: 100%;
       justify-content: center;
     }
     .cta-button.whatsapp {
-      background: linear-gradient(90deg, #25d366 0%, #128c7e 100%);
-      color: #fff;
+      background: linear-gradient(90deg, #00ff11 0%, #00ff40 100%);
+      color: #181818;
     }
     .cta-button.call {
-      background: linear-gradient(90deg, #ffd700 0%, #ffb300 100%);
-      color: #222;
-      box-shadow: 0 2px 8px rgba(255,215,0,0.18);
+      background: #222;
+      color: #3c3cef;
+      box-shadow: 0 2px 8px #1100ff33;
     }
     .badges-container {
-      margin: 12px 0;
+      margin: 16px 0;
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px;
     }
     .badge {
-      background: rgba(216, 227, 4, 0.12);
-      color: #120129;
-      border-radius: 8px;
-      padding: 4px 10px;
-      font-size: 0.95em;
+      background: #ffd600;
+      color: #f3ebeb;
+      border-radius: 10px;
+      padding: 6px 14px;
+      font-size: 1em;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 7px;
+      font-weight: 700;
+      box-shadow: 0 2px 8px #ffd60033;
     }
     .badge:nth-child(2) {
-      background: rgba(235, 239, 4, 0.12);
-      color: #0c0124;
+      background: #ffb300;
+      color: #181818;
     }
     .badge:nth-child(3) {
-      background: rgba(244, 224, 5, 0.12);
-      color: #040404;
+      background: #fffde7;
+      color: #181818;
     }
     .scroll-indicator {
       position: absolute;
-      bottom: 18px;
+      bottom: 22px;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 0.98em;
-      color: #fff;
+      font-size: 1.05em;
+      color: #ffd600;
       z-index: 3;
       text-align: center;
+      text-shadow: 0 2px 8px #000a;
+      transition: font-size 0.3s, bottom 0.3s;
     }
     .scroll-indicator .bounce {
       animation: bounceDown 1.5s infinite;
     }
     @keyframes bounceDown {
       0%, 100% { transform: translateY(0);}
-      50% { transform: translateY(10px);}
+      50% { transform: translateY(12px);}
     }
 
     /* Vision & Excellence Section Responsive */
     .vision-excellence {
-      padding: 120px 0;
+      padding: 100px 0 80px 0;
       text-align: center;
       position: relative;
-      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('path-to-bg-image.jpg');
+      background: linear-gradient(rgba(24,24,24,0.98), rgba(24,24,24,0.98)), url('path-to-bg-image.jpg');
       background-attachment: fixed;
       background-size: cover;
       background-position: center;
-      transition: all 0.5s ease-in-out;
-      margin: -2px 0;
+      transition: background 0.5s, padding 0.4s;
+      margin: 0;
     }
     .vision-excellence .content-container {
       max-width: 1400px;
       margin: 0 auto;
-      padding: 0 30px;
+      padding: 0 3vw;
+      transition: padding 0.4s, max-width 0.4s;
     }
     .vision-excellence h1 {
-      font-size: 4.5rem;
-      margin-bottom: 2rem;
+      font-size: 4rem;
+      margin-bottom: 2.2rem;
       font-weight: 700;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-      background: linear-gradient(45deg, #ffd700, #fff);
+      text-shadow: 2px 2px 4px #000, 0 2px 8px #ffd60099;
+      background: linear-gradient(45deg, #ffd700, #fffde7 60%, #ffd600 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transform: scale(1);
-      transition: transform 0.3s ease;
+      transition: font-size 0.3s, margin-bottom 0.3s;
     }
     .vision-excellence .vision-subtitle {
-      font-size: 2rem;
-      margin-bottom: 3rem;
+      font-size: 1.7rem;
+      margin-bottom: 2.5rem;
       font-weight: 300;
       line-height: 1.6;
-      color: #e0e0e0;
+      color: #ffd600;
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
+      text-shadow: 0 2px 8px #000a;
+      transition: font-size 0.3s;
     }
     .expertise-areas {
-      margin: 4rem auto;
-      padding: 2rem;
-      background: rgba(255,255,255,0.05);
-      border-radius: 15px;
+      margin: 3rem auto;
+      padding: 2.2rem 1.5rem;
+      background: rgba(40,40,40,0.88);
+      border-radius: 18px;
       backdrop-filter: blur(10px);
       max-width: 1000px;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s, padding 0.3s, background 0.3s;
+      box-shadow: 0 2px 14px #ffd60033;
     }
     .expertise-areas p {
-      font-size: 1.6rem;
-      margin-bottom: 2rem;
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
       color: #fff;
     }
     .expertise-tags-row {
       display: flex;
       justify-content: center;
-      gap: 2.5rem;
+      gap: 2rem;
       flex-wrap: wrap;
     }
     .expertise-tag {
-      color: #ffd700;
-      font-size: 1.3rem;
-      padding: 0.8rem 1.5rem;
-      border: 2px solid #ffd700;
+      color: #181818;
+      font-size: 1.1rem;
+      padding: 0.7rem 1.3rem;
+      border: 2px solid #ffd600;
       border-radius: 30px;
-      transition: all 0.3s ease;
+      background: #ffd600;
+      transition: all 0.3s;
       cursor: pointer;
       margin-bottom: 10px;
+      font-weight: 700;
+      box-shadow: 0 2px 8px #ffd60033;
+    }
+    .expertise-tag:hover {
+      background: #ffb300;
+      color: #181818;
+      border-color: #ffb300;
     }
     .action-buttons {
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      margin: 4rem 0;
+      gap: 1.5rem;
+      margin: 3rem 0;
       flex-wrap: wrap;
+      transition: gap 0.3s, margin 0.3s;
     }
     .action-btn {
-      padding: 1.4rem 3rem;
+      padding: 1.1rem 2.2rem;
       border-radius: 50px;
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: 1.08rem;
       text-decoration: none;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(255,215,0,0.3);
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px #ffd60044;
       border: none;
       display: inline-flex;
       align-items: center;
       gap: 0.7rem;
     }
     .action-btn.primary {
-      background: #ffd700;
-      color: #000;
+      background: linear-gradient(90deg, #ffd600 0%, #ffb300 100%);
+      color: #181818;
     }
     .action-btn.secondary {
-      background: rgba(255,255,255,0.1);
-      color: #fff;
-      border: 2px solid #fff;
+      background: #222;
+      color: #ffd600;
+      border: 2px solid #ffd600;
     }
     .action-btn.outline {
-      border: 2px solid #ffd700;
-      color: #ffd700;
+      border: 2px solid #ffd600;
+      color: #ffd600;
       background: transparent;
+    }
+    .action-btn:hover {
+      background: #ffd600;
+      color: #181818;
+      border-color: #ffd600;
     }
     .trust-indicators {
       display: flex;
       justify-content: center;
-      gap: 4rem;
+      gap: 2.5rem;
       flex-wrap: wrap;
-      margin-top: 4rem;
+      margin-top: 2.5rem;
     }
     .trust-badge {
       display: flex;
       align-items: center;
       gap: 0.8rem;
-      font-size: 1.2rem;
-      color: #ffd700;
-      transition: transform 0.3s ease;
+      font-size: 1.08rem;
+      color: #ffd600;
+      background: #222;
+      padding: 8px 18px;
+      border-radius: 18px;
+      font-weight: 700;
+      box-shadow: 0 2px 8px #ffd60033;
       margin-bottom: 10px;
     }
 
     /* Responsive Styles */
-    @media (max-width: 1100px) {
+    @media (max-width: 1200px) {
+      .hero-flex-container {
+        max-width: 98vw;
+        padding: 0 1vw;
+      }
+      .vision-excellence .content-container {
+        max-width: 98vw;
+        padding: 0 2vw;
+      }
+    }
+    @media (max-width: 1000px) {
       .hero-flex-container {
         flex-direction: column;
         align-items: stretch;
@@ -527,56 +579,33 @@
       .hero-left, .hero-right {
         max-width: 100vw;
         margin: 18px 0;
-        padding: 32px 10vw;
-      }
-    }
-    @media (max-width: 800px) {
-      .hero-left, .hero-right {
-        padding: 24px 4vw;
+        padding: 32px 6vw;
+        border-radius: 18px;
       }
       .vision-excellence h1 {
         font-size: 2.5rem;
       }
       .vision-excellence .vision-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
       }
-      .expertise-areas p {
-        font-size: 1.1rem;
+      .expertise-areas {
+        padding: 1.2rem 0.7rem;
       }
-      .expertise-tag {
-        font-size: 1rem;
-        padding: 0.6rem 1rem;
+      .action-buttons {
+        gap: 1rem;
+        margin: 2rem 0;
       }
-      .action-btn {
-        font-size: 1rem;
-        padding: 1rem 2rem;
-      }
-      .trust-badge {
-        font-size: 1rem;
+      .trust-indicators {
+        gap: 1.2rem;
+        margin-top: 1.5rem;
       }
     }
-    @media (max-width: 600px) {
-      .home-bg-video-wrapper {
-        min-height: 420px;
-        height: 100vh;
-      }
-      .promo-bg-video {
-        min-height: 420px;
-        height: 100vh !important;
-        width: 100vw !important;
-      }
-      .hero-flex-container {
-        flex-direction: column;
-        align-items: stretch;
-        height: auto;
-        min-height: 0;
-        padding: 0 0vw;
-      }
+    @media (max-width: 700px) {
       .hero-left, .hero-right {
-        padding: 18px 4vw;
+        padding: 18px 3vw;
         margin: 10px 0;
-        border-radius: 10px;
-        background: rgba(255,255,255,0.18);
+        border-radius: 12px;
+        background: rgba(30,30,30,0.96);
       }
       .value-props h3, .hero-content .promo-title {
         font-size: 1.3rem;
@@ -585,7 +614,7 @@
         font-size: 1rem;
       }
       .hero-content .promo-desc {
-        font-size: 0.95rem;
+        font-size: 0.98rem;
       }
       .cta-button, .action-btn {
         font-size: 0.98rem;
@@ -600,7 +629,7 @@
         bottom: 8px;
       }
       .vision-excellence {
-        padding: 40px 0;
+        padding: 40px 0 30px 0;
         background-attachment: scroll;
       }
       .vision-excellence .content-container {
@@ -608,29 +637,56 @@
       }
       .vision-excellence h1 {
         font-size: 1.5rem;
+        margin-bottom: 1rem;
       }
       .vision-excellence .vision-subtitle {
         font-size: 1rem;
+        margin-bottom: 1.2rem;
       }
       .expertise-areas {
-        padding: 1rem;
-        margin: 2rem auto;
+        padding: 0.7rem 0.2rem;
+        margin: 1.2rem auto;
+        border-radius: 10px;
       }
       .expertise-tags-row {
         gap: 0.7rem;
       }
+      .expertise-tag {
+        font-size: 0.98rem;
+        padding: 0.5rem 0.7rem;
+      }
       .action-buttons {
         gap: 0.7rem;
-        margin: 2rem 0;
+        margin: 1.2rem 0;
       }
       .trust-indicators {
-        gap: 1rem;
-        margin-top: 2rem;
+        gap: 0.7rem;
+        margin-top: 1rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero-flex-container {
+        padding: 0 0vw;
+      }
+      .hero-left, .hero-right {
+        padding: 10px 2vw;
+        margin: 6px 0;
+        border-radius: 8px;
+      }
+      .scroll-indicator {
+        font-size: 0.8em;
+        bottom: 4px;
+      }
+      .vision-excellence .content-container {
+        padding: 0 2vw;
+      }
+      .expertise-areas {
+        padding: 0.4rem 0.1rem;
       }
     }
     </style>
 
-
+ 
     <!-- About Section -->
     <section id="about" class="about enhanced-about-section" style="background: linear-gradient(120deg, #fffbe6 0%, #f7f7f7 100%); padding: 80px 0;">
       <div class="container" style="max-width: 1300px; margin: 0 auto; padding: 0 24px;">
@@ -781,202 +837,463 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
-        <div class="portfolio-header">
-            <h2 class="portfolio-title"><i class="fas fa-building"></i> Our Design Portfolio</h2>
-            <p class="portfolio-subtitle">A showcase of our award-winning architectural and interior design projects, blending innovation, sustainability, and timeless elegance.</p>
-            <p class="portfolio-description">At ArchDesign Studios, we transform spaces into extraordinary experiences through thoughtful design and meticulous craftsmanship. Explore our diverse portfolio spanning residential, commercial, and hospitality projects.</p>
-        </div>
+    <section id="portfolio" class="portfolio-section enhanced-portfolio">
+      <div class="portfolio-header">
+        <h2 class="portfolio-title gradient-text"><i class="fas fa-building"></i> Our Design Portfolio</h2>
+        <p class="portfolio-subtitle">A showcase of our award-winning architectural and interior design projects, blending innovation, sustainability, and timeless elegance.</p>
+        <p class="portfolio-description">At Bridan Design Build, we transform spaces into extraordinary experiences through thoughtful design and meticulous craftsmanship. Explore our diverse portfolio spanning residential, commercial, hospitality, and renovation projects across Kenya and East Africa.</p>
+      </div>
 
-        <!-- Hero Video Banner with Text Overlay -->
-        <div class="portfolio-hero">
-            <video class="hero-video" autoplay muted loop playsinline poster="portfolio-banner.jpg">
-                <source src="img/pixelvid.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="hero-overlay">
-                <div class="hero-content">
-                    <h2 class="hero-title">
-                        <i class="fas fa-drafting-compass"></i>
-                        Designing Tomorrow, Today
-                    </h2>
-                    <p class="hero-subtitle">
-                        <i class="fas fa-magic"></i>
-                        Discover our signature projects blending innovation, sustainability, and artistry.
-                    </p>
-                    <div class="hero-scroll-indicator">
-                        <span>Scroll Down to Explore <i class="fas fa-angle-double-down"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ===== Enhanced Portfolio Section ===== -->
-
-        <!-- Portfolio Stats with Animated 3D Counters -->
-        <div class="portfolio-stats-container enhanced-stats">
-          <div class="stats-grid">
-            <div class="stat-card glassmorphism">
-              <div class="stat-icon gradient-bg"><i class="fas fa-layer-group"></i></div>
-              <div class="counter" data-target="250">0</div>
-              <p class="stat-label">Projects Delivered</p>
-            </div>
-            <div class="stat-card glassmorphism">
-              <div class="stat-icon gradient-bg"><i class="fas fa-trophy"></i></div>
-              <div class="counter" data-target="18">0</div>
-              <p class="stat-label">Awards Won</p>
-            </div>
-            <div class="stat-card glassmorphism">
-              <div class="stat-icon gradient-bg"><i class="fas fa-heart"></i></div>
-              <div class="counter" data-target="98">0</div>
-              <span class="stat-percent">%</span>
-              <p class="stat-label">Happy Clients</p>
-            </div>
-            <div class="stat-card glassmorphism">
-              <div class="stat-icon gradient-bg"><i class="fas fa-globe-africa"></i></div>
-              <div class="counter" data-target="12">0</div>
-              <p class="stat-label">Cities Impacted</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Interactive Filter with Animated Underline -->
-        <div class="portfolio-filter-container enhanced-filter">
-          <div class="filter-wrapper">
-            <div class="filter-options" id="portfolioFilter">
-              <button class="filter-btn active" data-filter="all">
-                <i class="fas fa-th-large"></i> All
-              </button>
-              <button class="filter-btn" data-filter="residential">
-                <i class="fas fa-home"></i> Homes
-              </button>
-              <button class="filter-btn" data-filter="commercial">
-                <i class="fas fa-city"></i> Commercial
-              </button>
-              <button class="filter-btn" data-filter="hospitality">
-                <i class="fas fa-hotel"></i> Hospitality
-              </button>
-              <button class="filter-btn" data-filter="sustainable">
-                <i class="fas fa-leaf"></i> Eco-Friendly
-              </button>
-              <div class="filter-underline"></div>
-            </div>
-            <div class="filter-search">
-              <input type="text" placeholder="🔍 Search projects..." class="search-input">
-              <button class="search-btn"><i class="fas fa-search"></i></button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio Grid with 3D Hover Effects and Interactive Cards -->
-        <div class="portfolio-grid-container enhanced-portfolio-grid">
-          <div class="portfolio-grid" id="portfolioGrid">
-            <!-- Featured Project -->
-            <article class="portfolio-item featured glassmorphism" data-category="residential sustainable" data-tags="smart-home luxury modern">
-              <div class="portfolio-media">
-                <div class="media-3d">
-                  <video class="project-video" autoplay muted loop playsinline poster="skyview-thumb.jpg">
-                    <source src="img/pvid.mp4" type="video/mp4">
-                  </video>
-                  <img src="skyview-thumb.jpg" alt="Skyview Residences" class="project-image" loading="lazy">
-                </div>
-                <div class="project-badge neon-glow"><i class="fas fa-star"></i> Signature</div>
-                <div class="project-hover-content">
-                  <button class="quick-view-btn" data-project="skyview-residences">
-                    <i class="fas fa-eye"></i> Quick View
-                  </button>
-                  <button class="project-details-btn" data-project="skyview-residences">
-                    <i class="fas fa-info-circle"></i> Details
-                  </button>
-                </div>
-              </div>
-              <div class="project-info">
-                <h3 class="project-title gradient-text"><i class="fas fa-home"></i> Skyview Residences</h3>
-                <div class="project-meta">
-                  <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Nairobi</span>
-                  <span class="meta-item"><i class="far fa-calendar-alt"></i> 2024</span>
-                  <span class="meta-item"><i class="fas fa-ruler-combined"></i> 4,500 sq ft</span>
-                </div>
-                <p class="project-excerpt">
-                  <i class="fas fa-lightbulb"></i>
-                  Modern eco-home with smart automation, solar energy, and bespoke interiors.
-                </p>
-                <div class="project-tags">
-                  <span class="tag"><i class="fas fa-bolt"></i> Smart Home</span>
-                  <span class="tag"><i class="fas fa-leaf"></i> LEED Platinum</span>
-                  <span class="tag"><i class="fas fa-gem"></i> Luxury</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- Example of another project -->
-            <article class="portfolio-item glassmorphism" data-category="commercial" data-tags="office workspace">
-              <div class="portfolio-media">
-                <div class="media-3d">
-                  <img src="img/build.png" alt="Corporate Office Design" class="project-image" loading="lazy">
-                </div>
-                <div class="project-hover-content">
-                  <button class="quick-view-btn" data-project="corporate-office">
-                    <i class="fas fa-eye"></i> Quick View
-                  </button>
-                  <button class="project-details-btn" data-project="corporate-office">
-                    <i class="fas fa-info-circle"></i> Details
-                  </button>
-                </div>
-              </div>
-              <div class="project-info">
-                <h3 class="project-title gradient-text"><i class="fas fa-city"></i> Nexus Corporate Offices</h3>
-                <div class="project-meta">
-                  <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Mombasa</span>
-                  <span class="meta-item"><i class="far fa-calendar-alt"></i> 2023</span>
-                  <span class="meta-item"><i class="fas fa-ruler-combined"></i> 12,000 sq ft</span>
-                </div>
-                <p class="project-excerpt">
-                  <i class="fas fa-users"></i>
-                  Collaborative workspace with biophilic design and wellness zones.
-                </p>
-                <div class="project-tags">
-                  <span class="tag"><i class="fas fa-chair"></i> Ergonomic</span>
-                  <span class="tag"><i class="fas fa-project-diagram"></i> Open Plan</span>
-                </div>
-              </div>
-            </article>
-            <!-- Add more projects as needed, following the same structure -->
-          </div>
-        </div>
-
-        <!-- Project Modal -->
-        <div class="project-modal" id="projectModal">
-          <div class="modal-container glassmorphism">
-            <button class="modal-close-btn" aria-label="Close modal">
-              <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-content">
-              <!-- Content will be dynamically inserted here -->
-            </div>
-          </div>
-        </div>
-
-        <!-- CTA Section -->
-        <div class="portfolio-cta enhanced-cta">
-          <div class="cta-content">
-            <h3 class="gradient-text">
-              <i class="fas fa-rocket"></i>
-              Ready to Build Your Dream?
-            </h3>
-            <p>
-              <i class="fas fa-comments"></i>
-              Connect with our award-winning team and let's bring your vision to life!
+      <!-- Hero Video Banner with Text Overlay -->
+      <div class="portfolio-hero" style="position:relative; width:100%; height:420px; overflow:hidden; border-radius:18px; margin-bottom:2.5rem; box-shadow:0 8px 32px #ffd60033;">
+        <video class="hero-video" autoplay muted loop playsinline poster="img/home.jpg" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.7) contrast(1.1); position:absolute; top:0; left:0; z-index:1;">
+          <source src="img/pixelvid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(90deg,rgba(24,24,24,0.82) 60%,rgba(255,214,0,0.18) 100%); z-index:2; display:flex; align-items:center; justify-content:center;">
+          <div class="hero-content" style="text-align:center; max-width:700px; margin:0 auto; z-index:3;"></div>
+            <h2 class="hero-title" style="font-size:2.5rem; font-weight:800; color:#ffd600; margin-bottom:1.1rem; text-shadow:0 2px 12px #000b,0 1px 0 #ffd60099;">
+              <i class="fas fa-drafting-compass"></i>
+              Designing Tomorrow, Today
+            </h2>
+            <p class="hero-subtitle" style="font-size:1.25rem; font-weight:600; color:#fffde7; margin-bottom:1.2rem; text-shadow:0 2px 12px #ffd600cc,0 1px 0 #000;">
+              <i class="fas fa-magic"></i>
+              Discover our signature projects blending innovation, sustainability, and artistry.<br>
+              <span style="color:#ffd600; font-weight:700; text-shadow:0 2px 8px #ffd60099;">From luxury homes to modern offices, eco-friendly hotels, and creative renovations—see how we turn ideas into reality for clients across Kenya.</span>
             </p>
-            <div class="cta-buttons">
-              <a href="#contact" class="cta-btn primary glassmorphism">
-                <i class="fas fa-envelope-open-text"></i> Request Consultation
-              </a>
-              <a href="tel:+254741400368" class="cta-btn secondary glassmorphism">
-                <i class="fas fa-phone-alt"></i> Call Now
-              </a>
+            <ul style="list-style:none; padding:0; margin:0 0 1.2rem 0; display:flex; flex-wrap:wrap; gap:1.2rem; justify-content:center;">
+              <li style="color:#fff; font-size:1.08rem; font-weight:600; background:rgba(255,214,0,0.18); border-radius:12px; padding:7px 18px; display:inline-flex; align-items:center; gap:8px;">
+                <i class="fas fa-leaf" style="color:#ffd600;"></i> Sustainable Design
+              </li>
+              <li style="color:#fff; font-size:1.08rem; font-weight:600; background:rgba(255,214,0,0.18); border-radius:12px; padding:7px 18px; display:inline-flex; align-items:center; gap:8px;">
+                <i class="fas fa-award" style="color:#ffd600;"></i> Award-Winning Team
+              </li>
+              <li style="color:#fff; font-size:1.08rem; font-weight:600; background:rgba(255,214,0,0.18); border-radius:12px; padding:7px 18px; display:inline-flex; align-items:center; gap:8px;">
+                <i class="fas fa-users" style="color:#ffd600;"></i> 200+ Projects
+              </li>
+              <li style="color:#fff; font-size:1.08rem; font-weight:600; background:rgba(255,214,0,0.18); border-radius:12px; padding:7px 18px; display:inline-flex; align-items:center; gap:8px;">
+                <i class="fas fa-globe-africa" style="color:#ffd600;"></i> Serving All Kenya
+              </li>
+            </ul>
+            <div class="hero-scroll-indicator" style="margin-top:1.2rem;">
+              <span style="color:#ffd600; font-weight:700; font-size:1.1rem; text-shadow:0 2px 8px #000a;">
+                Scroll Down to Explore <i class="fas fa-angle-double-down"></i>
+              </span>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Portfolio Stats with Animated 3D Counters -->
+      <div class="portfolio-stats-container enhanced-stats">
+        <div class="stats-grid">
+          <div class="stat-card glassmorphism">
+            <div class="stat-icon gradient-bg"><i class="fas fa-layer-group"></i></div>
+            <div class="counter" data-target="250">0</div>
+            <p class="stat-label">Projects Delivered</p>
+          </div>
+          <div class="stat-card glassmorphism">
+            <div class="stat-icon gradient-bg"><i class="fas fa-trophy"></i></div>
+            <div class="counter" data-target="18">0</div>
+            <p class="stat-label">Awards Won</p>
+          </div>
+          <div class="stat-card glassmorphism">
+            <div class="stat-icon gradient-bg"><i class="fas fa-heart"></i></div>
+            <div class="counter" data-target="98">0</div>
+            <span class="stat-percent">%</span>
+            <p class="stat-label">Happy Clients</p>
+          </div>
+          <div class="stat-card glassmorphism">
+            <div class="stat-icon gradient-bg"><i class="fas fa-globe-africa"></i></div>
+            <div class="counter" data-target="12">0</div>
+            <p class="stat-label">Cities Impacted</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Filter with Animated Underline & Enhanced Features -->
+      <div class="portfolio-filter-container enhanced-filter" style="margin-bottom: 2.5rem;">
+        <div class="filter-wrapper" style="gap: 2rem; align-items: flex-end;">
+          <!-- Filter Options with Tooltips and Icons -->
+          <div class="filter-options" id="portfolioFilter" style="display: flex; gap: 0.5rem; position: relative;">
+            <button class="filter-btn active" data-filter="all" title="Show all projects">
+              <i class="fas fa-th-large"></i> All
+            </button>
+            <button class="filter-btn" data-filter="residential" title="View residential/home projects">
+              <i class="fas fa-home"></i> Homes
+            </button>
+            <button class="filter-btn" data-filter="commercial" title="View commercial/office projects">
+              <i class="fas fa-city"></i> Commercial
+            </button>
+            <button class="filter-btn" data-filter="hospitality" title="View hospitality/hotel projects">
+              <i class="fas fa-hotel"></i> Hospitality
+            </button>
+            <button class="filter-btn" data-filter="sustainable" title="View eco-friendly/green projects">
+              <i class="fas fa-leaf"></i> Eco-Friendly
+            </button>
+            <button class="filter-btn" data-filter="award" title="Award-winning projects">
+              <i class="fas fa-award"></i> Awarded
+            </button>
+            <div class="filter-underline"></div>
+          </div>
+          <!-- Search & Sort Controls -->
+          <div class="filter-search" style="display: flex; gap: 0.7rem; align-items: center;">
+            <input type="text" placeholder="🔍 Search projects..." class="search-input" aria-label="Search projects">
+            <button class="search-btn" title="Search"><i class="fas fa-search"></i></button>
+            <select class="sort-select" aria-label="Sort projects" style="padding: 8px 14px; border-radius: 20px; border: 1px solid #ffd600; font-size: 1rem; background: #fffde7; color: #222;">
+              <option value="recent">Sort: Most Recent</option>
+              <option value="popular">Sort: Most Popular</option>
+              <option value="size">Sort: Largest</option>
+              <option value="award">Sort: Awarded</option>
+            </select>
+          </div>
+        </div>
+        <!-- Quick Stats Row -->
+        <div class="portfolio-quick-stats" style="display: flex; gap: 2.5rem; justify-content: center; margin-top: 1.2rem; flex-wrap: wrap;">
+          <div class="stat-mini" style="display: flex; align-items: center; gap: 8px; background: #fffde7; border-radius: 12px; padding: 6px 18px; font-weight: 600; color: #222; box-shadow: 0 1px 4px #ffd60022;">
+            <i class="fas fa-layer-group" style="color:#ffd600;"></i> <span>Total Projects:</span> <span id="statTotalProjects">250</span>
+          </div>
+          <div class="stat-mini" style="display: flex; align-items: center; gap: 8px; background: #fffde7; border-radius: 12px; padding: 6px 18px; font-weight: 600; color: #222; box-shadow: 0 1px 4px #ffd60022;">
+            <i class="fas fa-award" style="color:#ffd600;"></i> <span>Awards:</span> <span id="statAwards">18</span>
+          </div>
+          <div class="stat-mini" style="display: flex; align-items: center; gap: 8px; background: #fffde7; border-radius: 12px; padding: 6px 18px; font-weight: 600; color: #222; box-shadow: 0 1px 4px #ffd60022;">
+            <i class="fas fa-users" style="color:#ffd600;"></i> <span>Clients:</span> <span id="statClients">200+</span>
+          </div>
+          <div class="stat-mini" style="display: flex; align-items: center; gap: 8px; background: #fffde7; border-radius: 12px; padding: 6px 18px; font-weight: 600; color: #222; box-shadow: 0 1px 4px #ffd60022;">
+            <i class="fas fa-globe-africa" style="color:#ffd600;"></i> <span>Cities:</span> <span id="statCities">12</span>
+          </div>
+        </div>
+        <!-- Filter Help/Info -->
+        <div class="filter-help" style="text-align:center; margin-top:1rem; color:#888; font-size:1rem;">
+          <i class="fas fa-info-circle" style="color:#ffd600;"></i>
+          Tip: Use the filters, search, or sort to quickly find projects by type, location, or feature.
+        </div>
+      </div>
+
+      <!-- Portfolio Grid with 3D Hover Effects and Interactive Cards -->
+      <div class="portfolio-grid-container enhanced-portfolio-grid">
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Featured Project -->
+          <article class="portfolio-item featured glassmorphism" data-category="residential sustainable award" data-tags="smart-home luxury modern eco">
+            <div class="portfolio-media">
+              <div class="media-3d">
+                <video class="project-video" autoplay muted loop playsinline poster="img/kitchen.jpg">
+                  <source src="img/pvid.mp4" type="video/mp4">
+                </video>
+                <img src="img/kitchen.jpg" alt="Skyview Residences" class="project-image" loading="lazy">
+              </div>
+              <div class="project-badge neon-glow"><i class="fas fa-star"></i> Signature</div>
+              <div class="project-hover-content">
+                <button class="quick-view-btn" data-project="skyview-residences">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+                <button class="project-details-btn" data-project="skyview-residences">
+                  <i class="fas fa-info-circle"></i> Details
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title gradient-text"><i class="fas fa-home"></i> Skyview Residences</h3>
+              <div class="project-meta">
+                <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Nairobi</span>
+                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2024</span>
+                <span class="meta-item"><i class="fas fa-ruler-combined"></i> 4,500 sq ft</span>
+              </div>
+              <p class="project-excerpt">
+                <i class="fas fa-lightbulb"></i>
+                Modern eco-home with smart automation, solar energy, and bespoke interiors.
+              </p>
+              <div class="project-tags">
+                <span class="tag"><i class="fas fa-bolt"></i> Smart Home</span>
+                <span class="tag"><i class="fas fa-leaf"></i> LEED Platinum</span>
+                <span class="tag"><i class="fas fa-gem"></i> Luxury</span>
+              </div>
+            </div>
+          </article>
+
+ 
+          <!-- Hospitality Project -->
+          <article class="portfolio-item glassmorphism" data-category="hospitality sustainable" data-tags="hotel eco-friendly beach">
+            <div class="portfolio-media">
+              <div class="media-3d">
+                <video class="project-video" autoplay muted loop playsinline poster="img/pool.jpg">
+                  <source src="img/cranevid.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <img src="img/pool.jpg" alt="Coastal Eco Hotel" class="project-image" loading="lazy">
+              </div>
+              <div class="project-hover-content">
+                <button class="quick-view-btn" data-project="coastal-eco-hotel">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+                <button class="project-details-btn" data-project="coastal-eco-hotel">
+                  <i class="fas fa-info-circle"></i> Details
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title gradient-text"><i class="fas fa-hotel"></i> Coastal Eco Hotel</h3>
+              <div class="project-meta">
+                <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Diani Beach</span>
+                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2022</span>
+                <span class="meta-item"><i class="fas fa-ruler-combined"></i> 8,000 sq ft</span>
+              </div>
+              <p class="project-excerpt">
+                <i class="fas fa-leaf"></i>
+                Eco-friendly hotel with local materials, solar power, and ocean views.
+              </p>
+              <div class="project-tags">
+                <span class="tag"><i class="fas fa-water"></i> Beachfront</span>
+                <span class="tag"><i class="fas fa-solar-panel"></i> Solar</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Renovation Project -->
+          <article class="portfolio-item glassmorphism" data-category="residential renovation" data-tags="remodel modern">
+            <div class="portfolio-media">
+              <div class="media-3d">
+                <video class="project-video" autoplay muted loop playsinline poster="img/pool.jpg">
+                  <source src="img/interiorvid (1).mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <img src="img/bedroom.jpg" alt="Modern Home Renovation" class="project-image" loading="lazy">
+              </div>
+              <div class="project-hover-content">
+                <button class="quick-view-btn" data-project="modern-renovation">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+                <button class="project-details-btn" data-project="modern-renovation">
+                  <i class="fas fa-info-circle"></i> Details
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title gradient-text"><i class="fas fa-home"></i> Modern Home Renovation</h3>
+              <div class="project-meta">
+                <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Karen, Nairobi</span>
+                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2023</span>
+                <span class="meta-item"><i class="fas fa-ruler-combined"></i> 3,200 sq ft</span>
+              </div>
+              <p class="project-excerpt">
+                <i class="fas fa-sync-alt"></i>
+                Full house remodel with open-plan living, new kitchen, and energy upgrades.
+              </p>
+              <div class="project-tags">
+                <span class="tag"><i class="fas fa-paint-roller"></i> Interior Design</span>
+                <span class="tag"><i class="fas fa-bolt"></i> Energy Efficient</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Add more projects as needed, following the same structure -->
+        </div>
+      </div>
+
+      <!-- Project Modal -->
+      <div class="project-modal" id="projectModal">
+        <div class="modal-container glassmorphism">
+          <button class="modal-close-btn" aria-label="Close modal">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="modal-content">
+            <!-- Content will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="portfolio-cta enhanced-cta">
+        <div class="cta-content">
+          <h3 class="gradient-text">
+            <i class="fas fa-rocket"></i>
+            Ready to Build Your Dream?
+          </h3>
+          <p>
+            <i class="fas fa-comments"></i>
+            Connect with our award-winning team and let's bring your vision to life!
+          </p>
+          <div class="cta-buttons">
+            <a href="#contact" class="cta-btn primary glassmorphism">
+              <i class="fas fa-envelope-open-text"></i> Request Consultation
+            </a>
+            <a href="tel:+254741400368" class="cta-btn secondary glassmorphism">
+              <i class="fas fa-phone-alt"></i> Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // Portfolio Section Interactivity
+        document.addEventListener('DOMContentLoaded', function () {
+          // Animated Counters
+          function animateCounter(counter) {
+            const target = +counter.getAttribute('data-target');
+            const duration = 1800;
+            let startTime = null;
+            function updateCounter(timestamp) {
+              if (!startTime) startTime = timestamp;
+              const progress = Math.min((timestamp - startTime) / duration, 1);
+              const value = Math.floor(progress * target);
+              counter.textContent = value;
+              if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.textContent = target;
+              }
+            }
+            requestAnimationFrame(updateCounter);
+          }
+          document.querySelectorAll('.counter').forEach(animateCounter);
+
+          // Filter Logic
+          const filterBtns = document.querySelectorAll('.filter-btn');
+          const grid = document.getElementById('portfolioGrid');
+          const underline = document.querySelector('.filter-underline');
+          function moveUnderline(btn) {
+            underline.style.width = btn.offsetWidth + 'px';
+            underline.style.left = btn.offsetLeft + 'px';
+          }
+          filterBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+              filterBtns.forEach(b => b.classList.remove('active'));
+              this.classList.add('active');
+              moveUnderline(this);
+              const filter = this.getAttribute('data-filter');
+              grid.querySelectorAll('.portfolio-item').forEach(item => {
+                if (filter === 'all' || item.dataset.category.includes(filter)) {
+                  item.style.display = '';
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+            });
+          });
+          // Initialize underline on load
+          setTimeout(() => {
+            const activeBtn = document.querySelector('.filter-btn.active');
+            if (activeBtn) moveUnderline(activeBtn);
+          }, 100);
+
+          // Search Logic
+          document.querySelector('.search-input').addEventListener('input', function () {
+            const val = this.value.toLowerCase();
+            grid.querySelectorAll('.portfolio-item').forEach(item => {
+              const text = item.textContent.toLowerCase();
+              item.style.display = text.includes(val) ? '' : 'none';
+            });
+          });
+
+          // Sort Logic
+          document.querySelector('.sort-select').addEventListener('change', function () {
+            const value = this.value;
+            const items = Array.from(grid.querySelectorAll('.portfolio-item'));
+            let sorted;
+            if (value === 'recent') {
+              sorted = items.sort((a, b) => {
+                const ay = a.querySelector('.meta-item:nth-child(2)').textContent.match(/\d{4}/);
+                const by = b.querySelector('.meta-item:nth-child(2)').textContent.match(/\d{4}/);
+                return (by ? +by[0] : 0) - (ay ? +ay[0] : 0);
+              });
+            } else if (value === 'size') {
+              sorted = items.sort((a, b) => {
+                const as = a.querySelector('.meta-item:nth-child(3)').textContent.replace(/[^0-9]/g, '');
+                const bs = b.querySelector('.meta-item:nth-child(3)').textContent.replace(/[^0-9]/g, '');
+                return (+bs) - (+as);
+              });
+            } else if (value === 'award') {
+              sorted = items.sort((a, b) => {
+                return (b.dataset.category.includes('award') ? 1 : 0) - (a.dataset.category.includes('award') ? 1 : 0);
+              });
+            } else {
+              sorted = items;
+            }
+            sorted.forEach(item => grid.appendChild(item));
+          });
+
+          // Modal Logic
+          const modal = document.getElementById('projectModal');
+          grid.addEventListener('click', function (e) {
+            const btn = e.target.closest('.quick-view-btn, .project-details-btn');
+            if (btn) {
+              const project = btn.dataset.project;
+              showProjectModal(project, btn.classList.contains('quick-view-btn'));
+            }
+          });
+          function showProjectModal(project, isQuickView) {
+            // Demo content, replace with real project data as needed
+            let content = '';
+            if (project === 'skyview-residences') {
+              content = `
+                <h2 style="color:#ffd600;">Skyview Residences</h2>
+                <img src="img/kitchen.jpg" alt="Skyview Residences" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+                <p>Modern eco-home in Nairobi with smart automation, solar energy, and bespoke interiors. Awarded LEED Platinum for sustainability.</p>
+                <ul>
+                  <li><strong>Location:</strong> Nairobi</li>
+                  <li><strong>Year:</strong> 2024</li>
+                  <li><strong>Size:</strong> 4,500 sq ft</li>
+                  <li><strong>Features:</strong> Smart Home, Solar, Luxury, LEED Platinum</li>
+                </ul>
+                <a href="#contact" class="cta-btn primary" style="margin-top:1rem;">Request Similar Project</a>
+              `;
+            } else if (project === 'corporate-office') {
+              content = `
+                <h2 style="color:#ffd600;">Nexus Corporate Offices</h2>
+                <img src="img/build.png" alt="Nexus Corporate Offices" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+                <p>Collaborative workspace in Mombasa with biophilic design, wellness zones, and open-plan layouts. Winner of 2023 Commercial Design Award.</p>
+                <ul>
+                  <li><strong>Location:</strong> Mombasa</li>
+                  <li><strong>Year:</strong> 2023</li>
+                  <li><strong>Size:</strong> 12,000 sq ft</li>
+                  <li><strong>Features:</strong> Ergonomic, Open Plan, Awarded</li>
+                </ul>
+                <a href="#contact" class="cta-btn primary" style="margin-top:1rem;">Request Similar Project</a>
+              `;
+            } else if (project === 'coastal-eco-hotel') {
+              content = `
+                <h2 style="color:#ffd600;">Coastal Eco Hotel</h2>
+                <img src="img/hotel.jpg" alt="Coastal Eco Hotel" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+                <p>Eco-friendly beachfront hotel in Diani Beach, built with local materials and powered by solar energy. Designed for sustainability and comfort.</p>
+                <ul>
+                  <li><strong>Location:</strong> Diani Beach</li>
+                  <li><strong>Year:</strong> 2022</li>
+                  <li><strong>Size:</strong> 8,000 sq ft</li>
+                  <li><strong>Features:</strong> Beachfront, Solar, Eco-Friendly</li>
+                </ul>
+                <a href="#contact" class="cta-btn primary" style="margin-top:1rem;">Request Similar Project</a>
+              `;
+            } else if (project === 'modern-renovation') {
+              content = `
+                <h2 style="color:#ffd600;">Modern Home Renovation</h2>
+                <img src="img/bedroom.jpg" alt="Modern Home Renovation" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+                <p>Full house remodel in Karen, Nairobi. Open-plan living, new kitchen, energy upgrades, and modern interior design.</p>
+                <ul>
+                  <li><strong>Location:</strong> Karen, Nairobi</li>
+                  <li><strong>Year:</strong> 2023</li>
+                  <li><strong>Size:</strong> 3,200 sq ft</li>
+                  <li><strong>Features:</strong> Interior Design, Energy Efficient</li>
+                </ul>
+                <a href="#contact" class="cta-btn primary" style="margin-top:1rem;">Request Similar Project</a>
+              `;
+            } else {
+              content = `<h2 style="color:#ffd600;">Project Details</h2><p>More details and images coming soon!</p>`;
+            }
+            modal.querySelector('.modal-content').innerHTML = content;
+            modal.classList.add('active');
+          }
+          modal.querySelector('.modal-close-btn').onclick = () => modal.classList.remove('active');
+          modal.onclick = e => { if (e.target === modal) modal.classList.remove('active'); };
+
+          // Keyboard accessibility for modal
+          document.addEventListener('keydown', function (e) {
+            if (modal.classList.contains('active') && e.key === 'Escape') {
+              modal.classList.remove('active');
+            }
+          });
+        });
+      </script>
+    </section>
 
         <!-- Services Section -->
         <section id="services" class="services enhanced-services">
