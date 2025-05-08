@@ -33,10 +33,11 @@
     <!-- Home/Hero Section -->
     <section id="home" class="home-section improved-hero">
       <div class="home-bg-video-wrapper" style="position: relative; width: 100%; height: 100vh; min-height: 520px; overflow: hidden;">
-        <video class="promo-bg-video" autoplay muted loop playsinline poster="img/home.jpg" style="opacity:1; z-index:1; filter:brightness(1.08) contrast(1.08); object-fit: cover; width: 100vw; height: 100vh; min-height: 520px; position: absolute; top: 0; left: 0;">
-          <source src="img/bgimage1 (4).mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+<video class="promo-bg-video" autoplay muted loop playsinline poster="img/home.jpg">
+  <source src="img/bgimage1.mp4" type="video/mp4">
+  <!-- Fallback image -->
+  <img src="img/home.jpg" alt="Bridan Design Build background">
+</video>
         <div class="hero-flex-container">
 
   <!-- Left Column -->
