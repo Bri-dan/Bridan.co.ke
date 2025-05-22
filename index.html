@@ -166,6 +166,50 @@
                                     <i class="fas fa-building" style="color: #ffd700;"></i>
                                     <span>NCA Licensed</span>
                                 </div>
+
+                                <!-- Include this in your <head> or a linked stylesheet -->
+<style>
+  .btn-download {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #1A237E 0%, #3949AB 100%);
+    color: #fff;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5em;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  }
+  .btn-download svg {
+    margin-right: 0.5em;
+    width: 1.2em;
+    height: 1.2em;
+    fill: #fff;
+  }
+</style>
+
+<!-- Your HTML -->
+<div class="intro-text">
+  <a
+    class="btn-download"
+    href="/Bridan_Design_Build.docx"
+    download="Bridan_Design_Build.docx"
+  >
+    <!-- SVG download icon -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.67v4h6V9h3.67L12 2z"/>
+    </svg>
+    Download Our Brochure
+  </a>
+</div>
+
                             </div>
                         </div>
                     </div>
@@ -474,8 +518,12 @@
 
    <!-- About Section -->
 
-<section id="about" class="about enhanced-about-section" style="margin:0; padding:0;">
-  <!-- 2️⃣ -->
+<section>
+
+<div id="about" class="about-section" style="padding: 4rem 2rem; background-color: #fff; box-sizing: border-box;"></div>
+  
+    <div class="out-header">
+      <!-- 2️⃣ -->
       <div class="container" style="max-width: 1300px; margin: 0 auto; padding: 0 24px;">
         <div class="section-header" style="text-align: center; margin-bottom: 48px;">
           <h2 style="font-size: 2.8rem; font-weight: 700; color: #222; margin-bottom: 10px;">
@@ -538,7 +586,7 @@
       </div>
     </div>
   </div>
-
+<br>
 </section>
 
 
@@ -557,9 +605,49 @@
                 <h1 class="section-title">Our Construction Projects</h1>
                         <p class="portfolio-description">At Bridan Design Build, we transform spaces into extraordinary experiences through thoughtful design and meticulous craftsmanship. Explore our diverse portfolio spanning residential, commercial, hospitality, and renovation projects across Kenya and East Africa.</p>
 
-                <div class="intro-text">
-                    <a class="arrow-link" href="#" onclick="downloadBrochure()">Construction Portfolio Brochure</a>
-                </div>
+      <!-- Include this in your <head> or a linked stylesheet -->
+<style>
+  .btn-download {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #1A237E 0%, #3949AB 100%);
+    color: #fff;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5em;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  }
+  .btn-download svg {
+    margin-right: 0.5em;
+    width: 1.2em;
+    height: 1.2em;
+    fill: #fff;
+  }
+</style>
+
+<!-- Your HTML -->
+<div class="intro-text">
+  <a
+    class="btn-download"
+    href="/bridan_design_Build.docx"
+    download="Bridan_DesignBuild.docx"
+  >
+    <!-- SVG download icon -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.67v4h6V9h3.67L12 2z"/>
+    </svg>
+    Download Our Brochure
+  </a>
+</div>
+
             </div>
             <aside class="portfolio-highlight">
                 <div class="stat-card">
@@ -762,7 +850,7 @@
 }
 
 .portfolio-intro {
-    background:linear-gradient(120deg,#f0df8a 0%,#f7f7f7 100%););
+    background:linear-gradient(120deg,#f0df8a 0%,#f7f7f7 100%);
     padding: 4rem 0;
     color: white;
 }
@@ -2631,7 +2719,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
       <div class="leader-card glassmorphism-3d hover-lift text-center p-6">
         <div class="leader-icon icon-large mb-3"><i class="fas fa-user-cog"></i></div>
-        <h3 class="bold-text text-lg mb-1">Chief Technical Officer</h3>
+        <h3 class="bold-text text-lg mb-1">Chief Operating Officer</h3>
         <div class="leader-name text-md mb-2">DIANA</div>
         <p class="text-base mb-0">Expert in engineering and technology, ensuring quality and technical excellence.</p>
       </div>
