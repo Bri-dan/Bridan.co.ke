@@ -70,28 +70,24 @@
 <br>
     <!-- Main Content -->
     <!-- Home/Hero Section - 3D Lively Image Slideshow Hero -->
-    <section id="home" class="hero-3d-slideshow" style="min-height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; padding-top: 50px;">
-      <!-- 3D Animated Slideshow Background -->
-      <div class="hero-bg-slideshow-3d">
-        <div class="slideshow-3d" id="bgSlideshow"></div>
+    <section>
+      <section id="home" class="hero-3d-slideshow" style="min-height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; padding-top: 50px;">
+        <!-- 3D Animated Slideshow Background -->
+        <div class="hero-bg-slideshow-3d">
+          <div class="slideshow-3d" id="bgSlideshow"></div>
           <img src="img/home.jpg" alt="Modern Home" class="slide-3d active" />
           <img src="img/stair.jpg" alt="Staircase" class="slide-3d" />
           <img src="img/build.png" alt="Building" class="slide-3d" />
           <img src="img/bridan1.webp" alt="Interior" class="slide-3d" />
           <img src="img/bedroom.jpg" alt="Bedroom" class="slide-3d" />
           <img src="img/HOMELOGO.jpg" alt="Logo" class="slide-3d" />
-            <img src="img/bridan2.jpg" alt="Logo" class="slide-3d" />
-              <img src="img/pool.jpg" alt="Logo" class="slide-3d" />
-                <img src="img/kitchen.jpg" alt="Logo" class="slide-3d" />
-                  <img src="img/lr.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/bridan2.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/pool.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/kitchen.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/lr.jpg" alt="Logo" class="slide-3d" />
         </div>
-        <!-- 3D Overlay for depth -->
-        <div class="hero-bg-overlay-3d"></div>
-      </div>
 
-      <!-- Hero Content -->
-      <div class="hero-content-3d" style="position:relative; z-index:10; max-width:800px; margin:auto;">
-        <div class="hero-left" style="
+        <div class="hero-left improved-hero" style="
           flex: 1 1 540px;
           max-width: 800px;
           color: white;
@@ -109,20 +105,22 @@
           <div style="
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.58);
-            border-radius: 18px;
+            background: linear-gradient(120deg,rgba(24,24,24,0.92) 60%,rgba(255,214,0,0.13) 100%);
+            border-radius: 22px;
             z-index: -1;
-            box-shadow: 0 8px 32px #ffd60033;
+            box-shadow: 0 8px 48px #ffd60022, 0 2px 12px #18181844;
+            backdrop-filter: blur(6px);
           "></div>
 
-          <div class="hero-content animated fadeInUp" style="max-width: 95%; padding: 2rem 1rem;">
-            <h3 class="promo-title" style="
-              color: #ffd700;
+          <div class="hero-content animated fadeInUp" style="max-width: 95%; padding: 2.5rem 1.2rem;">
+            <h3 class="promo-title gradient-text-3d" style="
               font-size: 3.2rem;
               margin-bottom: 18px;
               font-weight: 900;
-              text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);">
-              FREE ARCHITECT!
+              letter-spacing: 1px;
+              text-shadow: 0 4px 18px #18181899;
+            ">
+              <i class="fas fa-drafting-compass"></i> FREE ARCHITECT!
             </h3>
 
             <h4 class="promo-subtitle" style="
@@ -130,39 +128,155 @@
               line-height: 1.3;
               margin-bottom: 18px;
               font-weight: 700;
-              color: white;
-              text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);">
+              color: #fffbe6;
+              text-shadow: 0 2px 8px #ffd60033;
+            ">
               <u>Top-Tier House Designers in Kenya</u>
             </h4>
 
+            <div class="promo-desc" style="font-size: 1.18rem; line-height: 1.6; margin-bottom: 32px;">
+              <p style="margin-top: 10px; font-weight: 600; color: #ffd600;">
+                <i class="fas fa-pencil-ruler"></i> Architectural Drawings &nbsp; 
+                <i class="fas fa-paint-roller"></i> Interior Design &nbsp; 
+                <i class="fas fa-tasks"></i> Construction Management
+              </p>
+              <p style="margin-top: 12px; color: #fff; font-weight: 700;">
+                <span style="background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%); color:#181818; border-radius:12px; padding:6px 18px; font-weight:800; box-shadow:0 2px 12px #ffd60033;">
+                  ✅ Get FREE architectural plans when you sign up for construction!
+                </span>
+              </p>
+            </div>
 
-            <p class="hero-desc-3d" style="margin-bottom:2.2rem;">
-              <i class="fas fa-lightbulb"></i>
-             <span style="color:#ffd600;font-weight:600;"> Modern architecture, interiors & construction. </span>
-            </p>
-            <div class="hero-cta-3d" style="margin-bottom:2.2rem;">
-              <a href="#portfolio" class="cta-btn-3d primary"><i class="fas fa-images"></i> View Portfolio</a>
-              <a href="tel:+254741400368" class="cta-btn-3d call"><i class="fas fa-phone-alt"></i> Call Now</a>
-              <a href="https://api.whatsapp.com/send?phone=254741400368" target="_blank" class="cta-btn-3d whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <!-- CTA Buttons -->
+            <div class="cta-buttons-stack" style="display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; margin-bottom: 36px;">
+              <!-- WhatsApp -->
+              <a href="https://api.whatsapp.com/send?phone=254741400368"
+                target="_blank"
+                rel="noopener"
+                class="cta-btn-3d whatsapp"
+                style="padding: 15px 32px; border-radius: 30px; font-size: 1.13rem; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i>
+                <span>WhatsApp Now</span>
+              </a>
+              <!-- Call -->
+              <a href="tel:+254741400368"
+                class="cta-btn-3d call"
+                style="padding: 15px 32px; border-radius: 30px; font-size: 1.13rem; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-phone-alt" style="font-size: 1.3rem;"></i>
+                <span>Call Us: +254 741 400 368</span>
+              </a>
             </div>
-            <div class="hero-certifications-3d" style="margin-bottom:1.2rem;">
-              <span class="badge-3d"><i class="fas fa-certificate"></i> BORAQS Registered</span>
-              <span class="badge-3d"><i class="fas fa-hard-hat"></i> NCA Licensed</span>
-              <span class="badge-3d"><i class="fas fa-award"></i> ETIMS & VAT Compliant</span>
+
+            <!-- Certifications -->
+            <div class="badges-container" style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-bottom: 28px;">
+              <div class="badge-3d" style="background: rgba(255,255,255,0.13); color: #ffd600; padding: 10px 18px; border-radius: 14px; font-size: 1rem; font-weight: 700; display: flex; align-items: center; gap: 7px; box-shadow: 0 1px 4px #ffd60022; border: 1.5px solid #ffd60044;">
+                <i class="fas fa-certificate"></i> ETIMS & VAT Registered
+              </div>
+              <div class="badge-3d" style="background: rgba(255,255,255,0.13); color: #ffd600; padding: 10px 18px; border-radius: 14px; font-size: 1rem; font-weight: 700; display: flex; align-items: center; gap: 7px; box-shadow: 0 1px 4px #ffd60022; border: 1.5px solid #ffd60044;">
+                <i class="fas fa-hard-hat"></i> BORAQS Certified
+              </div>
+              <div class="badge-3d" style="background: rgba(255,255,255,0.13); color: #ffd600; padding: 10px 18px; border-radius: 14px; font-size: 1rem; font-weight: 700; display: flex; align-items: center; gap: 7px; box-shadow: 0 1px 4px #ffd60022; border: 1.5px solid #ffd60044;">
+                <i class="fas fa-building"></i> NCA Licensed
+              </div>
             </div>
+
             <!-- DOC DOWNLOAD -->
-            <div class="intro-text">
-              <a
-                class="btn-download blue-download-btn"
+            <div class="intro-text" style="margin-bottom: 0;">
+              <a class="btn-download"
                 href="/Bridan_Design_Build.docx"
                 download="Bridan_Design_Build.docx"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true" style="width:1.2em;height:1.2em;vertical-align:middle;">
+                style="margin-top: 10px;">
+                <!-- SVG download icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.67v4h6V9h3.67L12 2z"/>
                 </svg>
                 Download Our Brochure
               </a>
             </div>
+          </div>
+        </div>
+        <style>
+          .improved-hero .promo-title {
+            background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+          }
+          .improved-hero .promo-subtitle {
+            background: linear-gradient(90deg,#fffbe6 0,#ffd600 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+          }
+          .improved-hero .cta-btn-3d {
+            box-shadow: 0 2px 12px #ffd60033;
+            transition: background 0.2s, color 0.2s, transform 0.18s;
+            outline: none;
+          }
+          .improved-hero .cta-btn-3d.whatsapp {
+            background: #25d366;
+            color: #fff;
+            border: 2px solid #25d366;
+          }
+          .improved-hero .cta-btn-3d.whatsapp:hover {
+            background: #fff;
+            color: #25d366;
+            transform: scale(1.06) rotateZ(-2deg);
+          }
+          .improved-hero .cta-btn-3d.call {
+            background: #007bff;
+            color: #fff;
+            border: 2px solid #007bff;
+          }
+          .improved-hero .cta-btn-3d.call:hover {
+            background: #fff;
+            color: #007bff;
+            transform: scale(1.06) rotateZ(-2deg);
+          }
+          .improved-hero .btn-download {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, #1A237E 0%, #3949AB 100%);
+            color: #fff;
+            padding: 0.75em 1.5em;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 0.5em;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+          }
+          .improved-hero .btn-download:hover {
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            background: linear-gradient(135deg, #3949AB 0%, #1A237E 100%);
+          }
+          .improved-hero .btn-download svg {
+            margin-right: 0.5em;
+            width: 1.2em;
+            height: 1.2em;
+            fill: #fff;
+          }
+          @media (max-width: 900px) {
+            .improved-hero .promo-title { font-size: 2.2rem !important; }
+            .improved-hero .promo-subtitle { font-size: 1.3rem !important; }
+            .improved-hero .hero-content { padding: 1.2rem 0.2rem 1rem 0.2rem; }
+          }
+          @media (max-width: 600px) {
+            .improved-hero .promo-title { font-size: 1.3rem !important; }
+            .improved-hero .promo-subtitle { font-size: 1rem !important; }
+            .improved-hero .hero-content { padding: 1.2rem 0.2rem 1rem 0.2rem; }
+            .improved-hero .cta-buttons-stack { flex-direction: column; gap: 12px; }
+            .improved-hero .badges-container { flex-direction: column; gap: 10px; }
+          }
+        </style>
+      </section>
+    </section>
+
             <style>
               .blue-download-btn {
                 display: inline-flex;
@@ -298,7 +412,7 @@
           min-height: 100vh;
           position: relative;
           overflow: hidden;
-          background: #181818;
+          
         }
         .hero-bg-slideshow-3d {
           position: absolute;
@@ -979,17 +1093,51 @@
       <i class="fas fa-building" style="color:goldenrod;"></i> Our Portfolio
     </h2>
     <p class="portfolio-subtitle" style="font-size:1.15rem; color:#555; max-width:700px; margin:0 auto;">
-      Explore our award-winning projects, where; innovation, sustainability, and luxury meet. Each project is a testament to our passion for design, attention to detail, and client satisfaction.
+      Explore our award-winning projects, where innovation, sustainability, and luxury meet. Each project is a testament to our passion for design, attention to detail, and client satisfaction.
     </p>
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:18px; margin-top:1.5rem;">
-      <a class="btn-download" href="/Bridan_Design_Build.docx" download="Bridan_Design_Build.docx">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.67v4h6V9h3.67L12 2z"/></svg>
+    <br>
+    <div style="text-align: center;">
+      <a href="/Bridan_Design_Build.docx" download="Bridan_Design_Build.docx" class="blue-download-btn" style="display: inline-flex; align-items: center; gap: 10px;">
+        <svg style="width:1.3em;height:1.3em;fill:#fff;margin-right:6px;" viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.67v4h6V9h3.67L12 2z"/></svg>
         Download Our Brochure
       </a>
-      <a href="tel:+254741400368" style="display:inline-flex; align-items:center; background:#18df2f; color:#fff; padding:16px 32px; border-radius:30px; font-size:1.2rem; font-weight:700; text-decoration:none; box-shadow:0 4px 16px rgba(34,165,72,0.2); gap:10px;">
+      <a href="tel:+254741400368" style="display: inline-flex; align-items: center; background: #18df2f; color: #fff; padding: 16px 32px; border-radius: 30px; font-size: 1.2rem; font-weight: 700; text-decoration: none; box-shadow: 0 4px 16px rgba(34,165,72,0.2); gap: 10px;">
         <i class="fas fa-phone-alt"></i> Call Now: +254 741 400 368
       </a>
     </div>
+    
+    <style>
+      .blue-download-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 1px;
+        background: linear-gradient(90deg, #1976d2 0%, #2196f3 100%);
+        color: #fff !important;
+        font-weight: 700;
+        font-size: 1.13rem;
+        padding: 15px 32px;
+        border-radius: 30px;
+        text-decoration: none;
+        box-shadow: 0 4px 18px #1976d244, 0 2px 8px #2196f344;
+        border: none;
+        transition: background 0.2s, color 0.2s, transform 0.18s;
+        outline: none;
+        cursor: pointer;
+        margin: 0 auto;
+      }
+      .blue-download-btn:hover {
+        background: linear-gradient(90deg, #2196f3 0%, #1976d2 100%);
+        color: #fff;
+        transform: scale(1.06) translateY(-2px);
+        box-shadow: 0 8px 32px #1976d244;
+        text-decoration: none;
+      }
+      .blue-download-btn svg {
+        fill: #fff;
+        margin-right: 6px;
+      }
+    </style>
+  </div>
   </div>
   
   <section class="construction-portfolio">
