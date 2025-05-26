@@ -77,11 +77,53 @@
 
         <!-- Video Background -->
         <div class="elementor-background-video-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
-  <video class="hero-video" autoplay muted loop playsinline preload="auto"
-         style="width:100%; height:100%; object-fit:cover; filter:brightness(0.6) contrast(1.1); position:absolute; top:0; left:0; z-index:1;">
+  <!-- Video Background -->
+  <video class="hero-video" autoplay muted loop playsinline poster="img/home.jpg"
+    style="width:100%; height:100%; object-fit:cover; filter:brightness(0.6) contrast(1.1); position:absolute; top:0; left:0; z-index:1;">
     <source src="img/interiorvid (1).mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  <!-- Slideshow fallback for video delay -->
+  <div id="bg-slideshow" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;opacity:1;transition:opacity 0.7s;">
+    <img src="img/home.jpg" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;transition:opacity 0.7s;" />
+    <img src="img/stair.jpg" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;opacity:0;transition:opacity 0.7s;" />
+    <img src="img/build.png" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;opacity:0;transition:opacity 0.7s;" />
+    <img src="img/bridan1.webp" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;opacity:0;transition:opacity 0.7s;" />
+    <img src="img/bedroom.jpg" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;opacity:0;transition:opacity 0.7s;" />
+    <img src="img/HOMELOGO.jpg" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;opacity:0;transition:opacity 0.7s;" />
+  </div>
+  <script>
+    // Slideshow logic
+    (function() {
+      const images = document.querySelectorAll('#bg-slideshow img');
+      let idx = 0;
+      let interval;
+      function showSlide(i) {
+        images.forEach((img, j) => {
+     img.style.opacity = (i === j) ? '1' : '0';
+        });
+      }
+      function startSlideshow() {
+        showSlide(0);
+        interval = setInterval(() => {
+     idx = (idx + 1) % images.length;
+     showSlide(idx);
+        }, 2200);
+      }
+      // Start slideshow after 1s
+      setTimeout(startSlideshow, 1000);
+
+      // Hide slideshow when video is ready to play
+      const video = document.querySelector('.hero-video');
+      if (video) {
+        video.addEventListener('playing', function() {
+     const bg = document.getElementById('bg-slideshow');
+     if (bg) bg.style.opacity = '0';
+     if (interval) clearInterval(interval);
+        });
+      }
+    })();
+  </script>
         </div>
 
         
@@ -1697,9 +1739,8 @@
 
                    <script>
                                 // JS for underline position and active button toggle
-                                // Use different variable names to avoid redeclaration errors
-                                const filterBtns2 = document.querySelectorAll('.filter-btn');
-                                const underline2 = document.querySelector('.underline');
+                                const filterBtns = document.querySelectorAll('.filter-btn');
+                                const underline = document.querySelector('.underline');
 
                                 function moveUnderline(el) {
                                   underline.style.width = `${el.offsetWidth}px`;
@@ -3055,7 +3096,7 @@
           <div class="social-profile">
             <img src="img/bridanlogo.PNG" alt="Bridan Instagram Profile" class="social-avatar">
             <div>
-             <a href="https://www.instagram.com/bridan_design_build/" target="_blank" aria-label="Instagram" class="social-3d" style="background: #fff; color: #ed155d; font-size:2.2rem; width:64px; height:64px;">
+                                <a href="https://www.instagram.com/bridan_design_build/" target="_blank" aria-label="Instagram" class="social-3d" style="background: #fff; color: #ed155d; font-size:2.2rem; width:64px; height:64px;">
               <i class="fab fa-instagram"></i>
               </a>
             </div>
@@ -3579,6 +3620,8 @@
                                               width: 100%;
                                             }
                                             }
+                                            -webkit-text-fill-color: transparent;
+                                          }
                                           
                                           .ai-search-container p {
                                             font-size: 0.95rem;
