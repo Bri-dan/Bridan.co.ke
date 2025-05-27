@@ -98,7 +98,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding: 3rem 1.5rem;
+          padding: 2rem 1.5rem;
           margin: auto;
         ">
           <!-- Overlay background for better text visibility -->
@@ -108,7 +108,7 @@
             background: linear-gradient(120deg,rgba(24,24,24,0.92) 60%,rgba(255,214,0,0.13) 100%);
             border-radius: 22px;
             z-index: -1;
-            box-shadow: 0 8px 48px #ffd60022, 0 2px 12px #18181844;
+            box-shadow: 0 4px 28px #ffd60011, 0 1px 6px #18181822;
             backdrop-filter: blur(6px);
           "></div>
 
@@ -129,22 +129,28 @@
               margin-bottom: 18px;
               font-weight: 700;
               color: #fffbe6;
-              text-shadow: 0 2px 8px #ffd60033;
+              text-shadow: 0 2px 8px #00ffa233;
             ">
               <u>Top-Tier House Designers in Kenya</u>
             </h4>
 
             <div class="promo-desc" style="font-size: 1.18rem; line-height: 1.6; margin-bottom: 32px;">
-              <p style="margin-top: 10px; font-weight: 600; color: #ffd600;">
-                <i class="fas fa-pencil-ruler"></i> Architectural Drawings &nbsp; 
-                <i class="fas fa-paint-roller"></i> Interior Design &nbsp; 
-                <i class="fas fa-tasks"></i> Construction Management
-              </p>
-              <p style="margin-top: 12px; color: #fff; font-weight: 700;">
-                <span style="background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%); color:#181818; border-radius:12px; padding:6px 18px; font-weight:800; box-shadow:0 2px 12px #ffd60033;">
-                  ✅ Get FREE architectural plans when you sign up for construction!
+              <div style="display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; align-items: center; margin-bottom: 14px;">
+                <div style="display: flex; align-items: center; gap: 8px; background: #fffbe6; color: #ffd600; border-radius: 10px; padding: 8px 18px; font-weight: 700; box-shadow: 0 1px 6px #ffd60022;">
+                  <i class="fas fa-pencil-ruler"></i> Architectural Drawings
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; background: #fffbe6; color: #ff8c00; border-radius: 10px; padding: 8px 18px; font-weight: 700; box-shadow: 0 1px 6px #ffd60022;">
+                  <i class="fas fa-paint-roller"></i> Interior Design
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; background: #fffbe6; color: #25d366; border-radius: 10px; padding: 8px 18px; font-weight: 700; box-shadow: 0 1px 6px #ffd60022;">
+                  <i class="fas fa-tasks"></i> Construction & Management
+                </div>
+              </div>
+              <div style="text-align: center; margin-top: 12px;">
+                <span style="background: linear-gradient(90deg,#ffd600 0,#ffae00 100%); color:#181818; border-radius:12px; padding:8px 22px; font-weight:800; box-shadow:0 2px 12px #ffd60033; display: inline-block;">
+                  ✅ Get <span style="color:#570101;">FREE</span> architectural plans when you sign up for construction!
                 </span>
-              </p>
+              </div>
             </div>
 
             <!-- CTA Buttons -->
@@ -195,6 +201,7 @@
             </div>
           </div>
         </div>
+
         <style>
           .improved-hero .promo-title {
             background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%);
@@ -261,6 +268,44 @@
             height: 1.2em;
             fill: #fff;
           }
+          /* Make hero overlay more translucent for better bg visibility */
+          .improved-hero > div:first-child {
+            background: linear-gradient(120deg,rgba(24,24,24,0.65) 60%,rgba(255,214,0,0.10) 100%) !important;
+            border-radius: 22px;
+            z-index: -1;
+            box-shadow: 0 4px 28px #ffd60011, 0 1px 6px #18181822;
+            backdrop-filter: blur(4px);
+            opacity: 0.82;
+          }
+          /* Slideshow improvements */
+          .slideshow-3d .slide-3d {
+            opacity: 0;
+            transition: opacity 1.1s cubic-bezier(.4,0,.2,1), transform 1.5s cubic-bezier(.4,0,.2,1);
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            left: 0; top: 0;
+            z-index: 1;
+            pointer-events: none;
+            will-change: opacity, transform;
+            filter: brightness(0.7) contrast(1.1) saturate(1.1) blur(0.5px);
+            transform: scale(1.08) rotateY(8deg) translateZ(-40px);
+          }
+          .slideshow-3d .slide-3d.active {
+            opacity: 1;
+            z-index: 2;
+            pointer-events: auto;
+            transform: scale(1.02) rotateY(-2deg) translateZ(0);
+            filter: brightness(0.85) contrast(1.13) saturate(1.13) blur(0px);
+            box-shadow: 0 0 120px 0 #ffd60044;
+            animation: heroSlidePop 1.2s cubic-bezier(.4,0,.2,1);
+          }
+          @keyframes heroSlidePop {
+            0% { opacity: 0; transform: scale(1.12) rotateY(12deg) translateZ(-80px);}
+            100% { opacity: 1; transform: scale(1.02) rotateY(-2deg) translateZ(0);}
+          }
+          /* Responsive font tweaks */
           @media (max-width: 900px) {
             .improved-hero .promo-title { font-size: 2.2rem !important; }
             .improved-hero .promo-subtitle { font-size: 1.3rem !important; }
@@ -274,126 +319,39 @@
             .improved-hero .badges-container { flex-direction: column; gap: 10px; }
           }
         </style>
-      </section>
-    </section>
-
-            <style>
-              .blue-download-btn {
-                display: inline-flex;
-                align-items: center;
-                gap: 10px;
-                background: linear-gradient(90deg, #1976d2 0%, #2196f3 100%);
-                color: #fff !important;
-                font-weight: 700;
-                font-size: 1.13rem;
-                padding: 15px 32px;
-                border-radius: 30px;
-                text-decoration: none;
-                box-shadow: 0 4px 18px #1976d244, 0 2px 8px #2196f344;
-                border: none;
-                transition: background 0.2s, color 0.2s, transform 0.18s;
-                outline: none;
-                cursor: pointer;
-                margin: 0 auto;
-              }
-              .blue-download-btn:hover {
-                background: linear-gradient(90deg, #2196f3 0%, #1976d2 100%);
-                color: #fff;
-                transform: scale(1.06) translateY(-2px);
-                box-shadow: 0 8px 32px #1976d244;
-                text-decoration: none;
-              }
-              .blue-download-btn svg {
-                fill: #fff;
-                margin-right: 6px;
-              }
-            </style>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3D Parallax Floating Elements -->
-      <div class="hero-float-3d hero-float1"><i class="fas fa-drafting-compass"></i></div>
-      <div class="hero-float-3d hero-float2"><i class="fas fa-leaf"></i></div>
-      <div class="hero-float-3d hero-float3"><i class="fas fa-gem"></i></div>
-      <div class="hero-float-3d hero-float4"><i class="fas fa-bolt"></i></div>
-      <!-- Added for construction and interior design -->
-      <div class="hero-float-3d hero-float5"><i class="fas fa-hard-hat"></i></div>
-      <div class="hero-float-3d hero-float6"><i class="fas fa-paint-roller"></i></div>
-      <div class="hero-float-3d hero-float7"><i class="fas fa-couch"></i></div>
-      <div class="hero-float-3d hero-float8"><i class="fas fa-tools"></i></div>
-
-      <style>
-        /* Smooth fade transition for slideshow images */
-        .slideshow-3d .slide-3d {
-          opacity: 0;
-          transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 1.2s cubic-bezier(.4,0,.2,1);
-          position: absolute;
-          width: 100vw;
-          height: 100vh;
-          object-fit: cover;
-          left: 0; top: 0;
-          z-index: 1;
-          pointer-events: none;
-          will-change: opacity, transform;
-        }
-        .slideshow-3d .slide-3d.active {
-          opacity: 1;
-          z-index: 2;
-          pointer-events: auto;
-          transform: scale(1.03) rotateY(-2deg) translateZ(0);
-          transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 1.2s cubic-bezier(.4,0,.2,1);
-          animation: heroSlidePop 1.1s cubic-bezier(.4,0,.2,1);
-        }
-        /* Optional: subtle zoom for video-like effect */
-        .slideshow-3d .slide-3d.active {
-          animation: bgZoom 6s linear forwards;
-        }
-        @keyframes bgZoom {
-          from { transform: scale(1.03) rotateY(-2deg) translateZ(0);}
-          to   { transform: scale(1.08) rotateY(-2deg) translateZ(0);}
-        }
-        /* Responsive font tweaks */
-        @media (max-width: 900px) {
-          .promo-title { font-size: 2.2rem !important; }
-          .promo-subtitle { font-size: 1.3rem !important; }
-          .hero-title-3d { font-size: 1.3rem !important; }
-        }
-        @media (max-width: 600px) {
-          .promo-title { font-size: 1.3rem !important; }
-          .promo-subtitle { font-size: 1rem !important; }
-          .hero-title-3d { font-size: 1rem !important; }
-          .hero-content-3d { padding: 1.2rem 0.2rem 1rem 0.2rem; }
-        }
-      </style>
-      <script>
-        // Improved 3D Slideshow logic for smooth BG transitions
-        (function() {
-          const slides = document.querySelectorAll('.slide-3d');
-          let idx = 0;
-          let prevIdx = 0;
-          function showSlide(i) {
-            slides.forEach((img, j) => {
-              img.classList.toggle('active', i === j);
-              if (i !== j) img.style.opacity = 0;
+        <script>
+          // Improved 3D Slideshow logic for smooth BG transitions and better performance
+          (function() {
+            const slides = document.querySelectorAll('.slide-3d');
+            let idx = 0;
+            let timer;
+            function showSlide(i) {
+              slides.forEach((img, j) => {
+                img.classList.toggle('active', i === j);
+                if (i !== j) img.style.opacity = 0;
+              });
+              slides[i].style.opacity = 1;
+            }
+            function nextSlide() {
+              idx = (idx + 1) % slides.length;
+              showSlide(idx);
+            }
+            // Preload images for instant transitions
+            slides.forEach(img => {
+              if (img.complete) return;
+              img.onload = () => {};
             });
-            slides[i].style.opacity = 1;
-          }
-          function nextSlide() {
-            prevIdx = idx;
-            idx = (idx + 1) % slides.length;
             showSlide(idx);
-          }
-          // Preload images for instant transitions
-          slides.forEach(img => {
-            if (img.complete) return;
-            img.onload = () => {};
-          });
-          showSlide(idx);
-          setInterval(nextSlide, 2200); // Faster, more video-like
-        })();
-      </script>
-    </section>
+            timer = setInterval(nextSlide, 4000); // 4s per slide for optimal viewing
+            // Pause on hover for accessibility
+            const bg = document.querySelector('.hero-bg-slideshow-3d');
+            if (bg) {
+              bg.addEventListener('mouseenter', () => clearInterval(timer));
+              bg.addEventListener('mouseleave', () => timer = setInterval(nextSlide, 4000));
+            }
+            })();
+        </script>
+       
 
       <!-- 3D Parallax Floating Elements -->
       <div class="hero-float-3d hero-float1"><i class="fas fa-drafting-compass"></i></div>
@@ -406,454 +364,464 @@
       <div class="hero-float-3d hero-float7"><i class="fas fa-couch"></i></div>
       <div class="hero-float-3d hero-float8"><i class="fas fa-tools"></i></div>
 
-      <style>
-        .hero-3d-slideshow {
-          font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
-          min-height: 100vh;
-          position: relative;
-          overflow: hidden;
-          
-        }
-        .hero-bg-slideshow-3d {
-          position: absolute;
-          inset: 0;
-          width:600vw;
-          height: 600vh;
-          z-index: 1;
-          overflow: hidden;
-          perspective: 1200px;
-        }
-        .slideshow-3d {
-          width: 100vw;
-          height: 100vh;
-          position: absolute;
-          top: 0; left: 0;
-          display: grid;
-          place-items: center;
-          z-index: 1;
-        }
-        .slide-3d {
-          position: absolute;
-          width: 100vw;
-          height: 100vh;
-          object-fit: cover;
-          opacity: 0;
-          transform: scale(1.07) rotateY(8deg) translateZ(-40px);
-          transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 1.2s cubic-bezier(.4,0,.2,1);
-          filter: brightness(0.62) contrast(1.13) saturate(1.08) blur(0.5px);
-          will-change: opacity, transform;
-          box-shadow: 0 0 80px 0 #ffd60033;
-        }
-        .slide-3d.active {
-          opacity: 1;
-          z-index: 2;
-          transform: scale(1.03) rotateY(-2deg) translateZ(0);
-          filter: brightness(0.82) contrast(1.15) saturate(1.13) blur(0px);
-          box-shadow: 0 0 120px 0 #ffd60044;
-          animation: heroSlidePop 1.1s cubic-bezier(.4,0,.2,1);
-        }
-        @keyframes heroSlidePop {
-          0% { opacity: 0; transform: scale(1.12) rotateY(12deg) translateZ(-80px);}
-          100% { opacity: 1; transform: scale(1.03) rotateY(-2deg) translateZ(0);}
-        }
-        .hero-bg-overlay-3d {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(120deg,rgba(24,24,24,0.92) 60%,rgba(255,214,0,0.13) 100%);
-          z-index: 3;
-          pointer-events: none;
-          mix-blend-mode: multiply;
-        }
-        .hero-content-3d {
-          position: relative;
-          z-index: 10;
-          max-width: 700px;
-          margin: 0 auto;
-          text-align: center;
-          color: #fff;
-          padding: 3.5rem 1.5rem 2.5rem 1.5rem;
-          border-radius: 22px;
-          background: rgba(24,24,24,0.72);
-          box-shadow: 0 8px 48px #ffd60022, 0 2px 12px #18181844;
-          backdrop-filter: blur(6px);
-          animation: heroContentFadeIn 1.2s cubic-bezier(.4,0,.2,1);
-        }
-        @keyframes heroContentFadeIn {
-          from { opacity: 0; transform: translateY(60px);}
-          to { opacity: 1; transform: translateY(0);}
-        }
-        .hero-badge-3d {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%);
-          color: #181818;
-          font-weight: 800;
-          font-size: 1.1rem;
-          padding: 8px 22px;
-          border-radius: 18px;
-          margin-bottom: 1.2rem;
-          box-shadow: 0 2px 12px #ffd60033;
-          letter-spacing: 1px;
-          text-shadow: 0 2px 8px #ffd60033;
-          animation: neonGlow 2.5s infinite alternate;
-        }
-        @keyframes neonGlow {
-          0% { box-shadow: 0 2px 12px #ffd60033, 0 0 0 #ff8c0033;}
-          100% { box-shadow: 0 4px 24px #ffd60066, 0 0 16px #ff8c0033;}
-        }
-        .gradient-text-3d {
-          background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          text-fill-color: transparent;
-          font-size: 2.8rem;
-          font-weight: 900;
-          margin-bottom: 0.7rem;
-          letter-spacing: 1px;
-          text-shadow: 0 2px 8px #ffd60033;
-          line-height: 1.1;
-        }
-        .hero-title-3d {
-          margin-bottom: 1.2rem;
-          text-shadow: 0 4px 18px #18181899;
-        }
-        .hero-desc-3d {
-          font-size: 1.25rem;
-          color: #ffd600;
-          margin-bottom: 2.2rem;
-          font-weight: 600;
-          text-shadow: 0 2px 8px #18181899;
-          letter-spacing: 0.5px;
-        }
-        .hero-cta-3d {
-          display: flex;
-          gap: 18px;
-          justify-content: center;
-          flex-wrap: wrap;
-          margin-bottom: 2.2rem;
-        }
-        .cta-btn-3d {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          padding: 15px 32px;
-          border-radius: 30px;
-          font-size: 1.13rem;
-          font-weight: 700;
-          text-decoration: none;
-          border: none;
-          cursor: pointer;
-          background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%);
-          color: #181818;
-          box-shadow: 0 2px 12px #ffd60033;
-          transition: background 0.2s, color 0.2s, transform 0.18s;
-          outline: none;
-        }
-        .cta-btn-3d.primary:hover {
-          background: linear-gradient(90deg,#ff8c00 0,#ffd600 100%);
-          color: #fff;
-          transform: scale(1.06) rotateZ(-2deg);
-          box-shadow: 0 4px 18px #ffd60044;
-        }
-        .cta-btn-3d.call {
-          background: #25d366;
-          color: #fff;
-        }
-        .cta-btn-3d.call:hover {
-          background: #18df2f;
-          color: #ffd600;
-          transform: scale(1.06) rotateZ(-2deg);
-        }
-        .cta-btn-3d.whatsapp {
-          background: #fff;
-          color: #25d366;
-          border: 2px solid #25d366;
-        }
-        .cta-btn-3d.whatsapp:hover {
-          background: #25d366;
-          color: #fff;
-          transform: scale(1.06) rotateZ(-2deg);
-        }
-        .hero-certifications-3d {
-          display: flex;
-          gap: 14px;
-          justify-content: center;
-          margin-bottom: 1.2rem;
-          flex-wrap: wrap;
-        }
-        .badge-3d {
-          background: rgba(255,255,255,0.13);
-          color: #ffd600;
-          padding: 8px 18px;
-          border-radius: 14px;
-          font-size: 1rem;
-          font-weight: 700;
-          display: flex;
-          align-items: center;
-          gap: 7px;
-          box-shadow: 0 1px 4px #ffd60022;
-          border: 1.5px solid #ffd60044;
-          transition: background 0.2s, color 0.2s;
-        }
-        .badge-3d:hover {
-          background: #ffd600;
-          color: #181818;
-        }
-        /* 3D Floating Icons */
-        .hero-float-3d {
-          position: absolute;
-          font-size: 2.5rem;
-          opacity: 0.19;
-          pointer-events: none;
-          z-index: 5;
-          filter: blur(0.5px) drop-shadow(0 2px 8px #ffd60033);
-          animation: float3d 7s infinite alternate cubic-bezier(.4,0,.2,1);
-        }
-        .hero-float1 { top: 12%; left: 7%; color: #ffd600; animation-delay: 0s;}
-        .hero-float2 { top: 18%; right: 10%; color: #25d366; animation-delay: 1.2s;}
-        .hero-float3 { bottom: 14%; left: 12%; color: #ff8c00; animation-delay: 2.1s;}
-        .hero-float4 { bottom: 10%; right: 8%; color: #ffd600; animation-delay: 3.3s;}
-        @keyframes float3d {
-          0% { transform: translateY(0) scale(1) rotateZ(0deg);}
-          100% { transform: translateY(-22px) scale(1.13) rotateZ(8deg);}
-        }
-        /* Responsive */
-        @media (max-width: 900px) {
-          .hero-content-3d { padding: 2.2rem 0.7rem 1.5rem 0.7rem; }
-          .gradient-text-3d { font-size: 2.1rem; }
-          .hero-title-3d { font-size: 2.1rem; }
-          .hero-cta-3d { flex-direction: column; gap: 12px; }
-        }
-        @media (max-width: 600px) {
-          .hero-content-3d { padding: 1.2rem 0.2rem 1rem 0.2rem; }
-          .gradient-text-3d { font-size: 1.3rem; }
-          .hero-title-3d { font-size: 1.3rem; }
-          .hero-float-3d { font-size: 1.3rem; }
-        }
-      </style>
-      <script>
-        // 3D Slideshow logic
-        (function() {
-          const slides = document.querySelectorAll('.slide-3d');
-          let idx = 0;
-          function showSlide(i) {
-            slides.forEach((img, j) => img.classList.toggle('active', i === j));
-          }
-          setInterval(() => {
-            idx = (idx + 1) % slides.length;
-            showSlide(idx);
-          }, 1400); // Fast lively switch
-        })();
-      </script>
-    </section>
+                 
+                                          <style>
+                                            .hero-3d-slideshow {
+                                              font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+                                              min-height: 100vh;
+                                              position: relative;
+                                              overflow: hidden;
+                                              
+                                            }
+                                            .hero-bg-slideshow-3d {
+                                              position: absolute;
+                                              inset: 0;
+                                              width:600vw;
+                                              height: 600vh;
+                                              z-index: 1;
+                                              overflow: hidden;
+                                              perspective: 1200px;
+                                            }
+                                            .slideshow-3d {
+                                              width: 100vw;
+                                              height: 100vh;
+                                              position: absolute;
+                                              top: 0; left: 0;
+                                              display: grid;
+                                              place-items: center;
+                                              z-index: 1;
+                                            }
+                                            .slide-3d {
+                                              position: absolute;
+                                              width: 100vw;
+                                              height: 100vh;
+                                              object-fit: cover;
+                                              opacity: 0;
+                                              transform: scale(1.07) rotateY(8deg) translateZ(-40px);
+                                              transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 1.2s cubic-bezier(.4,0,.2,1);
+                                              filter: brightness(0.62) contrast(1.13) saturate(1.08) blur(0.5px);
+                                              will-change: opacity, transform;
+                                              box-shadow: 0 0 80px 0 #ffd60033;
+                                            }
+                                            .slide-3d.active {
+                                              opacity: 1;
+                                              z-index: 2;
+                                              transform: scale(1.03) rotateY(-2deg) translateZ(0);
+                                              filter: brightness(0.82) contrast(1.15) saturate(1.13) blur(0px);
+                                              box-shadow: 0 0 120px 0 #ffd60044;
+                                              animation: heroSlidePop 1.1s cubic-bezier(.4,0,.2,1);
+                                            }
+                                            @keyframes heroSlidePop {
+                                              0% { opacity: 0; transform: scale(1.12) rotateY(12deg) translateZ(-80px);}
+                                              100% { opacity: 1; transform: scale(1.03) rotateY(-2deg) translateZ(0);}
+                                            }
+                                            .hero-bg-overlay-3d {
+                                              position: absolute;
+                                              inset: 0;
+                                              background: linear-gradient(120deg,rgba(24,24,24,0.92) 60%,rgba(255,214,0,0.13) 100%);
+                                              z-index: 3;
+                                              pointer-events: none;
+                                              mix-blend-mode: multiply;
+                                            }
+                                            .hero-content-3d {
+                                              position: relative;
+                                              z-index: 10;
+                                              max-width: 700px;
+                                              margin: 0 auto;
+                                              text-align: center;
+                                              color: #fff;
+                                              padding: 3.5rem 1.5rem 2.5rem 1.5rem;
+                                              border-radius: 22px;
+                                              background: rgba(24,24,24,0.72);
+                                              box-shadow: 0 8px 48px #ffd60022, 0 2px 12px #18181844;
+                                              backdrop-filter: blur(6px);
+                                              animation: heroContentFadeIn 1.2s cubic-bezier(.4,0,.2,1);
+                                            }
+                                            @keyframes heroContentFadeIn {
+                                              from { opacity: 0; transform: translateY(60px);}
+                                              to { opacity: 1; transform: translateY(0);}
+                                            }
+                                            .hero-badge-3d {
+                                              display: inline-flex;
+                                              align-items: center;
+                                              gap: 8px;
+                                              background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%);
+                                              color: #181818;
+                                              font-weight: 800;
+                                              font-size: 1.1rem;
+                                              padding: 8px 22px;
+                                              border-radius: 18px;
+                                              margin-bottom: 1.2rem;
+                                              box-shadow: 0 2px 12px #ffd60033;
+                                              letter-spacing: 1px;
+                                              text-shadow: 0 2px 8px #ffd60033;
+                                              animation: neonGlow 2.5s infinite alternate;
+                                            }
+                                            @keyframes neonGlow {
+                                              0% { box-shadow: 0 2px 12px #ffd60033, 0 0 0 #ff8c0033;}
+                                              100% { box-shadow: 0 4px 24px #ffd60066, 0 0 16px #ff8c0033;}
+                                            }
+                                            .gradient-text-3d {
+                                              background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%);
+                                              -webkit-background-clip: text;
+                                              -webkit-text-fill-color: transparent;
+                                              background-clip: text;
+                                              text-fill-color: transparent;
+                                              font-size: 2.8rem;
+                                              font-weight: 900;
+                                              margin-bottom: 0.7rem;
+                                              letter-spacing: 1px;
+                                              text-shadow: 0 2px 8px #ffd60033;
+                                              line-height: 1.1;
+                                            }
+                                            .hero-title-3d {
+                                              margin-bottom: 1.2rem;
+                                              text-shadow: 0 4px 18px #18181899;
+                                            }
+                                            .hero-desc-3d {
+                                              font-size: 1.25rem;
+                                              color: #ffd600;
+                                              margin-bottom: 2.2rem;
+                                              font-weight: 600;
+                                              text-shadow: 0 2px 8px #18181899;
+                                              letter-spacing: 0.5px;
+                                            }
+                                            .hero-cta-3d {
+                                              display: flex;
+                                              gap: 18px;
+                                              justify-content: center;
+                                              flex-wrap: wrap;
+                                              margin-bottom: 2.2rem;
+                                            }
+                                            .cta-btn-3d {
+                                              display: inline-flex;
+                                              align-items: center;
+                                              gap: 8px;
+                                              padding: 15px 32px;
+                                              border-radius: 30px;
+                                              font-size: 1.13rem;
+                                              font-weight: 700;
+                                              text-decoration: none;
+                                              border: none;
+                                              cursor: pointer;
+                                              background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%);
+                                              color: #181818;
+                                              box-shadow: 0 2px 12px #ffd60033;
+                                              transition: background 0.2s, color 0.2s, transform 0.18s;
+                                              outline: none;
+                                            }
+                                            .cta-btn-3d.primary:hover {
+                                              background: linear-gradient(90deg,#ff8c00 0,#ffd600 100%);
+                                              color: #fff;
+                                              transform: scale(1.06) rotateZ(-2deg);
+                                              box-shadow: 0 4px 18px #ffd60044;
+                                            }
+                                            .cta-btn-3d.call {
+                                              background: #25d366;
+                                              color: #fff;
+                                            }
+                                            .cta-btn-3d.call:hover {
+                                              background: #18df2f;
+                                              color: #ffd600;
+                                              transform: scale(1.06) rotateZ(-2deg);
+                                            }
+                                            .cta-btn-3d.whatsapp {
+                                              background: #fff;
+                                              color: #25d366;
+                                              border: 2px solid #25d366;
+                                            }
+                                            .cta-btn-3d.whatsapp:hover {
+                                              background: #25d366;
+                                              color: #fff;
+                                              transform: scale(1.06) rotateZ(-2deg);
+                                            }
+                                            .hero-certifications-3d {
+                                              display: flex;
+                                              gap: 14px;
+                                              justify-content: center;
+                                              margin-bottom: 1.2rem;
+                                              flex-wrap: wrap;
+                                            }
+                                            .badge-3d {
+                                              background: rgba(255,255,255,0.13);
+                                              color: #ffd600;
+                                              padding: 8px 18px;
+                                              border-radius: 14px;
+                                              font-size: 1rem;
+                                              font-weight: 700;
+                                              display: flex;
+                                              align-items: center;
+                                              gap: 7px;
+                                              box-shadow: 0 1px 4px #ffd60022;
+                                              border: 1.5px solid #ffd60044;
+                                              transition: background 0.2s, color 0.2s;
+                                            }
+                                            .badge-3d:hover {
+                                              background: #ffd600;
+                                              color: #181818;
+                                            }
+                                            /* 3D Floating Icons */
+                                            .hero-float-3d {
+                                              position: absolute;
+                                              font-size: 2.5rem;
+                                              opacity: 0.19;
+                                              pointer-events: none;
+                                              z-index: 5;
+                                              filter: blur(0.5px) drop-shadow(0 2px 8px #ffd60033);
+                                              animation: float3d 7s infinite alternate cubic-bezier(.4,0,.2,1);
+                                            }
+                                            .hero-float1 { top: 12%; left: 7%; color: #ffd600; animation-delay: 0s;}
+                                            .hero-float2 { top: 18%; right: 10%; color: #25d366; animation-delay: 1.2s;}
+                                            .hero-float3 { bottom: 14%; left: 12%; color: #ff8c00; animation-delay: 2.1s;}
+                                            .hero-float4 { bottom: 10%; right: 8%; color: #ffd600; animation-delay: 3.3s;}
+                                            @keyframes float3d {
+                                              0% { transform: translateY(0) scale(1) rotateZ(0deg);}
+                                              100% { transform: translateY(-22px) scale(1.13) rotateZ(8deg);}
+                                            }
+                                            /* Responsive */
+                                            @media (max-width: 900px) {
+                                              .hero-content-3d { padding: 2.2rem 0.7rem 1.5rem 0.7rem; }
+                                              .gradient-text-3d { font-size: 2.1rem; }
+                                              .hero-title-3d { font-size: 2.1rem; }
+                                              .hero-cta-3d { flex-direction: column; gap: 12px; }
+                                            }
+                                            @media (max-width: 600px) {
+                                              .hero-content-3d { padding: 1.2rem 0.2rem 1rem 0.2rem; }
+                                              .gradient-text-3d { font-size: 1.3rem; }
+                                              .hero-title-3d { font-size: 1.3rem; }
+                                              .hero-float-3d { font-size: 1.3rem; }
+                                            }
+              </style>
+                                         
+              <script>
+                                            // 3D Slideshow logic
+                                            (function() {
+                                              const slides = document.querySelectorAll('.slide-3d');
+                                              let idx = 0;
+                                              function showSlide(i) {
+                                                slides.forEach((img, j) => img.classList.toggle('active', i === j));
+                                              }
+                                              setInterval(() => {
+                                                idx = (idx + 1) % slides.length;
+                                                showSlide(idx);
+                                              }, 1400); // Fast lively switch
+                                            })();
+              </script>
 
-<!-- Hero Section Styles -->
-                        <style>
-                            .cta-button:hover {
-                                transform: translateY(-2px);
-                                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-                            }
 
-                            @media (max-width: 768px) {
-                                .promo-subtitle {
-                                    font-size: 2rem !important;
-                                }
+   </section>
 
-                                .cta-buttons-stack {
-                                    flex-direction: column;
-                                    align-items: stretch;
-                                }
+                                    <!-- Hero Section Styles -->
+                                                            <style>
+                                                                .cta-button:hover {
+                                                                    transform: translateY(-2px);
+                                                                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+                                                                }
 
-                                .hero-left {
-                                    text-align: center !important;
-                                }
+                                                                @media (max-width: 768px) {
+                                                                    .promo-subtitle {
+                                                                        font-size: 2rem !important;
+                                                                    }
 
-                                .badges-container {
-                                    justify-content: center;
-                                }
-                            }
-                        </style>
+                                                                    .cta-buttons-stack {
+                                                                        flex-direction: column;
+                                                                        align-items: stretch;
+                                                                    }
 
-<br>
+                                                                    .hero-left {
+                                                                        text-align: center !important;
+                                                                    }
+
+                                                                    .badges-container {
+                                                                        justify-content: center;
+                                                                    }
+                                                                }
+                                                            </style>
+
+
 <!-- Bridan Design Build Hero Section (Improved) -->
-<section id="bridan" style="padding: 4rem 2rem; background-color: #fff; box-sizing: border-box;">
-  <style>
-    #bridan .container {
-      display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between; align-items: flex-start;
-    }
-    #bridan .value-props {
-      flex: 1 1 340px; max-width: 520px;
-      background: linear-gradient(120deg,#fffde6 0,#f7f7f7 100%);
-      border-radius: 18px; box-shadow: 0 4px 24px #ffd60022;
-      padding: 2.5rem 2rem; margin-bottom: 2rem;
-    }
-    #bridan .value-props h1 {
-      font-size: 2.2rem; color: #222; font-weight: 800; margin-bottom: 1.2rem;
-      background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text; text-fill-color: transparent;
-    }
-    #bridan .value-props ul {
-      list-style: none; padding: 0; margin: 0 0 1.5rem 0;
-    }
-    #bridan .value-props li {
-      display: flex; align-items: flex-start; gap: 12px; margin-bottom: 1.1rem;
-      font-size: 1.08rem; color: #444; font-weight: 600;
-    }
-    #bridan .value-props li i {
-      font-size: 1.5rem; color: #ffd600; background: #fffbe6; border-radius: 50%; padding: 7px;
-      box-shadow: 0 2px 8px #ffd60033;
-    }
-    #bridan .features-list {
-      display: grid; grid-template-columns: repeat(2,1fr); gap: 1.1rem 0.7rem; margin-bottom: 1.5rem;
-    }
-    #bridan .feature-item {
-      display: flex; align-items: center; gap: 10px; background: #f9f9f9; border-radius: 10px; padding: 0.7rem 1rem;
-      font-size: 1rem; color: #333; font-weight: 500; box-shadow: 0 2px 8px #ffd60011;
-    }
-    #bridan .feature-item i {
-      font-size: 1.3rem; color: #ff8c00;
-    }
-    #bridan .btn {
-      display: inline-flex; align-items: center; padding: 0.85rem 1.7rem; border-radius: 8px;
-      text-decoration: none; font-weight: bold; font-size: 1.08rem; transition: background 0.3s;
-      background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%); color: #fff; box-shadow: 0 2px 8px #ffd60033;
-      margin-top: 1.2rem;
-    }
-    #bridan .btn:hover {
-      background: linear-gradient(90deg,#ff8c00 0,#ffd600 100%); color: #fff; transform: translateY(-2px) scale(1.03);
-      box-shadow: 0 6px 18px #ffd60044;
-    }
-    #bridan .overview {
-      flex: 1 1 340px; max-width: 600px; background: #fff;
-      border-radius: 18px; box-shadow: 0 4px 24px #ffd60011;
-      padding: 2.5rem 2rem;
-    }
-    #bridan .overview h1 {
-      font-size: 2rem; color: #222; font-weight: 700; margin-bottom: 1rem;
-      text-decoration: underline; text-underline-offset: 5px;
-    }
-    #bridan .overview p {
-      color: #555; font-size: 1.08rem; line-height: 1.7; margin-bottom: 1.1rem;
-    }
-    #bridan .tags {
-      display: flex; flex-wrap: wrap; gap: 10px; margin: 1rem 0 1.5rem 0;
-    }
-    #bridan .tag {
-      background: #fffbe6; color: #ff8c00; padding: 0.5rem 1.1rem; border-radius: 20px; font-size: 1rem;
-      font-weight: 600; display: flex; align-items: center; gap: 7px;
-      box-shadow: 0 1px 4px #ffd60022;
-    }
-    #bridan .actions {
-      display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 1.5rem;
-    }
-    #bridan .actions a {
-      padding: 0.7rem 1.3rem; border-radius: 7px; text-decoration: none; font-weight: 600; font-size: 1.05rem;
-      background: #25d366; color: #fff; box-shadow: 0 2px 8px #25d36633; transition: background 0.2s;
-      display: flex; align-items: center; gap: 8px;
-    }
-    #bridan .actions a.contact { background: #ffd600; color: #222; }
-    #bridan .actions a.work { background: #ff8c00; color: #fff; }
-    #bridan .actions a.call { background: #fff; color: #18df2f; border: 2px solid #18df2f; }
-    #bridan .actions a.call:hover { background: #18df2f; color: #fff; }
-    #bridan .highlights {
-      display: flex; flex-wrap: wrap; gap: 12px; margin-top: 2rem;
-    }
-    #bridan .highlight {
-      display: inline-flex; align-items: center; padding: 0.5rem 1.2rem; border-radius: 20px; font-size: 1rem;
-      font-weight: 600; background: #e8f5e9; color: #388e3c; gap: 8px;
-      box-shadow: 0 1px 4px #ffd60022;
-    }
-    #bridan .highlight.orange { background: #fff3e0; color: #f57c00; }
-    #bridan .highlight.blue { background: #e3f2fd; color: #1976d2; }
-    #bridan .highlight.gold { background: #fffbe6; color: #ffd600; }
-    #bridan .highlight i { font-size: 1.2rem; }
-    #bridan .service-grid {
-      display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 1.5rem; margin: 2.5rem 0 0 0;
-    }
-    #bridan .service-card {
-      background: #fff; border-radius: 12px; box-shadow: 0 2px 10px #ffd60011;
-      padding: 1.5rem 1.2rem; text-align: center; transition: transform 0.2s, box-shadow 0.2s;
-    }
-    #bridan .service-card:hover {
-      transform: translateY(-6px) scale(1.03); box-shadow: 0 8px 24px #ffd60033;
-    }
-    #bridan .service-card .icon {
-      width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center;
-      margin: 0 auto 1rem; font-size: 2rem; background: #fffbe6; color: #ffd600; box-shadow: 0 2px 8px #ffd60022;
-    }
-    #bridan .service-card h3 { margin-bottom: 0.7rem; color: #222; font-size: 1.15rem; font-weight: 700; }
-    #bridan .service-card p { color: #666; font-size: 1rem; line-height: 1.5; }
-    #bridan .cta { text-align: center; margin-top: 2.5rem; }
-    #bridan .cta h2 { font-size: 2rem; color: #333; margin-bottom: 1.2rem; font-weight: 800; }
-    #bridan .cta .cta-actions {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;
-    }
-    #bridan .cta .cta-actions a {
-      padding: 0.8rem 1.5rem; border-radius: 7px; text-decoration: none; font-weight: bold; font-size: 1.08rem;
-      background: #25D366; color: #fff; box-shadow: 0 2px 8px #25d36633; transition: background 0.2s;
-      display: flex; align-items: center; gap: 8px;
-    }
-    #bridan .cta .cta-actions a.call { background: #ffd600; color: #222; }
-    #bridan .cta .cta-actions a.portfolio { background: #ff8c00; color: #fff; }
-    #bridan .scroll { margin-top: 3rem; text-align: center; cursor: pointer; }
-    #bridan .scroll span { font-size: 1rem; color: #999; }
-    #bridan .scroll i { font-size: 1.5rem; color: goldenrod; display: block; margin-top: 0.5rem; animation: bounce 1.5s infinite; }
-    @keyframes bounce { 0%,100%{transform: translateY(0);}50%{transform: translateY(10px);} }
-    @media (max-width: 900px) { #bridan .container { flex-direction: column; align-items: center; } }
-    @media (max-width: 600px) { #bridan .value-props, #bridan .overview { padding: 1.2rem 0.5rem; } }
-  </style>
-  <div class="container">
-    <!-- Left Column: Value Propositions -->
-    <div class="value-props">
-      <h1>Are you looking to save on construction costs?</h1>
-      <ul>
-        <li><i class="fas fa-user-tie"></i> Registered BORAQS Architects & NCA Contractors</li>
-        <li><i class="fas fa-certificate"></i> ETIMS & VAT Compliant, Fully Licensed</li>
-        <li><i class="fas fa-clock"></i> Guaranteed On-Time & On-Budget Delivery</li>
-        <li><i class="fas fa-handshake"></i> Transparent Process & Dedicated Project Manager</li>
-      </ul>
-      <div class="features-list">
-        <div class="feature-item"><i class="fas fa-leaf"></i> Sustainable, Eco-Friendly Designs</div>
-        <div class="feature-item"><i class="fas fa-gem"></i> Luxury & Modern Finishes</div>
-        <div class="feature-item"><i class="fas fa-bolt"></i> Smart Home Integration</div>
-        <div class="feature-item"><i class="fas fa-users"></i> Client-First Approach</div>
+        <section id="bridan" style="padding: 4rem 2rem; background-color: #fff; box-sizing: border-box;">
+                      
+                      <style>
+                                        #bridan .container {
+                                          display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between; align-items: flex-start;
+                                        }
+                                        #bridan .value-props {
+                                          flex: 1 1 340px; max-width: 520px;
+                                          background: linear-gradient(120deg,#fffde6 0,#f7f7f7 100%);
+                                          border-radius: 18px; box-shadow: 0 4px 24px #ffd60022;
+                                          padding: 2.5rem 2rem; margin-bottom: 2rem;
+                                        }
+                                        #bridan .value-props h1 {
+                                          font-size: 2.2rem; color: #222; font-weight: 800; margin-bottom: 1.2rem;
+                                          background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%);
+                                          -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                                          background-clip: text; text-fill-color: transparent;
+                                        }
+                                        #bridan .value-props ul {
+                                          list-style: none; padding: 0; margin: 0 0 1.5rem 0;
+                                        }
+                                        #bridan .value-props li {
+                                          display: flex; align-items: flex-start; gap: 12px; margin-bottom: 1.1rem;
+                                          font-size: 1.08rem; color: #444; font-weight: 600;
+                                        }
+                                        #bridan .value-props li i {
+                                          font-size: 1.5rem; color: #ffd600; background: #fffbe6; border-radius: 50%; padding: 7px;
+                                          box-shadow: 0 2px 8px #ffd60033;
+                                        }
+                                        #bridan .features-list {
+                                          display: grid; grid-template-columns: repeat(2,1fr); gap: 1.1rem 0.7rem; margin-bottom: 1.5rem;
+                                        }
+                                        #bridan .feature-item {
+                                          display: flex; align-items: center; gap: 10px; background: #f9f9f9; border-radius: 10px; padding: 0.7rem 1rem;
+                                          font-size: 1rem; color: #333; font-weight: 500; box-shadow: 0 2px 8px #ffd60011;
+                                        }
+                                        #bridan .feature-item i {
+                                          font-size: 1.3rem; color: #ff8c00;
+                                        }
+                                        #bridan .btn {
+                                          display: inline-flex; align-items: center; padding: 0.85rem 1.7rem; border-radius: 8px;
+                                          text-decoration: none; font-weight: bold; font-size: 1.08rem; transition: background 0.3s;
+                                          background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%); color: #fff; box-shadow: 0 2px 8px #ffd60033;
+                                          margin-top: 1.2rem;
+                                        }
+                                        #bridan .btn:hover {
+                                          background: linear-gradient(90deg,#ff8c00 0,#ffd600 100%); color: #fff; transform: translateY(-2px) scale(1.03);
+                                          box-shadow: 0 6px 18px #ffd60044;
+                                        }
+                                        #bridan .overview {
+                                          flex: 1 1 340px; max-width: 600px; background: #fff;
+                                          border-radius: 18px; box-shadow: 0 4px 24px #ffd60011;
+                                          padding: 2.5rem 2rem;
+                                        }
+                                        #bridan .overview h1 {
+                                          font-size: 2rem; color: #222; font-weight: 700; margin-bottom: 1rem;
+                                          text-decoration: underline; text-underline-offset: 5px;
+                                        }
+                                        #bridan .overview p {
+                                          color: #555; font-size: 1.08rem; line-height: 1.7; margin-bottom: 1.1rem;
+                                        }
+                                        #bridan .tags {
+                                          display: flex; flex-wrap: wrap; gap: 10px; margin: 1rem 0 1.5rem 0;
+                                        }
+                                        #bridan .tag {
+                                          background: #fffbe6; color: #ff8c00; padding: 0.5rem 1.1rem; border-radius: 20px; font-size: 1rem;
+                                          font-weight: 600; display: flex; align-items: center; gap: 7px;
+                                          box-shadow: 0 1px 4px #ffd60022;
+                                        }
+                                        #bridan .actions {
+                                          display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 1.5rem;
+                                        }
+                                        #bridan .actions a {
+                                          padding: 0.7rem 1.3rem; border-radius: 7px; text-decoration: none; font-weight: 600; font-size: 1.05rem;
+                                          background: #25d366; color: #fff; box-shadow: 0 2px 8px #25d36633; transition: background 0.2s;
+                                          display: flex; align-items: center; gap: 8px;
+                                        }
+                                        #bridan .actions a.contact { background: #ffd600; color: #222; }
+                                        #bridan .actions a.work { background: #ff8c00; color: #fff; }
+                                        #bridan .actions a.call { background: #fff; color: #18df2f; border: 2px solid #18df2f; }
+                                        #bridan .actions a.call:hover { background: #18df2f; color: #fff; }
+                                        #bridan .highlights {
+                                          display: flex; flex-wrap: wrap; gap: 12px; margin-top: 2rem;
+                                        }
+                                        #bridan .highlight {
+                                          display: inline-flex; align-items: center; padding: 0.5rem 1.2rem; border-radius: 20px; font-size: 1rem;
+                                          font-weight: 600; background: #e8f5e9; color: #388e3c; gap: 8px;
+                                          box-shadow: 0 1px 4px #ffd60022;
+                                        }
+                                        #bridan .highlight.orange { background: #fff3e0; color: #f57c00; }
+                                        #bridan .highlight.blue { background: #e3f2fd; color: #1976d2; }
+                                        #bridan .highlight.gold { background: #fffbe6; color: #ffd600; }
+                                        #bridan .highlight i { font-size: 1.2rem; }
+                                        #bridan .service-grid {
+                                          display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 1.5rem; margin: 2.5rem 0 0 0;
+                                        }
+                                        #bridan .service-card {
+                                          background: #fff; border-radius: 12px; box-shadow: 0 2px 10px #ffd60011;
+                                          padding: 1.5rem 1.2rem; text-align: center; transition: transform 0.2s, box-shadow 0.2s;
+                                        }
+                                        #bridan .service-card:hover {
+                                          transform: translateY(-6px) scale(1.03); box-shadow: 0 8px 24px #ffd60033;
+                                        }
+                                        #bridan .service-card .icon {
+                                          width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center;
+                                          margin: 0 auto 1rem; font-size: 2rem; background: #fffbe6; color: #ffd600; box-shadow: 0 2px 8px #ffd60022;
+                                        }
+                                        #bridan .service-card h3 { margin-bottom: 0.7rem; color: #222; font-size: 1.15rem; font-weight: 700; }
+                                        #bridan .service-card p { color: #666; font-size: 1rem; line-height: 1.5; }
+                                        #bridan .cta { text-align: center; margin-top: 2.5rem; }
+                                        #bridan .cta h2 { font-size: 2rem; color: #333; margin-bottom: 1.2rem; font-weight: 800; }
+                                        #bridan .cta .cta-actions {
+                                          display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;
+                                        }
+                                        #bridan .cta .cta-actions a {
+                                          padding: 0.8rem 1.5rem; border-radius: 7px; text-decoration: none; font-weight: bold; font-size: 1.08rem;
+                                          background: #25D366; color: #fff; box-shadow: 0 2px 8px #25d36633; transition: background 0.2s;
+                                          display: flex; align-items: center; gap: 8px;
+                                        }
+                                        #bridan .cta .cta-actions a.call { background: #ffd600; color: #222; }
+                                        #bridan .cta .cta-actions a.portfolio { background: #ff8c00; color: #fff; }
+                                        #bridan .scroll { margin-top: 3rem; text-align: center; cursor: pointer; }
+                                        #bridan .scroll span { font-size: 1rem; color: #999; }
+                                        #bridan .scroll i { font-size: 1.5rem; color: goldenrod; display: block; margin-top: 0.5rem; animation: bounce 1.5s infinite; }
+                                        @keyframes bounce { 0%,100%{transform: translateY(0);}50%{transform: translateY(10px);} }
+                                        @media (max-width: 900px) { #bridan .container { flex-direction: column; align-items: center; } }
+                                        @media (max-width: 600px) { #bridan .value-props, #bridan .overview { padding: 1.2rem 0.5rem; } }
+                                      
+                      </style>
+
+
+    <div class="container">
+      <!-- Left Column: Value Propositions -->
+      <div class="value-props">
+        <h1>Are you looking to save on construction costs?</h1>
+        <ul>
+          <li><i class="fas fa-user-tie"></i> Registered BORAQS Architects & NCA Contractors</li>
+          <li><i class="fas fa-certificate"></i> ETIMS & VAT Compliant, Fully Licensed</li>
+          <li><i class="fas fa-clock"></i> Guaranteed On-Time & On-Budget Delivery</li>
+          <li><i class="fas fa-handshake"></i> Transparent Process & Dedicated Project Manager</li>
+        </ul>
+        <div class="features-list">
+          <div class="feature-item"><i class="fas fa-leaf"></i> Sustainable, Eco-Friendly Designs</div>
+          <div class="feature-item"><i class="fas fa-gem"></i> Luxury & Modern Finishes</div>
+          <div class="feature-item"><i class="fas fa-bolt"></i> Smart Home Integration</div>
+          <div class="feature-item"><i class="fas fa-users"></i> Client-First Approach</div>
+        </div>
+        <a href="#portfolio" class="btn"><i class="fas fa-images"></i> View Portfolio</a>
       </div>
-      <a href="#portfolio" class="btn"><i class="fas fa-images"></i> View Portfolio</a>
+      <!-- Right Column: Overview & Actions -->
+      <div class="overview">
+        <h1><u>Transform Your Space into Beauty & Art</u></h1>
+        <p>
+          Bridan Design Build Limited is Nairobi’s trusted house design & build company. We don’t just design — we craft living art, blending architecture, interiors, and construction for seamless, stunning results.
+        </p>
+        <div class="tags">
+          <span class="tag"><i class="fas fa-drafting-compass"></i> Architectural Design</span>
+          <span class="tag"><i class="fas fa-paint-brush"></i> Interior Design</span>
+          <span class="tag"><i class="fas fa-hard-hat"></i> Construction</span>
+          <span class="tag"><i class="fas fa-tasks"></i> Project Management</span>
+          <span class="tag"><i class="fas fa-solar-panel"></i> Green Building</span>
+        </div>
+        <div class="actions">
+          <a href="#portfolio" class="work"><i class="fas fa-images"></i> Our Work</a>
+          <a href="#contact" class="contact"><i class="fas fa-envelope"></i> Contact Us</a>
+          <a href="tel:+254741400368" class="call" onclick="handlePhoneClick(event)">
+            <i class="fas fa-phone-alt"></i> Call: +254 741 400 368
+          </a>
+        </div>
+        <div class="highlights">
+          <span class="highlight"><i class="fas fa-comments"></i> Free Consultation</span>
+          <span class="highlight orange"><i class="fas fa-clock"></i> On-Time Delivery</span>
+          <span class="highlight blue"><i class="fas fa-handshake"></i> Quality Guaranteed</span>
+          <span class="highlight gold"><i class="fas fa-award"></i> Award-Winning Team</span>
+        </div>
+        <p style="margin-top:1.5rem; font-weight:bold; color:#444;">
+          We area design build <strong style="color:#007BFF;">Company servises the whole of Nairobi</strong>
+        </p>
+      </div>
     </div>
-    <!-- Right Column: Overview & Actions -->
-    <div class="overview">
-      <h1><u>Transform Your Space into Beauty & Art</u></h1>
-      <p>
-        Bridan Design Build Limited is Nairobi’s trusted house design & build company. We don’t just design — we craft living art, blending architecture, interiors, and construction for seamless, stunning results.
-      </p>
-      <div class="tags">
-        <span class="tag"><i class="fas fa-drafting-compass"></i> Architectural Design</span>
-        <span class="tag"><i class="fas fa-paint-brush"></i> Interior Design</span>
-        <span class="tag"><i class="fas fa-hard-hat"></i> Construction</span>
-        <span class="tag"><i class="fas fa-tasks"></i> Project Management</span>
-        <span class="tag"><i class="fas fa-solar-panel"></i> Green Building</span>
-      </div>
-      <div class="actions">
-        <a href="#portfolio" class="work"><i class="fas fa-images"></i> Our Work</a>
-        <a href="#contact" class="contact"><i class="fas fa-envelope"></i> Contact Us</a>
-        <a href="tel:+254741400368" class="call" onclick="handlePhoneClick(event)">
-          <i class="fas fa-phone-alt"></i> Call: +254 741 400 368
-        </a>
-      </div>
-      <div class="highlights">
-        <span class="highlight"><i class="fas fa-comments"></i> Free Consultation</span>
-        <span class="highlight orange"><i class="fas fa-clock"></i> On-Time Delivery</span>
-        <span class="highlight blue"><i class="fas fa-handshake"></i> Quality Guaranteed</span>
-        <span class="highlight gold"><i class="fas fa-award"></i> Award-Winning Team</span>
-      </div>
-      <p style="margin-top:1.5rem; font-weight:bold; color:#444;">
-        We area design build <strong style="color:#007BFF;">Company servises the whole of Nairobi</strong>
-      </p>
-    </div>
-  </div>
+
+
   <!-- Services Grid -->
     
   <div>
@@ -901,19 +869,19 @@
       <i class="fas fa-chevron-down"></i>
     </div>
   </div>
-  <script>
-    function handlePhoneClick(event) {
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        return true;
-      }
-      event.preventDefault();
-      const confirmCall = confirm("This number is +254 741 400 368. Click OK to copy it to your clipboard.");
-      if (confirmCall) {
-        navigator.clipboard.writeText("+254741400368");
-        alert("Number copied to clipboard!");
-      }
-    }
-  </script>
+              <script>
+                function handlePhoneClick(event) {
+                  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    return true;
+                  }
+                  event.preventDefault();
+                  const confirmCall = confirm("This number is +254 741 400 368. Click OK to copy it to your clipboard.");
+                  if (confirmCall) {
+                    navigator.clipboard.writeText("+254741400368");
+                    alert("Number copied to clipboard!");
+                  }
+                }
+              </script>
 </section>
 
 
