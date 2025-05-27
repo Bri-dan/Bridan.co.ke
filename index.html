@@ -3,18 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#25D366"> <!-- Sets the browser's theme color on supported devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#25D366">
+  <meta name="description" content="Bridan Design Build - Leading construction, architecture, and interior design firm in Kenya. Innovative, responsive, and fast.">
+  <meta name="keywords" content="Bridan, Design, Build, Construction, Architecture, Interior Design, Kenya, Responsive, Fast">
+  <meta name="author" content="Bridan Design Build">
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000">
   <title>Bridan Design Build</title>
-  
-  <!-- External Stylesheets -->
-  <link rel="stylesheet" href="style.css">
-  
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Preconnect for faster font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/bridanlogo.PNG" type="image/png">
+
+  <!-- Manifest for PWA support (optional) -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Performance: DNS Prefetch for CDN assets -->
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+  <!-- SEO: Open Graph tags (optional for social sharing) -->
+  <meta property="og:title" content="Bridan Design Build">
+  <meta property="og:description" content="Kenya's trusted design-build company for architecture, interiors, and construction.">
+  <meta property="og:image" content="img/bridanlogo.PNG">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bridan.co.ke/">
+
+  <!-- Responsive and fast loading best practices -->
 </head>
 
     
@@ -31,10 +57,23 @@
 
 
               <nav>
-                  <div class="logo" >
-                    <img src="img/bridanlogo.PNG" alt="Bridan Design Build Logo" style="width: 85px; height: auto; padding: 2px;"> 
-                    
-                  </div>
+                  <a href="#home" class="logo" style="display:inline-block; cursor:pointer;">
+                    <img src="img/bridanlogo.PNG" alt="Bridan Design Build Logo" style="width: 85px; height: auto; padding: 2px;">
+                  </a>
+                  <script>
+                    // Smooth scroll to top when logo is clicked
+                    document.querySelectorAll('.logo').forEach(function(logo) {
+                      logo.addEventListener('click', function(e) {
+                        // If already at #home, scroll to top smoothly
+                        if (window.location.hash === '#home' || window.scrollY > 0) {
+                          e.preventDefault();
+                          document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
+                          // Optionally update hash
+                          history.replaceState(null, null, '#home');
+                        }
+                      });
+                    });
+                  </script>
 
                   <ul class="nav-links">
                     <li><a href="#home" class="active">Home</a></li>
@@ -81,6 +120,19 @@
         <!-- 3D Animated Slideshow Background -->
         <div class="hero-bg-slideshow-3d">
           <div class="slideshow-3d" id="bgSlideshow"></div>
+
+
+          <img src="img/pintrest.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/pinbath.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/pin1.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/pin2.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/pin3.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/lr.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/pin4.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/pin5.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/pin6.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/pin7.jpg" alt="Logo" class="slide-3d" />
+          <img src="img/pin8.jpg" alt="Logo" class="slide-3d" />
           <img src="img/home.jpg" alt="Modern Home" class="slide-3d active" />
           <img src="img/stair.jpg" alt="Staircase" class="slide-3d" />
           <img src="img/build.png" alt="Building" class="slide-3d" />
@@ -359,16 +411,75 @@
         </script>
        
 
-      <!-- 3D Parallax Floating Elements -->
-      <div class="hero-float-3d hero-float1"><i class="fas fa-drafting-compass"></i></div>
-      <div class="hero-float-3d hero-float2"><i class="fas fa-leaf"></i></div>
-      <div class="hero-float-3d hero-float3"><i class="fas fa-gem"></i></div>
-      <div class="hero-float-3d hero-float4"><i class="fas fa-bolt"></i></div>
-      <!-- Added for construction and interior design -->
-      <div class="hero-float-3d hero-float5"><i class="fas fa-hard-hat"></i></div>
-      <div class="hero-float-3d hero-float6"><i class="fas fa-paint-roller"></i></div>
-      <div class="hero-float-3d hero-float7"><i class="fas fa-couch"></i></div>
-      <div class="hero-float-3d hero-float8"><i class="fas fa-tools"></i></div>
+      <!-- 3D Parallax Floating Elements (Enhanced & More Visible) -->
+      <div class="hero-float-3d hero-float1" style="font-size:4.5rem; color:#ff9100; opacity:20.32; left:4%; top:10%;"><i class="fas fa-drafting-compass"></i></div>
+      <div class="hero-float-3d hero-float2" style="font-size:3.2rem; color:#25d366; opacity:2.28; right:7%; top:18%;"><i class="fas fa-leaf"></i></div>
+      <div class="hero-float-3d hero-float3" style="font-size:4.7rem; color:#a1067f; opacity:4.10; left:10%; bottom:12%;"><i class="fas fa-gem"></i></div>
+      <div class="hero-float-3d hero-float4" style="font-size:4.3rem; color:#e0030377; opacity:10.26; right:8%; bottom:10%;"><i class="fas fa-bolt"></i></div>
+      <div class="hero-float-3d hero-float5" style="font-size:3.8rem; color:#1976d2; opacity:2.53; left:20%; top:30%;"><i class="fas fa-building"></i></div>
+      <div class="hero-float-3d hero-float6" style="font-size:4.1rem; color:#ff0000; opacity:15.25; right:18%; top:12%;"><i class="fas fa-hard-hat"></i></div>
+      <div class="hero-float-3d hero-float7" style="font-size:3.4rem; color:#18df2f; opacity:10.22; left:12%; bottom:24%;"><i class="fas fa-tree"></i></div>
+      <div class="hero-float-3d hero-float8" style="font-size:3.6rem; color:#ff4081; opacity:4.21; right:14%; bottom:22%;"><i class="fas fa-paint-roller"></i></div>
+      <div class="hero-float-3d hero-float9" style="font-size:3.2rem; color:#00bcd4; opacity:0.24; left:35%; top:8%;"><i class="fas fa-water"></i></div>
+      <div class="hero-float-3d hero-float10" style="font-size:3.3rem; color:#ffd600; opacity:0.20; right:28%; bottom:18%;"><i class="fas fa-award"></i></div>
+      <div class="hero-float-3d hero-float11" style="font-size:3.5rem; color:#b09302; opacity:0.22; left:50%; top:18%;"><i class="fas fa-star"></i></div>
+      <div class="hero-float-3d hero-float12" style="font-size:3.1rem; color:#ff8c00; opacity:0.19; right:40%; bottom:8%;"><i class="fas fa-cubes"></i></div>
+      <div class="hero-float-3d hero-float13" style="font-size:3.7rem; color:#ffd600; opacity:0.23; left:60%; top:35%;"><i class="fas fa-solar-panel"></i></div>
+      <div class="hero-float-3d hero-float14" style="font-size:3.2rem; color:#25d366; opacity:0.21; right:55%; bottom:25%;"><i class="fas fa-users"></i></div>
+      <div class="hero-float-3d hero-float15" style="font-size:3.4rem; color:#ff8c00; opacity:0.20; left:70%; top:12%;"><i class="fas fa-sync-alt"></i></div>
+      <div class="hero-float-3d hero-float16" style="font-size:3.3rem; color:#ffd600; opacity:0.29; right:65%; bottom:15%;"><i class="fas fa-lightbulb"></i></div>
+      <div class="hero-float-3d hero-float17" style="font-size:3.6rem; color:#18df2f; opacity:0.22; left:80%; top:28%;"><i class="fas fa-certificate"></i></div>
+      <div class="hero-float-3d hero-float18" style="font-size:3.2rem; color:#1976d2; opacity:1.21; right:75%; bottom:12%;"><i class="fas fa-ruler-combined"></i></div>
+      <div class="hero-float-3d hero-float19" style="font-size:3.5rem; color:#ff4081; opacity:10.20; left:85%; top:8%;"><i class="fas fa-couch"></i></div>
+      <div class="hero-float-3d hero-float20" style="font-size:5.3rem; color:#4f00e0; opacity:10.18; right:85%; bottom:5%;"><i class="fas fa-shield-alt"></i></div>
+      <!-- Add a subtle 3D glow effect -->
+      <style>
+        .hero-float-3d {
+          position: absolute;
+          z-index: 4;
+          pointer-events: none;
+          filter: drop-shadow(0 4px 18px #ffd60044) blur(0.5px);
+          animation: float3d 7s infinite alternate cubic-bezier(.4,0,.2,1);
+          transition: opacity 0.3s, filter 0.3s;
+          /* Extra 3D pop */
+          text-shadow: 0 2px 18px #ffd60033, 0 1px 8px #18181822;
+        }
+        /* Unique delays for each element for lively effect */
+        .hero-float1  { animation-delay: 0s; }
+        .hero-float2  { animation-delay: 0.7s; }
+        .hero-float3  { animation-delay: 1.4s; }
+        .hero-float4  { animation-delay: 2.1s; }
+        .hero-float5  { animation-delay: 2.8s; }
+        .hero-float6  { animation-delay: 3.5s; }
+        .hero-float7  { animation-delay: 4.2s; }
+        .hero-float8  { animation-delay: 4.9s; }
+        .hero-float9  { animation-delay: 5.6s; }
+        .hero-float10 { animation-delay: 6.3s; }
+        .hero-float11 { animation-delay: 3.2s; }
+        .hero-float12 { animation-delay: 1.8s; }
+        .hero-float13 { animation-delay: 2.4s; }
+        .hero-float14 { animation-delay: 5.1s; }
+        .hero-float15 { animation-delay: 3.7s; }
+        .hero-float16 { animation-delay: 4.4s; }
+        .hero-float17 { animation-delay: 2.2s; }
+        .hero-float18 { animation-delay: 1.1s; }
+        .hero-float19 { animation-delay: 5.9s; }
+        .hero-float20 { animation-delay: 6.7s; }
+        @keyframes float3d {
+          0%   { transform: translateY(0) scale(1) rotateZ(0deg);}
+          100% { transform: translateY(-28px) scale(1.13) rotateZ(8deg);}
+        }
+        /* Responsive: reduce clutter on small screens */
+        @media (max-width: 900px) {
+          .hero-float-3d { font-size: 2.1rem !important; }
+          .hero-float11, .hero-float12, .hero-float13, .hero-float14, .hero-float15, .hero-float16, .hero-float17, .hero-float18, .hero-float19, .hero-float20 { display: none !important; }
+        }
+        @media (max-width: 600px) {
+          .hero-float-3d { font-size: 1.2rem !important; }
+          .hero-float6, .hero-float7, .hero-float8, .hero-float9, .hero-float10 { display: none !important; }
+        }
+      </style>
+
 
                  
                                           <style>
@@ -776,125 +887,260 @@
                                       
                       </style>
 
+                      <div class="container" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; align-items: stretch;">
+                        <!-- Left Column: Value Propositions -->
+                        <div class="overview" style="background: url('img/pin4.jpg') center center/cover no-repeat; min-height: 420px; border-radius: 18px; position: relative; flex: 1 1 340px; max-width: 520px; box-shadow: 0 4px 24px #ffd60022;">
+                          <!-- More transparent overlay for better bg visibility -->
+                          <div style="
+                            position: absolute;
+                            inset: 0;
+                            background: linear-gradient(120deg,rgba(255,214,0,0.13) 60%,rgba(34,139,34,0.09) 100%);
+                            pointer-events: none;
+                            z-index: 0;
+                            border-radius: 18px;
+                            box-shadow: 0 0 40px 5px #ffd60033;
+                            opacity: 0.92;
+                          ">
+                          </div>
+                            <div style="position:relative; z-index:1; padding: 2rem 1.2rem; text-align:center;">
+            
 
-    <div class="container">
-      <!-- Left Column: Value Propositions -->
-      <div class="value-props">
-        <h1>Are you looking to save on construction costs?</h1>
-        <ul>
-          <li><i class="fas fa-user-tie"></i> Registered BORAQS Architects & NCA Contractors</li>
-          <li><i class="fas fa-certificate"></i> ETIMS & VAT Compliant, Fully Licensed</li>
-          <li><i class="fas fa-clock"></i> Guaranteed On-Time & On-Budget Delivery</li>
-          <li><i class="fas fa-handshake"></i> Transparent Process & Dedicated Project Manager</li>
-        </ul>
-        <div class="features-list">
-          <div class="feature-item"><i class="fas fa-leaf"></i> Sustainable, Eco-Friendly Designs</div>
-          <div class="feature-item"><i class="fas fa-gem"></i> Luxury & Modern Finishes</div>
-          <div class="feature-item"><i class="fas fa-bolt"></i> Smart Home Integration</div>
-          <div class="feature-item"><i class="fas fa-users"></i> Client-First Approach</div>
-        </div>
-        <a href="#portfolio" class="btn"><i class="fas fa-images"></i> View Portfolio</a>
-      </div>
-      <!-- Right Column: Overview & Actions -->
-      <div class="overview">
-        <h1><u>Transform Your Space into Beauty & Art</u></h1>
-        <p>
-          Bridan Design Build Limited is Nairobi’s trusted house design & build company. We don’t just design — we craft living art, blending architecture, interiors, and construction for seamless, stunning results.
-        </p>
-        <div class="tags">
-          <span class="tag"><i class="fas fa-drafting-compass"></i> Architectural Design</span>
-          <span class="tag"><i class="fas fa-paint-brush"></i> Interior Design</span>
-          <span class="tag"><i class="fas fa-hard-hat"></i> Construction</span>
-          <span class="tag"><i class="fas fa-tasks"></i> Project Management</span>
-          <span class="tag"><i class="fas fa-solar-panel"></i> Green Building</span>
-        </div>
-        <div class="actions">
-          <a href="#portfolio" class="work"><i class="fas fa-images"></i> Our Work</a>
-          <a href="#contact" class="contact"><i class="fas fa-envelope"></i> Contact Us</a>
-          <a href="tel:+254741400368" class="call" onclick="handlePhoneClick(event)">
-            <i class="fas fa-phone-alt"></i> Call: +254 741 400 368
-          </a>
-        </div>
-        <div class="highlights">
-          <span class="highlight"><i class="fas fa-comments"></i> Free Consultation</span>
-          <span class="highlight orange"><i class="fas fa-clock"></i> On-Time Delivery</span>
-          <span class="highlight blue"><i class="fas fa-handshake"></i> Quality Guaranteed</span>
-          <span class="highlight gold"><i class="fas fa-award"></i> Award-Winning Team</span>
-        </div>
-        <p style="margin-top:1.5rem; font-weight:bold; color:#444;">
-          We area design build <strong style="color:#007BFF;">Company servises the whole of Nairobi</strong>
-        </p>
-      </div>
-    </div>
+                            </h1>
+                            <p style="
+                              font-size: 1.63rem;
+                              color: #333;
+                              margin-top: 0.3rem;
+                              background: goldenrod;
+                              border-radius: 10px;
+                              display: inline-block;
+                              padding: 0.7rem 0.3rem;
+                              box-shadow: 0 1px 6px #ffd60022;
+                              font-weight: 600;
+                            ">
+                              <i class="fas fa-piggy-bank" style="color:#ffd600;"></i>
+                              <span style="border-bottom: 3px solid #ffd600; padding-bottom: 1px;">
+                                Do You Want to <span style="color:#0b36c5; background:rgba(160,241,171,0.7); padding:2px 10px; border-radius:8px; font-weight:900;">SAVE</span> on Construction Costs?
+                              </span>
+                          
+                           
+                            <div style="margin: 0 0 1.2rem 0;">
+                              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.8rem; font-size: 1.08rem; font-weight: 700; color: #66ff0e;">
+                              <i class="fas fa-user-tie" style="font-size:1.3rem; color:rgb(255, 19, 19); background:#fffbe6; border-radius:50%; padding:6px;"></i>
+                              Registered <span style="color:#f92d2d;">BORAQS & NCA</span> Architects & Contractors
+                              </div>
+                              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.8rem; font-size: 1.08rem; font-weight: 700; color: #66ff0e;">
+                              <i class="fas fa-certificate" style="font-size:1.3rem; color:rgb(80, 1, 237); background:#fffbe6; border-radius:50%; padding:6px;"></i>
+                              <span style="color:#1eff00;">ETIMS</span> & VAT Compliant, Fully Licensed
+                              </div>
+                              <br>
+                              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.8rem; font-size: 1.08rem; font-weight: 700; color: #b09302;">
+                              <i class="fas fa-clock" style="font-size:1.3rem; color:gold; background:#fffbe6; border-radius:50%; padding:6px;"></i>
+                              <span style="color:#6aff00;">On-Time</span> & <span style="color:#00ff08;">On-Budget Delivery</span> 
+                              </div>
+                              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.8rem; font-size: 1.08rem; font-weight: 700; color: #28ef00;">
+                              <i class="fas fa-handshake" style="font-size:1.3rem; color:rgb(21, 255, 0); background:#fffbe6; border-radius:50%; padding:6px;"></i>
+                              Transparent Process &amp; 
+                              <span style="color:#00ff59; display: flex; align-items: center; gap: 6px;">
+                                <i class="fas fa-user-tie" style="font-size:1.3rem; color:rgb(255, 0, 0); background:#fffbe6; border-radius:50%; padding:6px;"></i>
+                                Dedicated Project Manager
+                              </span>
+                              </div>
+                            </div>
 
 
-  <!-- Services Grid -->
-    
-  <div>
-      <h2 style="font-size: 2rem; color: #222; margin-bottom: 0.5rem;"><u>We Are More Than Just a Construction Company Based in Nairobi, Kenya</u></h2>
-      <p style="font-size: 1.1rem; color: #555; line-height: 1.6;">We also provide:</p>
-    </div>
-    
-  <div class="service-grid">
-    <div class="service-card">
+                            <div class="features-list" style="display: grid; grid-template-columns: repeat(2,1fr); gap: 0.7rem; margin-bottom: 1.2rem;">
+                              <div class="feature-item" style="display: flex; align-items: center; gap: 8px; background: #fffbe6; border-radius: 8px; padding: 0.6rem 0.8rem; font-size: 1rem; color: #222; font-weight: 700;">
+                                <i class="fas fa-leaf" style="color:#b5c200;"></i> Eco-Friendly Designs
+                              </div>
+                              <div class="feature-item" style="display: flex; align-items: center; gap: 8px; background: #fffbe6; border-radius: 8px; padding: 0.6rem 0.8rem; font-size: 1rem; color: #222; font-weight: 700;">
+                                <i class="fas fa-gem" style="color:goldenrod;"></i> Luxury Finishes
+                              </div>
+                              <div class="feature-item" style="display: flex; align-items: center; gap: 8px; background: #fffbe6; border-radius: 8px; padding: 0.6rem 0.8rem; font-size: 1rem; color: #222; font-weight: 700;">
+                                <i class="fas fa-bolt" style="color:#ffd600;"></i> Smart Home Integration
+                              </div>
+                              <div class="feature-item" style="display: flex; align-items: center; gap: 8px; background: #fffbe6; border-radius: 8px; padding: 0.6rem 0.8rem; font-size: 1rem; color: #222; font-weight: 700;">
+                                <i class="fas fa-users" style="color:#ffae00;"></i> Client-First Approach
+                              </div>
+                            </div>
+                            <a href="#portfolio" class="btn" style="
+                              display: inline-flex;
+                              align-items: center;
+                              gap: 8px;
+                              background: linear-gradient(90deg,#ffd600 0,#ffae00 100%);
+                              color: #181818;
+                              border-radius: 10px;
+                              padding: 0.8rem 1.5rem;
+                              font-size: 1rem;
+                              font-weight: 800;
+                              text-decoration: none;
+                              box-shadow: 0 2px 8px #ffd60033;
+                              margin-top: 0.8rem;
+                              transition: background 0.2s, color 0.2s, transform 0.18s;
+                            " onmouseover="this.style.background='linear-gradient(90deg,#ffae00 0,#ffd600 100%)';this.style.color='#fff';this.style.transform='scale(1.04)';" onmouseout="this.style.background='linear-gradient(90deg,#ffd600 0,#ffae00 100%)';this.style.color='#181818';this.style.transform='scale(1)';">
+                              <i class="fas fa-images" style="color:goldenrod;"></i> View Portfolio
+                            </a>
+                          </div>
+                        </div>
 
-      <div class="icon" style="background:#e8f5e9;"><i class="fas fa-drafting-compass"></i></div>
-      <h3>Architectural Design</h3>
-      <p>Modern, functional plans tailored to your vision. 3D renders, council approvals, and expert space planning.</p>
-    </div>
-    <div class="service-card">
-      <div class="icon" style="background:#fff3e0;"><i class="fas fa-paint-brush"></i></div>
-      <h3>Interior Design</h3>
-      <p>Personalized interiors, custom furniture, lighting, and finishes for homes, offices, and hospitality.</p>
-    </div>
-    <div class="service-card">
-      <div class="icon" style="background:#e3f2fd;"><i class="fas fa-hard-hat"></i></div>
-      <h3>Construction & Build</h3>
-      <p>Turnkey construction, renovations, and project management — delivered by certified, skilled teams.</p>
-    </div>
-    <div class="service-card">
-      <div class="icon" style="background:#fffbe6;"><i class="fas fa-bolt"></i></div>
-      <h3>Smart & Green Solutions</h3>
-      <p>Solar, automation, energy-efficient upgrades, and sustainable building for a future-ready property.</p>
-    </div>
-  </div>
+                        <!-- Right Column: Overview & Actions -->
+                        <div class="overview" style="background: rgba(255,255,255,0.7); border-radius: 18px; flex: 1 1 340px; max-width: 600px; position: relative; box-shadow: 0 4px 24px #ffd60011; margin-top: 0;">
+                          <div style="position:relative; z-index:1; padding: 2rem 1.2rem;">
+                            <h1 style="color: #f2d335; font-size:1.7rem; font-weight:900; margin-bottom: 1rem; text-shadow:0 2px 8px #18181822;">
+                              <u>Transform Your Space into Beauty &amp; Art</u>
+                            </h1>
+                            <p style="color: #181818; font-size:1.05rem; font-weight:600; margin-bottom:1rem;">
+                              Bridan Design Build Limited is Nairobi’s trusted house design &amp; build company. We offer:
+                            </p>
+                            <div class="tags" style="margin-bottom:1rem;">
+                              <span class="tag"><i class="fas fa-drafting-compass"></i> Architectural Design</span>
+                              <span class="tag"><i class="fas fa-paint-brush"></i> Interior Design</span>
+                              <span class="tag"><i class="fas fa-hard-hat"></i> Construction</span>
+                              <span class="tag"><i class="fas fa-tasks"></i> Project Management</span>
+                              <span class="tag"><i class="fas fa-solar-panel"></i> Green Building</span>
+                            </div>
+                            <div class="actions" style="margin-bottom:1rem;">
+                              <a href="#portfolio" class="work"><i class="fas fa-images"></i> Our Work</a>
+                              <a href="#contact" class="contact"><i class="fas fa-envelope"></i> Contact Us</a>
+                              <a href="tel:+254741400368" class="call" onclick="handlePhoneClick(event)">
+                                <i class="fas fa-phone-alt"></i> Call: +254 741 400 368
+                              </a>
+                            </div>
+                            <div class="highlights" style="margin-bottom:1rem;">
+                              <span class="highlight"><i class="fas fa-comments"></i> Free Consultation</span>
+                              <span class="highlight orange"><i class="fas fa-clock"></i> On-Time Delivery</span>
+                              <span class="highlight blue"><i class="fas fa-handshake"></i> Quality Guaranteed</span>
+                            </div>
+                            <p style="margin-top:1rem; font-weight:bold; color:#222; background:rgba(255,255,255,0.85); border-radius:8px; padding:0.5rem 1rem; display:inline-block;">
+                              We are a design-build <strong style="color:red;">company serving all of Nairobi</strong>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
 
-  
-  <!-- CTA Section -->
-  <div class="cta">
-    <h2>Ready to Start Your Project?</h2>
-    <div class="cta-actions">
-      <a href="#portfolio" class="portfolio"><i class="fas fa-images"></i> See Our Projects</a>
-      <a href="tel:+254741400368" class="call" onclick="handlePhoneClick(event)">
-        <i class="fas fa-phone-alt"></i> Call Now: +254 741 400 368
-      </a>
-      <a href="https://wa.me/+254741400368" class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-    </div>
-    <div class="scroll" onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });">
-      <span>Explore More</span>
-      <i class="fas fa-chevron-down"></i>
-    </div>
-  </div>
-              <script>
-                function handlePhoneClick(event) {
-                  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                    return true;
-                  }
-                  event.preventDefault();
-                  const confirmCall = confirm("This number is +254 741 400 368. Click OK to copy it to your clipboard.");
-                  if (confirmCall) {
-                    navigator.clipboard.writeText("+254741400368");
-                    alert("Number copied to clipboard!");
-                  }
+                      <br>
+
+ <!-- Services Grid -->
+
+            <!-- SERVICES SECTION: What We Offer (Simple, Clean, Commented) -->
+            <div class="contact-content-3d" style="padding-top: 2.5rem;">
+              <!-- Background Slideshow for Visual Appeal -->
+              <div class="contact-bg-slideshow">
+                <img src="img/home.jpg" alt="Modern Home Project" class="contact-bg-slide active" />
+                <img src="img/bedroom.jpg" alt="Interior Bedroom Design" class="contact-bg-slide" />
+                <img src="img/build.png" alt="Construction Site" class="contact-bg-slide" />
+                <img src="img/black1.jpg" alt="Living Room Interior" class="contact-bg-slide" />
+                <img src="img/kitchen.jpg" alt="Modern Kitchen" class="contact-bg-slide" />
+                <img src="img/black2.jpg" alt="Luxury Pool Project" class="contact-bg-slide" />
+                <img src="img/stair.jpg" alt="Office Staircase" class="contact-bg-slide" />
+                <img src="img/HOMELOGO.jpg" alt="Bridan Logo Placeholder" class="contact-bg-slide" />
+              </div>
+              <style>
+                .contact-content-3d { position: relative; z-index: 1; }
+                .contact-bg-slideshow {
+                  position: absolute; inset: 0; width: 100%; height: 100%;
+                  z-index: 0; overflow: hidden; border-radius: 22px; pointer-events: none;
                 }
+                .contact-bg-slide {
+                  position: absolute; width: 100%; height: 100%; object-fit: cover;
+                  left: 0; top: 0; opacity: 0; transition: opacity 1.2s cubic-bezier(.4,0,.2,1);
+                  z-index: 0; filter: brightness(0.55) blur(1px);
+                }
+                .contact-bg-slide.active { opacity: 1; z-index: 1; }
+                .contact-content-3d > *:not(.contact-bg-slideshow) { position: relative; z-index: 2; }
+              </style>
+              <script>
+                // Simple slideshow logic
+                (function() {
+                  const slides = document.querySelectorAll('.contact-bg-slide');
+                  let idx = 0;
+                  function showSlide(i) {
+                    slides.forEach((img, j) => img.classList.toggle('active', i === j));
+                  }
+                  setInterval(() => {
+                    idx = (idx + 1) % slides.length;
+                    showSlide(idx);
+                  }, 4000);
+                  showSlide(idx);
+                })();
               </script>
-</section>
+
+              <!-- Section Title -->
+               <div>
+              <h2 style="font-size: 1.3rem; color: #222; margin-bottom: 0.5rem; background: rgba(255,255,255,0.85); border-radius: 8px; padding: 1rem 1rem; display: inline-block;margin-top: 1.5rem">
+                <u>We Are More Than Just a Construction Company Based in Nairobi, Kenya</u>
+              </h2>
+              <br>
+                    <h2 style="font-size: 1rem; color: #555; line-height: 1.5; background: rgba(214, 210, 18, 0.85); border-radius: 8px; padding: 0.3rem 1rem; display: inline-block;">
+                    We also provide:
+                    </h2>
+              </div>
+            
 
 
+              <!-- Services Grid (Simple, Clear) -->
+              <div class="service-grid" style="margin-top: 1.2rem; display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 1.2rem;">
+                <!-- Architectural Design -->
+                <div class="service-card" style="background:#fff; border-radius:12px; box-shadow:0 2px 10px #ffd60011; padding:1.2rem; text-align:center;">
+                  <div class="icon" style="background:#e8f5e9; border-radius:50%; width:48px; height:48px; display:flex; align-items:center; justify-content:center; margin:0 auto 0.7rem;">
+                    <i class="fas fa-drafting-compass"></i>
+                  </div>
+                  <h3 style="font-size:1.1rem; margin-bottom:0.5rem;">Architectural Design</h3>
+                  <p style="font-size:0.97rem;">Modern, functional plans tailored to your vision. 3D renders, council approvals, and expert space planning.</p>
+                </div>
+                <!-- Interior Design -->
+                <div class="service-card" style="background:#fff; border-radius:12px; box-shadow:0 2px 10px #ffd60011; padding:1.2rem; text-align:center;">
+                  <div class="icon" style="background:#fff3e0; border-radius:50%; width:48px; height:48px; display:flex; align-items:center; justify-content:center; margin:0 auto 0.7rem;">
+                    <i class="fas fa-paint-brush"></i>
+                  </div>
+                  <h3 style="font-size:1.1rem; margin-bottom:0.5rem;">Interior Design</h3>
+                  <p style="font-size:0.97rem;">Personalized interiors, custom furniture, lighting, and finishes for homes, offices, and hospitality.</p>
+                </div>
+                <!-- Construction & Build -->
+                <div class="service-card" style="background:#fff; border-radius:12px; box-shadow:0 2px 10px #ffd60011; padding:1.2rem; text-align:center;">
+                  <div class="icon" style="background:#e3f2fd; border-radius:50%; width:48px; height:48px; display:flex; align-items:center; justify-content:center; margin:0 auto 0.7rem;">
+                    <i class="fas fa-hard-hat"></i>
+                  </div>
+                  <h3 style="font-size:1.1rem; margin-bottom:0.5rem;">Construction & Build</h3>
+                  <p style="font-size:0.97rem;">Turnkey construction, renovations, and project management — delivered by certified, skilled teams.</p>
+                </div>
 
+              </div>
+            </div>
 
+            <!-- CTA Section: Simple Call to Action -->
+            <div class="cta" style="margin-top: 0.7rem; padding-top: 1.2rem; padding-bottom: 1.2rem;">
+              <h2 style="margin-bottom: 0.7rem;">Ready to Start Your Project?</h2>
+              <div class="cta-actions" style="margin-bottom: 0.5rem;">
+                <a href="#portfolio" class="portfolio"><i class="fas fa-images"></i> See Our Projects</a>
+                <a href="tel:+254741400368" class="call" onclick="handlePhoneClick(event)">
+                  <i class="fas fa-phone-alt"></i> Call Now: +254 741 400 368
+                </a>
+                <a href="https://wa.me/+254741400368" class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+              </div>
+              <div class="scroll" onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });" style="margin-top: 0.2rem;">
+                <span>Explore More</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <script>
+              // For desktop users, copy phone number instead of calling directly
+              function handlePhoneClick(event) {
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                  return true;
+                }
+                event.preventDefault();
+                const confirmCall = confirm("This number is +254 741 400 368. Click OK to copy it to your clipboard.");
+                if (confirmCall) {
+                  navigator.clipboard.writeText("+254741400368");
+                  alert("Number copied to clipboard!");
+                }
+              }
+            </script>
+            <!-- END SERVICES SECTION -->
 
-<!-- 1️⃣ Why Choose Bridan? -->
+<!-- WHAT MAKES US DIFF SECTION -->
+ 
+
 <section style="background: #fff; padding: 70px 24px 40px 24px; border-bottom: 1px solid #eee;"></section>
   <h2 style="font-size:2.3rem; font-weight:800; color:#222; margin-bottom:18px; text-align:center; background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
     <i class="fas fa-star" style="color:#b09302;"></i>
@@ -940,45 +1186,123 @@
 
 <!-- 2️⃣ What to Expect When You Call Bridan -->
 <section class="whattoexpect" style="padding: 3.5rem 2rem 3rem 2rem; background:linear-gradient(120deg,#fdf3c1 0%,#f7f7f7 100%);">
-  <h3 style="text-align:center; font-size:2.1rem; color:#222; font-weight:700; margin-bottom:44px;">
-    What Happens When You Contact Bridan?
-  </h3>
-  <div style="display:flex; flex-wrap:wrap; gap:32px; justify-content:center; max-width:1100px; margin:0 auto;">
-    <!-- Step 1 -->
-    <div style="flex:1 1 260px; background:#fff; padding:32px 22px; border-radius:14px; box-shadow:0 2px 14px #ffd60018; text-align:center;">
-      <div style="font-size:2.2rem; font-weight:800; color:#25d366; margin-bottom:14px;">
-        <i class="fas fa-phone-alt"></i>
-      </div>
-      <h4 style="font-size:1.15rem; color:#222; font-weight:700; margin-bottom:10px;">1. Free Consultation</h4>
-      <p style="font-size:1rem; color:#444;">
-        We discuss your vision, location (Nairobi, Mombasa, Kisumu, etc.), and budget. Get expert advice with no obligation.
-      </p>
+  <div class="contact-content-3d">
+    <!-- Contact Section Background Slideshow (Improved) -->
+    <div class="contact-bg-slideshow">
+      <!-- Modern Building (local) -->
+      <img src="img/home.jpg" alt="Modern Home Project" class="contact-bg-slide active" />
+      <!-- Interior Design (local) -->
+      <img src="img/bedroom.jpg" alt="Interior Bedroom Design" class="contact-bg-slide" />
+      <!-- Living Room (local) -->
+      <img src="img/black1.jpg" alt="Living Room Interior" class="contact-bg-slide" />
+      <!-- Kitchen (local) -->
+      <img src="img/kitchen.jpg" alt="Modern Kitchen" class="contact-bg-slide" />
+      <!-- Pool Project (local) -->
+      <img src="img/black2.jpg" alt="Luxury Pool Project" class="contact-bg-slide" />
+      <!-- Office/Commercial (local) -->
+      <img src="img/stair.jpg" alt="Office Staircase" class="contact-bg-slide" />
+      <!-- Logo Placeholder (local) -->
+      <img src="img/HOMELOGO.jpg" alt="Bridan Logo Placeholder" class="contact-bg-slide" />
+      <!-- Optional: Add more relevant images as needed -->
     </div>
-    <!-- Step 2 -->
-    <div style="flex:1 1 260px; background:#fff; padding:32px 22px; border-radius:14px; box-shadow:0 2px 14px #ffd60018; text-align:center;">
-      <div style="font-size:2.2rem; font-weight:800; color:#ffd600; margin-bottom:14px;">
-        <i class="fas fa-drafting-compass"></i>
+    <!-- Slideshow Styles -->
+    <style>
+      .contact-content-3d {
+        position: relative;
+        z-index: 1;
+      }
+      .contact-bg-slideshow {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        overflow: hidden;
+        border-radius: 22px;
+        pointer-events: none;
+      }
+      .contact-bg-slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: opacity 1.2s cubic-bezier(.4,0,.2,1);
+        z-index: 0;
+        filter: brightness(0.55) blur(1px);
+      }
+      .contact-bg-slide.active {
+        opacity: 1;
+        z-index: 1;
+      }
+      /* Ensure content is above slideshow */
+      .contact-content-3d > *:not(.contact-bg-slideshow) {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+    <!-- Slideshow Script -->
+    <script>
+      // Improved slideshow for contact section background
+      (function() {
+        const slides = document.querySelectorAll('.contact-bg-slide');
+        let idx = 0;
+        function showSlide(i) {
+          slides.forEach((img, j) => img.classList.toggle('active', i === j));
+        }
+        setInterval(() => {
+          idx = (idx + 1) % slides.length;
+          showSlide(idx);
+        }, 4000);
+        showSlide(idx);
+      })();
+    </script>
+
+    <!-- Section Heading -->
+    <h3 style="text-align:center; font-size:3.5rem; color:goldenrod; font-weight:1000; margin-bottom:44px;">
+      What Happens When You Contact Bridan?
+    </h3>
+    <!-- Steps Container -->
+    <div style="display:flex; flex-wrap:wrap; gap:32px; justify-content:center; max-width:1100px; margin:0 auto;">
+      <!-- Step 1: Free Consultation -->
+      <div style="flex:1 1 260px; background:#fff; padding:32px 22px; border-radius:14px; box-shadow:0 2px 14px #ffd60018; text-align:center;">
+        <div style="font-size:2.2rem; font-weight:800; color:#25d366; margin-bottom:14px;">
+          <i class="fas fa-phone-alt"></i>
+        </div>
+        <h4 style="font-size:1.15rem; color:#222; font-weight:700; margin-bottom:10px;">1. Free Consultation</h4>
+        <p style="font-size:1rem; color:#444;">
+          We discuss your vision, location (Nairobi, Mombasa, Kisumu, etc.), and budget. Get expert advice with no obligation.
+        </p>
       </div>
-      <h4 style="font-size:1.15rem; color:#222; font-weight:700; margin-bottom:10px;">2. Custom Design & Quote</h4>
-      <p style="font-size:1rem; color:#444;">
-        Receive tailored floorplans, 3D renders, and a detailed cost estimate in KSh. We plan every detail before you commit.
-      </p>
-    </div>
-    <!-- Step 3 -->
-    <div style="flex:1 1 260px; background:#fff; padding:32px 22px; border-radius:14px; box-shadow:0 2px 14px #ffd60018; text-align:center;">
-      <div style="font-size:2.2rem; font-weight:800; color:#ff8c00; margin-bottom:14px;">
-        <i class="fas fa-hard-hat"></i>
+      <!-- Step 2: Custom Design & Quote -->
+      <div style="flex:1 1 260px; background:#fff; padding:32px 22px; border-radius:14px; box-shadow:0 2px 14px #ffd60018; text-align:center;">
+        <div style="font-size:2.2rem; font-weight:800; color:#ffd600; margin-bottom:14px;">
+          <i class="fas fa-drafting-compass"></i>
+        </div>
+        <h4 style="font-size:1.15rem; color:#222; font-weight:700; margin-bottom:10px;">2. Custom Design &amp; Quote</h4>
+        <p style="font-size:1rem; color:#444;">
+          Receive tailored floorplans, 3D renders, and a detailed cost estimate in KSh. We plan every detail before you commit.
+        </p>
       </div>
-      <h4 style="font-size:1.15rem; color:#222; font-weight:700; margin-bottom:10px;">3. Build & Handover</h4>
-      <p style="font-size:1rem; color:#444;">
-        NCA-compliant construction, quality control by our BORAQS architect, and on-schedule handover—stress-free from start to finish.
-      </p>
+      <!-- Step 3: Build & Handover -->
+      <div style="flex:1 1 260px; background:#fff; padding:32px 22px; border-radius:14px; box-shadow:0 2px 14px #ffd60018; text-align:center;">
+        <div style="font-size:2.2rem; font-weight:800; color:#ff8c00; margin-bottom:14px;">
+          <i class="fas fa-hard-hat"></i>
+        </div>
+        <h4 style="font-size:1.15rem; color:#222; font-weight:700; margin-bottom:10px;">3. Build &amp; Handover</h4>
+        <p style="font-size:1rem; color:#444;">
+          NCA-compliant construction, quality control by our BORAQS architect, and on-schedule handover—stress-free from start to finish.
+        </p>
+      </div>
     </div>
-  </div>
-  <div style="text-align:center; margin-top:38px;">
-    <a href="tel:+254741400368" style="display:inline-block; background:#25d366; color:#fff; padding:16px 38px; border-radius:30px; font-size:1.2rem; font-weight:700; text-decoration:none; box-shadow:0 4px 16px #25d36633;">
-      <i class="fas fa-phone-alt" style="margin-right:10px;"></i> Call Now: +254 741 400 368
-    </a>
+    <!-- Call to Action Button -->
+    <div style="text-align:center; margin-top:38px;">
+      <a href="tel:+254741400368" style="display:inline-block; background:#25d366; color:#fff; padding:16px 38px; border-radius:30px; font-size:1.2rem; font-weight:700; text-decoration:none; box-shadow:0 4px 16px #25d36633;">
+        <i class="fas fa-phone-alt" style="margin-right:10px;"></i> Call Now: +254 741 400 368
+      </a>
+    </div>
   </div>
 </section>
 
@@ -1536,348 +1860,539 @@
     </script>
   </section>
 
-
-      <!-- Portfolio Grid with 3D Hover Effects and Interactive Cards -->
-       
-      <div class="portfolio-grid-container enhanced-portfolio-grid">
-        <div class="portfolio-grid" id="portfolioGrid">
-          <!-- Featured Project -->
-          <article class="portfolio-item featured glassmorphism" data-category="residential sustainable award" data-tags="smart-home luxury modern eco">
-            <div class="portfolio-media">
-              <div class="media-3d">
-                <video class="project-video" autoplay muted loop playsinline poster="img/kitchen.jpg">
-                  <source src="img/pvid.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="project-badge neon-glow"><i class="fas fa-star"></i> Signature</div>
-              <div class="project-hover-content">
-                <button class="quick-view-btn" data-project="skyview-residences">
-                  <i class="fas fa-eye"></i> Quick View
-                </button>
-                <button class="project-details-btn" data-project="skyview-residences">
-                  <i class="fas fa-info-circle"></i> Details
-                </button>
-                 </div>
-            </div>
-            <div class="project-info">
-              <h3 class="project-title gradient-text"><i class="fas fa-home"></i> Skyview Residences</h3>
-              <div class="project-meta">
-                <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Nairobi</span>
-                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2024</span>
-                <span class="meta-item"><i class="fas fa-ruler-combined"></i> 4,500 sq ft</span>
-              </div>
-              <p class="project-excerpt">
-                <i class="fas fa-lightbulb"></i>
-                <br>
-                <br>
-                Modern eco-home with smart automation, solar energy, and bespoke interiors.
-                Uses new Technology to enhance comfort and efficiency.
-              </p>
-              <div class="project-tags">
-                <span class="tag"><i class="fas fa-bolt"></i> Smart Home</span>
-                <span class="tag"><i class="fas fa-leaf"></i> LEED Platinum</span>
-                <span class="tag"><i class="fas fa-gem"></i> Luxury</span>
-              </div>
-            </div>
-          </article>
-
- 
-  <!-- Hospitality Project -->
-          <article class="portfolio-item glassmorphism" data-category="hospitality sustainable" data-tags="hotel eco-friendly beach">
-            <div class="portfolio-media">
-              <div class="media-3d">
-                <video class="project-video" autoplay muted loop playsinline poster="img/pool.jpg">
-                  <source src="img/bri1.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <img src="img/home.jpg" alt="Coastal Eco Hotel" class="project-image" loading="lazy">
-              </div>
-              <div class="project-hover-content">
-                <button class="quick-view-btn" data-project="coastal-eco-hotel">
-                  <i class="fas fa-eye"></i> Quick View
-                </button>
-                <button class="project-details-btn" data-project="coastal-eco-hotel">
-                  <i class="fas fa-info-circle"></i> Details
-                </button>
-              </div>
-            </div>
-            <div class="project-info">
-              <h3 class="project-title gradient-text"><i class="fas fa-hotel"></i> Coastal Eco Hotel</h3>
-              <div class="project-meta">
-                <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Diani Beach</span>
-                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2022</span>
-                <span class="meta-item"><i class="fas fa-ruler-combined"></i> 8,000 sq ft</span>
-              </div>
-              <br>
-              <p class="project-excerpt">
-                <i class="fas fa-leaf"></i>
-                 <br>
-                Eco-friendly hotel with fresh imported materials, solar power, ocean views and  it also has a pool ,spa and  luxury amenities.
-              </p>
-              <div class="project-tags">
-                <span class="tag"><i class="fas fa-bolt"></i> Smart Home</span>
-                <span class="tag"><i class="fas fa-leaf"></i> LEED Platinum</span>
-                <span class="tag"><i class="fas fa-gem"></i> Luxury</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Renovation Project -->
-          <article class="portfolio-item glassmorphism" data-category="residential renovation" data-tags="remodel modern">
-            <div class="portfolio-media">
-              <div class="media-3d">
-                <video class="project-video" autoplay muted loop playsinline poster="img/bedroom.jpg">
-                  <source src="img/interiorvid (1).mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="project-hover-content">
-                <button class="quick-view-btn" data-project="modern-renovation">
-                  <i class="fas fa-eye"></i> Quick View
-                </button>
-                <button class="project-details-btn" data-project="modern-renovation">
-                  <i class="fas fa-info-circle"></i> Details
-                </button>
-              </div>
-            </div>
-            <div class="project-info">
-              <h3 class="project-title gradient-text"><i class="fas fa-home"></i> Modern Home Renovation</h3>
-              <div class="project-meta">
-                <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Karen, Nairobi</span>
-                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2024</span>
-                <span class="meta-item"><i class="fas fa-ruler-combined"></i> 3,200 sq ft</span>
-              </div>
-              <p class="project-excerpt">
-                <i class="fas fa-sync-alt"></i>
-                
-                Full house remodel with open-plan living, energy upgrades, beautiful and amaizing interiors designed by the best designers.
-              </p>
-              <div class="project-tags">
-                <span class="tag"><i class="fas fa-paint-roller"></i> Interior Design</span>
-                <span class="tag"><i class="fas fa-bolt"></i> Energy Efficient</span>
-                <span class="tag"><i class="fas fa-gem"></i> Luxury</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Add more projects as needed, following the same structure -->
-        </div>
+  <!-- Portfolio Grid with 3D Hover Effects, Interactive Cards, and AI-Powered Search/Filter -->
+  <div class="portfolio-grid-container enhanced-portfolio-grid">
+    <!-- AI Search & Filter Bar -->
+    <div class="portfolio-toolbar" style="display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin-bottom:2rem;justify-content:space-between;">
+      <div class="portfolio-filters" style="display:flex;gap:0.5rem;">
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+        <button class="filter-btn" data-filter="renovation">Renovation</button>
+        <button class="filter-btn" data-filter="sustainable">Sustainable</button>
+        <span class="underline" style="position:absolute;bottom:-5px;left:0;height:3px;background:#ffd600;border-radius:3px;transition:all 0.35s cubic-bezier(0.4,0,0.2,1);"></span>
       </div>
-
-      <!-- Project Modal -->
-      <div class="project-modal" id="projectModal">
-        <div class="modal-container glassmorphism">
-          <button class="modal-close-btn" aria-label="Close modal">
-            <i class="fas fa-times"></i>
-          </button>
-          <div class="modal-content">
-            <!-- Content will be dynamically inserted here -->
+      <div class="portfolio-search" style="display:flex;gap:0.5rem;align-items:center;">
+        <input type="text" id="portfolioSearch" placeholder="Search projects, e.g. 'eco hotel'" style="padding:0.6rem 1rem;border-radius:24px;border:1px solid #ddd;outline:none;font-size:1rem;box-shadow:inset 0 0 8px rgba(0,0,0,0.08);">
+        <button id="aiPortfolioSearchBtn" style="background:linear-gradient(90deg,#ffd600 0,#ff8c00 100%);color:#222;border:none;border-radius:24px;padding:0.6rem 1.2rem;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;">
+          <i class="fas fa-robot"></i> AI Search
+        </button>
+      </div>
+    </div>
+    <!-- AI Search Results -->
+    <div id="aiPortfolioResults" style="display:none;background:#fffbe6;border-radius:10px;padding:1rem 1.5rem;margin-bottom:1.5rem;box-shadow:0 2px 12px #ffd60022;">
+      <strong style="color:#ff8c00;"><i class="fas fa-magic"></i> AI Suggestions:</strong>
+      <div id="aiPortfolioResultsContent" style="margin-top:0.5rem;"></div>
+    </div>
+    <!-- Portfolio Grid -->
+    <div class="portfolio-grid" id="portfolioGrid">
+      <!-- Featured Project -->
+      <article class="portfolio-item featured glassmorphism" data-category="residential sustainable award" data-tags="smart-home luxury modern eco" data-title="Skyview Residences" data-date="2024-01-01" data-popularity="98">
+        <div class="portfolio-media">
+          <div class="media-3d">
+            <video class="project-video" autoplay muted loop playsinline poster="img/kitchen.jpg">
+              <source src="img/pvid.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-badge neon-glow"><i class="fas fa-star"></i> Signature</div>
+          <div class="project-hover-content">
+            <button class="quick-view-btn" data-project="skyview-residences">
+              <i class="fas fa-eye"></i> Quick View
+            </button>
+            <button class="project-details-btn" data-project="skyview-residences">
+              <i class="fas fa-info-circle"></i> Details
+            </button>
           </div>
         </div>
+        <div class="project-info">
+          <h3 class="project-title gradient-text"><i class="fas fa-home"></i> Skyview Residences</h3>
+          <div class="project-meta">
+            <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Nairobi</span>
+            <span class="meta-item"><i class="far fa-calendar-alt"></i> 2024</span>
+            <span class="meta-item"><i class="fas fa-ruler-combined"></i> 4,500 sq ft</span>
+          </div>
+          <p class="project-excerpt">
+            <i class="fas fa-lightbulb"></i><br><br>
+            Modern eco-home with smart automation, solar energy, and bespoke interiors.
+            Uses new Technology to enhance comfort and efficiency.
+          </p>
+          <div class="project-tags">
+            <span class="tag"><i class="fas fa-bolt"></i> Smart Home</span>
+            <span class="tag"><i class="fas fa-leaf"></i> LEED Platinum</span>
+            <span class="tag"><i class="fas fa-gem"></i> Luxury</span>
+          </div>
+        </div>
+      </article>
+      <!-- Hospitality Project -->
+      <article class="portfolio-item glassmorphism" data-category="hospitality sustainable" data-tags="hotel eco-friendly beach" data-title="Coastal Eco Hotel" data-date="2022-06-01" data-popularity="85">
+        <div class="portfolio-media">
+          <div class="media-3d">
+            <video class="project-video" autoplay muted loop playsinline poster="img/pool.jpg">
+              <source src="img/bri1.mp4" type="video/mp4">
+            </video>
+            <img src="img/home.jpg" alt="Coastal Eco Hotel" class="project-image" loading="lazy">
+          </div>
+          <div class="project-hover-content">
+            <button class="quick-view-btn" data-project="coastal-eco-hotel">
+              <i class="fas fa-eye"></i> Quick View
+            </button>
+            <button class="project-details-btn" data-project="coastal-eco-hotel">
+              <i class="fas fa-info-circle"></i> Details
+            </button>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title gradient-text"><i class="fas fa-hotel"></i> Coastal Eco Hotel</h3>
+          <div class="project-meta">
+            <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Diani Beach</span>
+            <span class="meta-item"><i class="far fa-calendar-alt"></i> 2022</span>
+            <span class="meta-item"><i class="fas fa-ruler-combined"></i> 8,000 sq ft</span>
+          </div>
+          <br>
+          <p class="project-excerpt">
+            <i class="fas fa-leaf"></i><br>
+            Eco-friendly hotel with fresh imported materials, solar power, ocean views and it also has a pool, spa and luxury amenities.
+          </p>
+          <div class="project-tags">
+            <span class="tag"><i class="fas fa-bolt"></i> Smart Home</span>
+            <span class="tag"><i class="fas fa-leaf"></i> LEED Platinum</span>
+            <span class="tag"><i class="fas fa-gem"></i> Luxury</span>
+          </div>
+        </div>
+      </article>
+      <!-- Renovation Project -->
+      <article class="portfolio-item glassmorphism" data-category="residential renovation" data-tags="remodel modern" data-title="Modern Home Renovation" data-date="2024-03-01" data-popularity="90">
+        <div class="portfolio-media">
+          <div class="media-3d">
+            <video class="project-video" autoplay muted loop playsinline poster="img/bedroom.jpg">
+              <source src="img/interiorvid (1).mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-hover-content">
+            <button class="quick-view-btn" data-project="modern-renovation">
+              <i class="fas fa-eye"></i> Quick View
+            </button>
+            <button class="project-details-btn" data-project="modern-renovation">
+              <i class="fas fa-info-circle"></i> Details
+            </button>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title gradient-text"><i class="fas fa-home"></i> Modern Home Renovation</h3>
+          <div class="project-meta">
+            <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Karen, Nairobi</span>
+            <span class="meta-item"><i class="far fa-calendar-alt"></i> 2024</span>
+            <span class="meta-item"><i class="fas fa-ruler-combined"></i> 3,200 sq ft</span>
+          </div>
+          <p class="project-excerpt">
+            <i class="fas fa-sync-alt"></i>
+            Full house remodel with open-plan living, energy upgrades, beautiful and amazing interiors designed by the best designers.
+          </p>
+          <div class="project-tags">
+            <span class="tag"><i class="fas fa-paint-roller"></i> Interior Design</span>
+            <span class="tag"><i class="fas fa-bolt"></i> Energy Efficient</span>
+            <span class="tag"><i class="fas fa-gem"></i> Luxury</span>
+          </div>
+        </div>
+      </article>
+      <!-- Add more projects as needed, following the same structure -->
+    </div>
+  </div>
+
+  <!-- Project Modal -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-container glassmorphism">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-content">
+        <!-- Content will be dynamically inserted here -->
       </div>
+    </div>
+  </div>
 
+                                          <style>
+                                            .portfolio-toolbar {
+                                              position: relative;
+                                              z-index: 2;
+                                              margin-bottom: 2rem;
+                                            }
+                                            .portfolio-filters {
+                                              position: relative;
+                                              display: flex;
+                                              gap: 0.5rem;
+                                              align-items: center;
+                                              font-size: 1rem;
+                                              font-weight: 600;
+                                            }
+                                            .filter-btn {
+                                              padding: 0.6rem 1.5rem;
+                                              border: none;
+                                              border-radius: 24px;
+                                              font-weight: 600;
+                                              cursor: pointer;
+                                              background: #fffbe6;
+                                              color: #222;
+                                              box-shadow: 0 2px 8px #ffd60011;
+                                              transition: background 0.2s, color 0.2s, transform 0.18s;
+                                              position: relative;
+                                              z-index: 1;
+                                            }
+                                            .filter-btn.active {
+                                              background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%);
+                                              color: #222;
+                                              box-shadow: 0 4px 18px #ffd60033;
+                                              transform: scale(1.07);
+                                            }
+                                            .portfolio-search input {
+                                              min-width: 220px;
+                                            }
+                                            .portfolio-grid {
+                                              display: grid;
+                                              grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+                                              gap: 2rem;
+                                            }
+                                            .portfolio-item {
+                                              background: rgba(255,255,255,0.95);
+                                              border-radius: 18px;
+                                              box-shadow: 0 6px 24px #ffd60011;
+                                              overflow: hidden;
+                                              transition: transform 0.25s, box-shadow 0.25s;
+                                              display: flex;
+                                              flex-direction: column;
+                                              position: relative;
+                                              cursor: pointer;
+                                              will-change: transform;
+                                            }
+                                            .portfolio-item:hover {
+                                              transform: translateY(-10px) scale(1.03) rotateZ(-1deg);
+                                              box-shadow: 0 12px 36px #ffd60033;
+                                              z-index: 2;
+                                            }
+                                            .portfolio-media {
+                                              position: relative;
+                                              height: 220px;
+                                              overflow: hidden;
+                                              background: #f7f7f7;
+                                              display: flex;
+                                              align-items: center;
+                                              justify-content: center;
+                                            }
+                                            .media-3d {
+                                              width: 100%;
+                                              height: 100%;
+                                              perspective: 900px;
+                                              position: relative;
+                                              overflow: hidden;
+                                            }
+                                            .project-video, .project-image {
+                                              width: 100%;
+                                              height: 100%;
+                                              object-fit: cover;
+                                              border-radius: 0;
+                                              transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+                                              box-shadow: 0 2px 12px #ffd60022;
+                                            }
+                                            .portfolio-item:hover .project-video,
+                                            .portfolio-item:hover .project-image {
+                                              transform: scale(1.07) rotateY(6deg);
+                                              filter: brightness(0.93) contrast(1.08);
+                                            }
+                                            .project-badge {
+                                              position: absolute;
+                                              top: 18px;
+                                              left: 18px;
+                                              background: linear-gradient(90deg,#ffd600 0,#ff8c00 100%);
+                                              color: #fff;
+                                              border-radius: 12px;
+                                              padding: 7px 18px;
+                                              font-weight: 700;
+                                              font-size: 1rem;
+                                              box-shadow: 0 2px 8px #ffd60033;
+                                              z-index: 3;
+                                              animation: neonGlow 2.5s infinite alternate;
+                                            }
+                                            @keyframes neonGlow {
+                                              0% { box-shadow: 0 2px 12px #ffd60033, 0 0 0 #ff8c0033;}
+                                              100% { box-shadow: 0 4px 24px #ffd60066, 0 0 16px #ff8c0033;}
+                                            }
+                                            .project-hover-content {
+                                              position: absolute;
+                                              bottom: 18px;
+                                              right: 18px;
+                                              display: flex;
+                                              gap: 10px;
+                                              opacity: 0;
+                                              pointer-events: none;
+                                              transition: opacity 0.25s;
+                                              z-index: 4;
+                                            }
+                                            .portfolio-item:hover .project-hover-content {
+                                              opacity: 1;
+                                              pointer-events: auto;
+                                            }
+                                            .quick-view-btn, .project-details-btn {
+                                              background: #fff;
+                                              color: #ff8c00;
+                                              border: 2px solid #ffd600;
+                                              border-radius: 8px;
+                                              padding: 7px 16px;
+                                              font-weight: 700;
+                                              font-size: 1rem;
+                                              cursor: pointer;
+                                              transition: background 0.18s, color 0.18s, transform 0.18s;
+                                              display: flex;
+                                              align-items: center;
+                                              gap: 7px;
+                                              box-shadow: 0 1px 4px #ffd60022;
+                                            }
+                                            .quick-view-btn:hover, .project-details-btn:hover {
+                                              background: #ffd600;
+                                              color: #fff;
+                                              transform: scale(1.08);
+                                            }
+                                            .project-info {
+                                              padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+                                              flex: 1 1 auto;
+                                              display: flex;
+                                              flex-direction: column;
+                                              justify-content: space-between;
+                                            }
+                                            .project-title {
+                                              margin: 0 0 0.7rem 0;
+                                              font-size: 1.25rem;
+                                              font-weight: 700;
+                                              color: #222;
+                                              display: flex;
+                                              align-items: center;
+                                              gap: 8px;
+                                            }
+                                            .project-meta {
+                                              display: flex;
+                                              gap: 1rem;
+                                              font-size: 0.98rem;
+                                              color: #888;
+                                              margin-bottom: 0.7rem;
+                                              flex-wrap: wrap;
+                                            }
+                                            .project-excerpt {
+                                              font-size: 1rem;
+                                              color: #444;
+                                              margin-bottom: 1rem;
+                                              line-height: 1.5;
+                                            }
+                                            .project-tags {
+                                              display: flex;
+                                              gap: 8px;
+                                              flex-wrap: wrap;
+                                              margin-top: 0.5rem;
+                                            }
+                                            .project-tags .tag {
+                                              background: #fffbe6;
+                                              color: #ff8c00;
+                                              border-radius: 14px;
+                                              padding: 5px 14px;
+                                              display: flex;
+                                              align-items: center;
+                                              gap: 7px;
+                                              font-weight: 600;
+                                              font-size: 0.95rem;
+                                              box-shadow: 0 1px 4px #ffd60022;
+                                            }
+                                            /* Modal Styles */
+                                            .project-modal {
+                                              display: none;
+                                              position: fixed;
+                                              top: 0; left: 0; width: 100vw; height: 100vh;
+                                              background: rgba(0,0,0,0.8);
+                                              z-index: 1000;
+                                              align-items: center;
+                                              justify-content: center;
+                                            }
+                                            .project-modal.active {
+                                              display: flex;
+                                            }
+                                            .modal-container {
+                                              background: white;
+                                              margin: 5% auto;
+                                              padding: 2rem;
+                                              width: 90%;
+                                              max-width: 600px;
+                                              border-radius: 18px;
+                                              position: relative;
+                                              box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+                                              animation: fadeIn 0.4s;
+                                            }
+                                            .modal-close-btn {
+                                              position: absolute;
+                                              right: 2rem;
+                                              top: 1rem;
+                                              font-size: 2rem;
+                                              cursor: pointer;
+                                              color: #ffd600;
+                                              background: none;
+                                              border: none;
+                                            }
+                                            @media (max-width: 600px) {
+                                              .portfolio-grid {
+                                                grid-template-columns: 1fr;
+                                              }
+                                              .modal-container {
+                                                padding: 1rem;
+                                              }
+                                            }
+                                          </style>
 
+                                          <script>
+                                            // Portfolio Filter Logic
+                                            const filterBtns = document.querySelectorAll('.filter-btn');
+                                            const underline = document.querySelector('.portfolio-filters .underline');
+                                            const projects = document.querySelectorAll('.portfolio-item');
+                                            function moveUnderline(btn) {
+                                              underline.style.width = btn.offsetWidth + 'px';
+                                              underline.style.left = btn.offsetLeft + 'px';
+                                            }
+                                            filterBtns.forEach(btn => {
+                                              btn.addEventListener('click', () => {
+                                                filterBtns.forEach(b => b.classList.remove('active'));
+                                                btn.classList.add('active');
+                                                moveUnderline(btn);
+                                                const filter = btn.dataset.filter;
+                                                projects.forEach(p => {
+                                                  if (filter === 'all' || p.dataset.category.includes(filter)) {
+                                                    p.style.display = '';
+                                                  } else {
+                                                    p.style.display = 'none';
+                                                  }
+                                                });
+                                              });
+                                            });
+                                            window.addEventListener('load', () => {
+                                              const active = document.querySelector('.filter-btn.active');
+                                              if (active) moveUnderline(active);
+                                            });
+
+                                            // Portfolio Search Logic
+                                            document.getElementById('portfolioSearch').addEventListener('input', function() {
+                                              const term = this.value.toLowerCase();
+                                              projects.forEach(item => {
+                                                const title = item.dataset.title.toLowerCase();
+                                                const tags = item.dataset.tags.toLowerCase();
+                                                item.style.display = (title.includes(term) || tags.includes(term)) ? '' : 'none';
+                                              });
+                                            });
+
+                                            // AI Search Logic (Simulated)
+                                            document.getElementById('aiPortfolioSearchBtn').addEventListener('click', function() {
+                                              const input = document.getElementById('portfolioSearch').value.trim().toLowerCase();
+                                              const aiResults = document.getElementById('aiPortfolioResults');
+                                              const aiContent = document.getElementById('aiPortfolioResultsContent');
+                                              aiContent.innerHTML = '';
+                                              if (!input) {
+                                                aiResults.style.display = 'none';
+                                                return;
+                                              }
+                                              // Simulated AI: keyword-based suggestions
+                                              const suggestions = {
+                                                'eco': [
+                                                  { title: 'Skyview Residences', desc: 'Eco-smart home with solar and automation.' },
+                                                  { title: 'Coastal Eco Hotel', desc: 'Sustainable beachfront hotel with solar and local materials.' }
+                                                ],
+                                                'hotel': [
+                                                  { title: 'Coastal Eco Hotel', desc: 'Award-winning eco-friendly hotel in Diani Beach.' }
+                                                ],
+                                                'renovation': [
+                                                  { title: 'Modern Home Renovation', desc: 'Full house remodel with energy upgrades and open-plan living.' }
+                                                ],
+                                                'luxury': [
+                                                  { title: 'Skyview Residences', desc: 'Luxury smart home with bespoke interiors.' },
+                                                  { title: 'Coastal Eco Hotel', desc: 'Luxury amenities and spa.' }
+                                                ]
+                                              };
+                                              let found = false;
+                                              Object.keys(suggestions).forEach(key => {
+                                                if (input.includes(key)) {
+                                                  suggestions[key].forEach(s => {
+                                                    aiContent.innerHTML += `<div style="margin-bottom:0.7rem;"><strong>${s.title}:</strong> ${s.desc}</div>`;
+                                                  });
+                                                  found = true;
+                                                }
+                                              });
+                                              if (!found) {
+                                                aiContent.innerHTML = `<div>No direct matches found. Try searching for "eco", "hotel", "renovation", or "luxury".</div>`;
+                                              }
+                                              aiResults.style.display = 'block';
+                                              aiResults.scrollIntoView({ behavior: 'smooth' });
+                                            });
+
+                                            // Modal Logic
+                                            function showProjectModal(project, isQuickView) {
+                                              const modal = document.getElementById('projectModal');
+                                              const content = modal.querySelector('.modal-content');
+                                              // Demo content, replace with real project data as needed
+                                              let html = '';
+                                              if (project === 'skyview-residences') {
+                                                html = `
+                                                  <h2 style="color:#ffd600;">Skyview Residences</h2>
+                                                  <img src="img/kitchen.jpg" alt="Skyview Residences" style="width:100%;border-radius:12px;margin-bottom:1rem;">
+                                                  <p>Modern eco-home in Nairobi with smart automation, solar energy, and bespoke interiors. Awarded LEED Platinum for sustainability.</p>
+                                                  <ul>
+                                                    <li><strong>Location:</strong> Nairobi</li>
+                                                    <li><strong>Year:</strong> 2024</li>
+                                                    <li><strong>Size:</strong> 4,500 sq ft</li>
+                                                    <li><strong>Features:</strong> Smart Home, Solar, Luxury, LEED Platinum</li>
+                                                  </ul>
+                                                  <a href="#contact" class="cta-btn primary" style="margin-top:1rem;">Request Similar Project</a>
+                                                `;
+                                              } else if (project === 'coastal-eco-hotel') {
+                                                html = `
+                                                  <h2 style="color:#ffd600;">Coastal Eco Hotel</h2>
+                                                  <img src="img/pool.jpg" alt="Coastal Eco Hotel" style="width:100%;border-radius:12px;margin-bottom:1rem;">
+                                                  <p>Eco-friendly beachfront hotel in Diani Beach, built with local materials and powered by solar energy. Designed for sustainability and comfort.</p>
+                                                  <ul>
+                                                    <li><strong>Location:</strong> Diani Beach</li>
+                                                    <li><strong>Year:</strong> 2022</li>
+                                                    <li><strong>Size:</strong> 8,000 sq ft</li>
+                                                    <li><strong>Features:</strong> Beachfront, Solar, Eco-Friendly, Spa, Pool</li>
+                                                  </ul>
+                                                  <a href="#contact" class="cta-btn primary" style="margin-top:1rem;">Request Similar Project</a>
+                                                `;
+                                              } else if (project === 'modern-renovation') {
+                                                html = `
+                                                  <h2 style="color:#ffd600;">Modern Home Renovation</h2>
+                                                  <img src="img/bedroom.jpg" alt="Modern Home Renovation" style="width:100%;border-radius:12px;margin-bottom:1rem;">
+                                                  <p>Full house remodel in Karen, Nairobi. Open-plan living, new kitchen, energy upgrades, and modern interior design.</p>
+                                                  <ul>
+                                                    <li><strong>Location:</strong> Karen, Nairobi</li>
+                                                    <li><strong>Year:</strong> 2024</li>
+                                                    <li><strong>Size:</strong> 3,200 sq ft</li>
+                                                    <li><strong>Features:</strong> Interior Design, Energy Efficient, Luxury</li>
+                                                  </ul>
+                                                  <a href="#contact" class="cta-btn primary" style="margin-top:1rem;">Request Similar Project</a>
+                                                `;
+                                              } else {
+                                                html = `<h2 style="color:#ffd600;">Project Details</h2><p>More details and images coming soon!</p>`;
+                                              }
+                                              content.innerHTML = html;
+                                              modal.classList.add('active');
+                                            }
+                                            document.querySelectorAll('.quick-view-btn, .project-details-btn').forEach(btn => {
+                                              btn.addEventListener('click', function(e) {
+                                                const project = btn.dataset.project;
+                                                showProjectModal(project, btn.classList.contains('quick-view-btn'));
+                                              });
+                                            });
+                                            document.querySelector('.modal-close-btn').onclick = () => document.getElementById('projectModal').classList.remove('active');
+                                            document.getElementById('projectModal').onclick = e => { if (e.target === document.getElementById('projectModal')) document.getElementById('projectModal').classList.remove('active'); };
+                                            document.addEventListener('keydown', function(e) {
+                                              if (document.getElementById('projectModal').classList.contains('active') && e.key === 'Escape') {
+                                                document.getElementById('projectModal').classList.remove('active');
+                                              }
+                                            });
+                                          </script>
 
 
 <br>
-
-
-
-<section>
-<!-- Hero Video Banner with Enhanced Text Overlay -->
-<div class="portfolio-hero" style="position:relative; width:100%; height:440px; overflow:hidden; border-radius:18px; margin-bottom:3rem; box-shadow:0 8px 32px #ffd60033;">
-  <video class="hero-video" autoplay muted loop playsinline poster="img/home.jpg"
-         style="width:100%; height:100%; object-fit:cover; filter:brightness(0.6) contrast(1.1); position:absolute; top:0; left:0; z-index:1;">
-    <source src="img/pixelvid.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-
-         <style>
-                    :root {
-                      --primary: #ffd600;
-                      --secondary: #181818;
-                      --ease: cubic-bezier(0.4, 0, 0.2, 1);
-                    }
-
-                    .hero {
-                      position: relative;
-                      height: 70vh;
-                      background: url('construction-bg.jpg') center/cover fixed;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      overflow: hidden;
-                    }
-
-                    .hero::before {
-                      content: "";
-                      position: absolute;
-                      inset: 0;
-                      background: linear-gradient(90deg, rgba(24, 24, 24, 0.95) 60%, rgba(232, 211, 104, 0.15));
-                      z-index: 1;
-                    }
-
-                    .hero-content {
-                      position: relative;
-                      z-index: 2;
-                      text-align: center;
-                      padding: 2rem;
-                      max-width: 1200px;
-                    }
-
-                    .hero-title {
-                      font-size: 2.5rem;
-                      font-weight: 600;
-                      color: var(--primary);
-                      text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-                      margin-bottom: 2rem;
-                      transform: translateY(50px);
-                      opacity: 0;
-                      animation: slideUp 1s var(--ease) forwards;
-                    }
-
-                    .features-grid {
-                      display: grid;
-                      grid-template-columns: repeat(4, 1fr);
-                      gap: 2rem;
-                      margin: 3rem 0;
-                    }
-
-                    .feature-card {
-                      background:goldenrod;
-                      padding: 2rem;
-                      border-radius: 16px;
-                      transition: all 0.3s var(--ease);
-                      cursor: pointer;
-                      position: relative;
-                      overflow: hidden;
-                      backdrop-filter: blur(12px);
-                    }
-
-                    .feature-card:hover {
-                      transform: translateY(-10px);
-                      background: rgba(255, 214, 0, 0.1);
-                      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-                    }
-
-                    .feature-card i {
-                      font-size: 2.5rem;
-                      color: var(--primary);
-                      margin-bottom: 1rem;
-                      transition: transform 0.3s var(--ease);
-                    }
-
-                    .feature-card:hover i {
-                      transform: scale(1.2);
-                    }
-
-                    .feature-card::after {
-                      content: "";
-                      position: absolute;
-                      bottom: -50%;
-                      left: -50%;
-                      width: 200%;
-                      height: 200%;
-                      background: linear-gradient(45deg, transparent 40%, rgba(255, 214, 0, 0.1) 50%, transparent 60%);
-                      animation: shine 4s infinite;
-                      opacity: 0;
-                    }
-
-                    .feature-card:hover::after {
-                      opacity: 1;
-                    }
-
-                    @keyframes slideUp {
-                      to { transform: translateY(0); opacity: 1; }
-                    }
-
-                    @keyframes shine {
-                      to { transform: translateX(100%); }
-                    }
-
-                    /* Parallax Effect */
-                    .hero::after {
-                      content: "";
-                      position: absolute;
-                      inset: 0;
-                      background: url('construction-bg.jpg') center/cover fixed;
-                      filter: blur(8px);
-                      z-index: -1;
-                      transform: scale(1.1);
-                    }
-
-                    /* Responsive Design */
-                    @media (max-width: 1024px) {
-                      .features-grid { grid-template-columns: repeat(2, 1fr); }
-                      .hero-title { font-size: 2.5rem; }
-                    }
-
-                    @media (max-width: 640px) {
-                      .features-grid { grid-template-columns: 1fr; }
-                      .hero-title { font-size: 2rem; }
-                    }
-         </style>
-
-        <div class="hero">
-          <div class="hero-content">
-            <h2 class="hero-title">
-              <i class="fas fa-drafting-compass"></i><br>
-              Designing Tomorrow, Today
-            </h2>
-
-            <div class="features-grid" style="align-items: stretch;">
-              <div class="feature-card" onclick="showDetail('residential')">
-                <i class="fas fa-house-user"></i>
-                <p>Luxury Residences</p>
-                <span class="feature-tag">25+ Projects</span>
-              </div>
-              <div class="feature-card" onclick="showDetail('commercial')">
-                <i class="fas fa-city"></i>
-                <p>Commercial Towers</p>
-                <span class="feature-tag">15+ Projects</span>
-              </div>
-              <div class="feature-card" onclick="showDetail('eco')">
-                <i class="fas fa-leaf"></i>
-                <p>Sustainable Designs</p>
-                <span class="feature-tag">LEED Certified</span>
-              </div>
-              <div class="feature-card" onclick="showDetail('tech')">
-                <i class="fas fa-robot"></i>
-                <p>Smart Integration</p>
-                <span class="feature-tag">AI Powered</span>
-              </div>
-            </div>
-            <!-- Call Button centered below the grid -->
-            <div style="display: flex; justify-content: center; margin-top: 2.5rem;">
-              <a href="tel:+254741400368" style="display:inline-flex; align-items:center; background:#18df2f; color:#fff; padding:12px 28px; border-radius:30px; font-size:1.1rem; font-weight:600; text-decoration:none; box-shadow:0 2px 12px rgba(34,165,72,0.15); transition:background 0.2s;">
-                <i class="fas fa-phone-alt" style="margin-right:10px;"></i> Call Now: +254 741 400 368
-              </a>
-            </div>
-          </div>
-        </div>
-
-         <script>
-                        function showDetail(category) {
-                          const details = {
-                            residential: "Explore our premium residential projects featuring...",
-                            commercial: "State-of-the-art commercial developments...",
-                            eco: "Sustainable architecture solutions with...",
-                            tech: "Smart building integration using IoT and AI..."
-                          };
-                          // Replace with modal implementation
-                          alert(details[category]);
-                        }
-
-                        // Parallax effect
-                        window.addEventListener('scroll', () => {
-                          const scrolled = window.pageYOffset;
-                          document.querySelector('.hero').style.backgroundPositionY = `${scrolled * 0.5}px`;
-                        });
-           </script>
-
-
-</section>
 
 
 <!-- Portfolio ratings Section -->
@@ -2506,23 +3021,123 @@
           </style>
             </div>
 
+
             <!-- Contact Info, Map & Form Row -->
             <div class="contact-content-3d">
-              <!-- Contact Info & Map -->
+              <!-- Contact Section Background Slideshow (Improved) -->
+              <div class="contact-bg-slideshow">
+                <!-- Modern Building (local) -->
+                <img src="img/home.jpg" alt="Modern Home Project" class="contact-bg-slide active" />
+                <!-- Interior Design (local) -->
+                <img src="img/bedroom.jpg" alt="Interior Bedroom Design" class="contact-bg-slide" />
+                <!-- Construction Site (local) -->
+                <img src="img/build.png" alt="Construction Site" class="contact-bg-slide" />
+                <!-- Living Room (local) -->
+                <img src="img/black1.jpg" alt="Living Room Interior" class="contact-bg-slide" />
+                <!-- Kitchen (local) -->
+                <img src="img/kitchen.jpg" alt="Modern Kitchen" class="contact-bg-slide" />
+                <!-- Pool Project (local) -->
+                <img src="img/black2.jpg" alt="Luxury Pool Project" class="contact-bg-slide" />
+                <!-- Office/Commercial (local) -->
+                <img src="img/stair.jpg" alt="Office Staircase" class="contact-bg-slide" />
+                <!-- Logo Placeholder (local) -->
+                <img src="img/HOMELOGO.jpg" alt="Bridan Logo Placeholder" class="contact-bg-slide" />
+                <!-- Optional: Add more relevant images as needed -->
+              </div>
+              <style>
+                .contact-content-3d {
+                  position: relative;
+                  z-index: 1;
+                }
+                .contact-bg-slideshow {
+                  position: absolute;
+                  inset: 0;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 0;
+                  overflow: hidden;
+                  border-radius: 22px;
+                  pointer-events: none;
+                }
+                .contact-bg-slide {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  left: 0;
+                  top: 0;
+                  opacity: 0;
+                  transition: opacity 1.2s cubic-bezier(.4,0,.2,1);
+                  z-index: 0;
+                  filter: brightness(0.55) blur(1px);
+                }
+                .contact-bg-slide.active {
+                  opacity: 1;
+                  z-index: 1;
+                }
+                /* Ensure content is above slideshow */
+                .contact-content-3d > *:not(.contact-bg-slideshow) {
+                  position: relative;
+                  z-index: 2;
+                }
+              </style>
+              <script>
+                // Improved slideshow for contact section background
+                (function() {
+                  const slides = document.querySelectorAll('.contact-bg-slide');
+                  let idx = 0;
+                  function showSlide(i) {
+                    slides.forEach((img, j) => img.classList.toggle('active', i === j));
+                  }
+                  setInterval(() => {
+                    idx = (idx + 1) % slides.length;
+                    showSlide(idx);
+                  }, 4000);
+                  showSlide(idx);
+                })();
+              </script>
+
+
+
+   
+<!-- Contact Info & Map -->
+
+              <div class="find-us-header" style="text-align:center; margin-bottom:24px;">
+                <h2 style="font-size:2rem; font-weight:700; color:#ffd600; margin-bottom:8px;">
+                <h2 style="font-size:2rem; font-weight:700; color:#ffd600; margin-bottom:8px;">
+                  <i class="fas fa-map-marker-alt" style="color:#ca0909; margin-right:8px;"></i>
+                 <u> Where and How to Find Us</u>
+                </h2>
+                <p style="color:goldenrod; font-size:1.1rem;">
+                  Visit our office, call, email, or chat with us online. We’re always ready to help you start your project!
+                </p>
+              </div>
               <div class="contact-info-3d glassmorphism-3d">
                 <div class="info-card-3d">
                   <div class="info-item-3d">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Nachu Plaza, Upperhill, Moi, Nairobi Area, Kenya 00202</span>
+                    <i class="fas fa-map-marker-alt" style="color: #ca0909; margin-right: 8px;"></i>
+                    <a href="https://www.google.com/maps?q=1.299991,36.813982" target="_blank" rel="noopener" style="color:goldenrod; font-weight:800;">
+                      Nachu Plaza, Upperhill, Moi, Nairobi Area, Kenya 00202
+                    </a>
                   </div>
-                  <div class="info-item-3d">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:bridandesignbuild@gmail.com">bridandesignbuild@gmail.com</a>
-                  </div>
-                  <div class="info-item-3d">
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:+254741400368">+254 741 400 368</a>
-                  </div>
+                    <div class="info-item-3d">
+                      <a href="mailto:bridandesignbuild@gmail.com" style="color:goldenrod; font-weight:600; display:flex; align-items:center; text-decoration:none;">
+                        <i class="fas fa-envelope" style="color: #e609d7; margin-right: 8px;"></i>
+                        bridandesignbuild@gmail.com
+                      </a>
+                    </div>
+                    <div class="info-item-3d">
+                    <a href="tel:+254741400368" style="color:goldenrod; font-weight:600; ">
+                      <i class="fas fa-phone" style="color: #1309ca; margin-right: 8px;"></i>
+                      +254 741 400 368
+                    </a>
+                    </div>
+                    <div class="info-item-3d">
+                    <a href="https://api.whatsapp.com/send?phone=254741400368" target="_blank"style="color:goldenrod; font-weight:600; ">
+                      <i class="fab fa-whatsapp" style="color: #13ca4d; margin-right: 8px;"></i>
+                      WhatsApp Now: +254 741 400 368
+                    </a>
+                    </div>
                   <div class="info-item-3d">
                     <i class="fas fa-clock"></i>
                     <span>Mon - Sat: 8:00am – 6:00pm</span>
@@ -2551,8 +3166,20 @@
                   <h3><i class="fas fa-user-tie"></i> Careers</h3>
                   <p>
                     Interested in joining Bridan Design Build? Send your cover letter and CV to
-                    <a href="mailto:bridandesignbuild@gmail.com">bridandesignbuild@gmail.com</a>
-                    or <a href="tel:+254741400368">call us</a>.
+                            <div class="info-item-3d">
+                            <a href="mailto:bridandesignbuild@gmail.com" style="color:goldenrod; font-weight:600; display:flex; align-items:center; text-decoration:none;">
+                              <i class="fas fa-envelope" style="color: #e609d7; margin-right: 8px;"></i>
+                              bridandesignbuild@gmail.com
+                            </a>
+                          </div>
+                    or 
+                    <a href="tel:+254741400368">call us - at-></a>
+                    
+                    <a href="tel:+254741400368" style="color:goldenrod; font-weight:600; ">
+                      <i class="fas fa-phone" style="color: #1309ca; margin-right: 8px;"></i>
+                      +254 741 400 368
+                    </a>
+                   
                   </p>
                 </div>
                 <div class="emergency-contact-3d">
@@ -2566,7 +3193,18 @@
          <div class="contact-form-3d glassmorphism-3d">
                 <form id="contactForm" autocomplete="off">
                   <div>
-                    <p>FILL OUT THIS FORM TO TO GET A FREE ARCHITECT & BUILD SERVICE<p>
+                    <h3 style="
+                      font-size: 1.35rem;
+                      font-weight: 900;
+                      color: #181818;
+                      text-align: center;
+                      margin-bottom: 18px;
+                      text-decoration: underline;
+                      text-underline-offset: 6px;
+                      letter-spacing: 0.5px;
+                    ">
+                      FILL OUT THIS FORM TO GET A <span style="color:#ff0000;">FREE ARCHITECT</span> &amp; BUILD SERVICE
+                    </h3>
                   </div>
                   <div class="form-group-3d">
                     <input type="text" name="firstName" placeholder="First name" required>
@@ -2608,6 +3246,8 @@
                 </div>
               </div>
             </div>
+          </section>
+
 
    <!-- Friendly Note -->
             <div class="contact-note-3d">
@@ -3485,9 +4125,7 @@
              <a href="https://www.instagram.com/bridan_design_build/" class="social-follow-btn" target="_blank" rel="noopener">
                 Follow Us <i class="fas fa-external-link-alt"></i>
               </a>
-            </div>
 
-            <div class="social-info">
               <h3>@bridan_design_build</h3>
             </div>
           </div>
@@ -3523,7 +4161,7 @@
             <!-- Slide 3: Office Space Revolution -->
             <div class="slide">
               <div class="instagram-placeholder">
-                <img src="img/bridaan2.jpg" alt="Office Space Revolution" class="preview-image">
+                <img src="img/office2.jpg" alt="Office Space Revolution" class="preview-image">
                 <div class="post-overlay">
                   <div class="post-details">
                     <h4>Office Space Revolution</h4>
@@ -3567,10 +4205,10 @@
               <img src="img/home.jpg" alt="Instagram Gallery 1">
             </a>
             <a href="https://www.instagram.com/p/Cw0y8n6gQwF/" target="_blank" rel="noopener" class="gallery-item">
-              <img src="img/kitchen.jpg" alt="Instagram Gallery 2">
+              <img src="img/black2.jpg" alt="Instagram Gallery 2">
             </a>
             <a href="https://www.instagram.com/p/Cw0y8n6gQwF/" target="_blank" rel="noopener" class="gallery-item">
-              <img src="img/bedroom.jpg" alt="Instagram Gallery 3">
+              <img src="img/blue.jpg" alt="Instagram Gallery 3">
             </a>
             <a href="https://www.instagram.com/p/Cw0y8n6gQwF/" target="_blank" rel="noopener" class="gallery-item">
               <img src="img/stair.jpg" alt="Instagram Gallery 4">
@@ -3584,10 +4222,12 @@
         <div class="social-header">
           <div class="social-profile">
             <img src="img/bridanlogo.PNG" alt="Bridan TikTok Profile" class="social-avatar">
+
             <div>
             <a href="https://www.tiktok.com/@bridandesignbuild" target="_blank" aria-label="TikTok" class="social-3d" style="background: #fff; color: #010101;"><i class="fab fa-tiktok"></i></a>
 
             </div>
+
             <div class="social-info">
                 <h3>@bridandesignbuild</h3>
               <a href="https://www.tiktok.com/@bridandesignbuild" class="social-follow-btn" target="_blank" rel="noopener noreferrer">
@@ -5017,15 +5657,22 @@
             </form>
           </div>
           <div class="footer-careers" style="margin-top:18px; color:#ffd600; font-size:0.98rem;">
-            <i class="fas fa-user-tie"></i> <strong>Careers:</strong> Send your CV to <a href="mailto:bridandesignbuild@gmail.com" style="color:#ffd600; text-decoration:underline;">bridandesignbuild@gmail.com</a>
-          </div>
+            <i class="fas fa-user-tie"></i> <strong>Careers:</strong> Send your CV to 
+                      <a href="mailto:bridandesignbuild@gmail.com" style="color:goldenrod; font-weight:600; display:flex; align-items:center; text-decoration:none;">
+                        <i class="fas fa-envelope" style="color: #e609d7; margin-right: 8px;"></i>
+                        bridandesignbuild@gmail.com
+                      </a>
+               
         </div>
       </div>
+      </div>
+      <!-- Footer Bottom -->
+
       <div class="footer-bottom" style="background:#181818; color:#bbb; padding:18px 0 10px 0; text-align:center; font-size:0.98rem; border-top: 1px solid #ffd60022;">
         <div class="copyright">
           <p style="margin:0;">
-            <i class="fas fa-copyright" style="color:#ffd600;"></i>
-            2025 Bridan Design Build. All Rights Reserved.
+        <i class="fas fa-copyright" style="color:#ffd600;"></i>
+        2025 Bridan Design Build<sup style="font-size:0.7em; color:#ffd600; margin-left:2px;">TM</sup> All Rights Reserved.
           </p>
         </div>
         <div class="legal-links" style="margin-top:6px;">
